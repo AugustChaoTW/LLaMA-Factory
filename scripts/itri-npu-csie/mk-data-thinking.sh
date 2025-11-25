@@ -140,14 +140,14 @@ else
     echo "   Please be patient..."
     
     # Start API server in background and capture output
-    docker exec -d "$CONTAINER_NAME" bash -c "cd /workspace/LLaMA-Factory && bash run_inference.sh api $CONFIG_FILE > /tmp/api_setup.log 2>&1"
+    docker exec -d "$CONTAINER_NAME" bash -c "cd /workspace/LLaMA-Factory/LLaMA-Factory && bash run_inference.sh api $CONFIG_FILE > /tmp/api_setup.log 2>&1"
     
     echo "✓ Installation and API startup initiated"
     echo ""
     echo "→ Monitoring installation progress..."
     
     # Monitor installation with timeout
-    INSTALL_TIMEOUT=600  # 10 minutes for installation
+    INSTALL_TIMEOUT=900  # 15 minutes for installation
     INSTALL_WAITED=0
     
     while [ $INSTALL_WAITED -lt $INSTALL_TIMEOUT ]; do

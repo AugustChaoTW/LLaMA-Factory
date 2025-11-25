@@ -103,7 +103,8 @@ def configure_quantization(
             quantization_config["use_exllama"] = False  # disable exllama
 
         if quant_method == QuantizationMethod.AWQ:
-            check_version("autoawq", mandatory=True)
+            #check_version("autoawq", mandatory=True)
+            pass
 
         if quant_method == QuantizationMethod.AQLM:
             check_version("aqlm>=1.1.0", mandatory=True)

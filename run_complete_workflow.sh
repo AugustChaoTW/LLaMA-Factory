@@ -1,6 +1,84 @@
 #!/bin/bash
 # Complete Workflow: Docker + API + Benchmark
 # This script orchestrates the entire evaluation process with timing reports
+# Now supports flags and --help usage output.
+
+usage() {
+    cat <<'EOF'
+用法: bash run_complete_workflow.sh [選項]
+
+描述:
+  啟動/建立 Docker 容器 -> 啟動推理 API -> 執行 TMMLU 基準測試，並列出時間與效能統計。
+
+選項:
+  --config <FILE>          指定推理設定檔 (預設: itri/inference/gpt_lora_120b_sft.yaml)
+  --max-samples <N>        評測最大樣本數 (預設: 100)
+  --cleanup <yes|no>       完成後是否移除容器 (預設: yes)
+  --container-name <NAME>  自訂容器名稱 (預設: llama-factory-benchmark)
+  -h, --help               顯示此說明並結束
+
+位置參數相容模式 (舊用法):
+  bash run_complete_workflow.sh [CONFIG] [MAX_SAMPLES] [CLEANUP]
+  舊位置參數仍可使用；若同時提供旗標與位置參數，旗標優先。
+
+環境需求:
+  1. 已安裝 Docker 並具備 NVIDIA GPU Driver (使用 --gpus all)
+  2. 容器映像: nvcr.io/nvidia/pytorch:25.10-py3
+  3. 系統需有 bc (計算每秒樣本數)；若無則 throughput 會顯示 N/A。
+
+範例指令:
+  基本:      bash run_complete_workflow.sh --config itri/inference/gpt_lora_120b_sft.yaml
+  指定樣本:  bash run_complete_workflow.sh --max-samples 200
+  保留容器:  bash run_complete_workflow.sh --cleanup no
+  全部旗標:  bash run_complete_workflow.sh --config itri/inference/gpt_lora_120b_sft.yaml --max-samples 150 --cleanup yes --container-name my-bench
+  舊用法:    bash run_complete_workflow.sh itri/inference/gpt_lora_120b_sft.yaml 120 no
+  顯示說明:  bash run_complete_workflow.sh --help
+
+EOF
+}
+
+parse_args() {
+    # Defaults (will apply after parsing to allow flag override of positional)
+    local positional=()
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            -h|--help)
+                usage
+                exit 0
+                ;;
+            --config)
+                CONFIG_FILE="$2"; shift 2 ;;
+            --max-samples)
+                MAX_SAMPLES="$2"; shift 2 ;;
+            --cleanup)
+                CLEANUP_CONTAINER="$2"; shift 2 ;;
+            --container-name)
+                CONTAINER_NAME="$2"; shift 2 ;;
+            --) shift; break ;;
+            -*) echo "[錯誤] 未知選項: $1" >&2; usage; exit 1 ;;
+            *) positional+=("$1"); shift ;;
+        esac
+    done
+
+    # Apply positional fallback only if not set via flags
+    if [[ ${#positional[@]} -gt 0 && -z $CONFIG_FILE ]]; then
+        CONFIG_FILE="${positional[0]}"
+    fi
+    if [[ ${#positional[@]} -gt 1 && -z $MAX_SAMPLES ]]; then
+        MAX_SAMPLES="${positional[1]}"
+    fi
+    if [[ ${#positional[@]} -gt 2 && -z $CLEANUP_CONTAINER ]]; then
+        CLEANUP_CONTAINER="${positional[2]}"
+    fi
+
+    # Final defaults
+    : "${CONTAINER_NAME:=llama-factory-benchmark}"
+    : "${CONFIG_FILE:=itri/inference/gpt_lora_120b_sft.yaml}"
+    : "${MAX_SAMPLES:=100}"
+    : "${CLEANUP_CONTAINER:=yes}"
+}
+
+parse_args "$@"
 
 set -e
 
@@ -13,11 +91,8 @@ echo "=========================================="
 echo "Start Time: $(date '+%Y-%m-%d %H:%M:%S')"
 echo ""
 
-# Configuration
-CONTAINER_NAME="llama-factory-benchmark"
-CONFIG_FILE="${1:-itri/inference/gpt_lora_120b_sft.yaml}"
-MAX_SAMPLES="${2:-100}"
-CLEANUP_CONTAINER="${3:-yes}"  # yes/no - whether to cleanup container after completion
+# Configuration (after parsing)
+# Variables already set by parse_args with defaults applied
 
 echo "Configuration:"
 echo "  Container: $CONTAINER_NAME"

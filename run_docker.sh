@@ -25,7 +25,7 @@ FEATURES:
     - Current directory mounted to /workspace/LLaMA-Factory
     - HuggingFace cache mounted from ~/.cache/huggingface
     - Proper IPC and memory limits for multi-GPU training
-    - Uses NVIDIA PyTorch 25.10 image
+    - Uses llama-factory-train-img with pre-installed packages
 
 MODES:
     Interactive (default):
@@ -144,7 +144,7 @@ if [ "$DETACH" = "yes" ]; then
         -v $(pwd):/workspace/LLaMA-Factory \
         -v ~/.cache/huggingface:/root/.cache/huggingface \
         -w /workspace/LLaMA-Factory \
-        nvcr.io/nvidia/pytorch:25.10-py3 \
+	nvcr.io/nvidia/pytorch:25.10-py3 \
         tail -f /dev/null
     
     echo "✓ Container started in detached mode"
@@ -165,6 +165,6 @@ else
         -v $(pwd):/workspace/LLaMA-Factory \
         -v ~/.cache/huggingface:/root/.cache/huggingface \
         -w /workspace/LLaMA-Factory \
-        nvcr.io/nvidia/pytorch:25.10-py3 \
+	nvcr.io/nvidia/pytorch:25.10-py3 \
         bash
 fi
