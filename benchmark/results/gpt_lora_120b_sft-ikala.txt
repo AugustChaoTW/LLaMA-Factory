@@ -1,0 +1,99 @@
+==========================================
+Step 3: Run TMMLU Benchmark
+==========================================
+→ Running benchmark in container...
+🐳 Running inside Docker container
+==========================================
+TMMLU Benchmark Evaluation
+==========================================
+Environment: Docker Container
+Config: itri/inference/gpt_lora_120b_sft-ikala.yaml
+API Port: 8000
+API URL: http://localhost:8000
+Max Samples: 1000
+==========================================
+Python: python3
+→ Skipping API server start (as requested)
+
+Checking API availability...
+✓ API server is available
+
+Starting TMMLU evaluation...
+
+Starting TMMLU evaluation...
+API health check passed ✓
+Loading TMMLU+ dataset (split: test)...
+Loading 5 subjects...
+  ✓ Loaded engineering_math: 103 questions
+  ✓ Loaded dentistry: 399 questions
+  ✓ Loaded traditional_chinese_medicine_clinical_medicine: 278 questions
+  ✓ Loaded clinical_psychology: 125 questions
+  ✓ Loaded technical: 402 questions
+Total questions loaded: 1307
+Dataset loaded: 1307 samples
+Evaluating 1000 samples
+Evaluating: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [12:08<00:00,  1.37it/s]
+
+============================================================
+TMMLU EVALUATION RESULTS
+============================================================
+Overall Accuracy: 26.20%
+Correct: 262 / 1000
+
+Per-Subject Results:
+------------------------------------------------------------
+technical                     : 27.37% (26/95)
+clinical_psychology           : 27.20% (34/125)
+engineering_math              : 27.18% (28/103)
+traditional_chinese_medicine_clinical_medicine: 25.90% (72/278)
+dentistry                     : 25.56% (102/399)
+============================================================
+
+Results saved to: benchmark/results/tmmlu_results_20251125_180431.json
+
+==========================================
+Evaluation completed!
+==========================================
+
+📊 Evaluation Metrics Report
+==========================================
+Overall Accuracy: 26.20%
+Correct Answers: 262/1000
+Total Questions: 1000
+
+Per-Subject Performance:
+------------------------------------------------------------
+  technical                               : 27.37% (26/95)
+  clinical_psychology                     : 27.20% (34/125)
+  engineering_math                        : 27.18% (28/103)
+  traditional_chinese_medicine_clinical_medicine: 25.90% (72/278)
+  dentistry                               : 25.56% (102/399)
+
+============================================================
+
+Results saved in: benchmark/results/tmmlu_results_20251125_180431.json
+
+
+Cleaning up...
+
+==========================================
+⏱ Timing Report
+==========================================
+Container Setup:    0s
+API Setup:          0s
+Evaluation:         741s
+----------------------------------------
+Total Time:         741s (12:21)
+==========================================
+
+📊 Performance Metrics
+==========================================
+Samples Evaluated:  1000
+Throughput:         1.34 samples/sec
+Avg Time/Sample:    .74s
+==========================================
+
+==========================================
+Workflow Complete!
+==========================================
+End Time: 2025-11-25 18:16:51

@@ -118,33 +118,34 @@ echo "=========================================="
 CONTAINER_START_TIME=$(date +%s)
 
 if [ "$IN_CONTAINER" = false ]; then
-    # Check if container already exists
-    if docker ps -a --format '{{.Names}}' | grep -q "^${CONTAINER_NAME}$" 2>/dev/null; then
-        echo "⚠ Container '$CONTAINER_NAME' already exists"
+    # Check if container already exists and is running
+    if docker ps --format '{{.Names}}' | grep -q "^${CONTAINER_NAME}$" 2>/dev/null; then
+        echo "✓ Container '$CONTAINER_NAME' is already running"
+        echo "→ Will use existing container"
+    elif docker ps -a --format '{{.Names}}' | grep -q "^${CONTAINER_NAME}$" 2>/dev/null; then
+        echo "✓ Container '$CONTAINER_NAME' exists but is stopped"
+        echo "→ Starting existing container..."
+        docker start "$CONTAINER_NAME"
+        echo "✓ Container started"
+        sleep 2
+    else
+        # Start new container in detached mode
+        echo "→ Creating new container..."
+        docker run -d \
+            --name "$CONTAINER_NAME" \
+            --gpus all \
+            --ipc=host \
+            --ulimit memlock=-1 \
+            --ulimit stack=67108864 \
+            -v $(pwd):/workspace/LLaMA-Factory \
+            -v ~/.cache/huggingface:/root/.cache/huggingface \
+            -w /workspace/LLaMA-Factory \
+            nvcr.io/nvidia/pytorch:25.10-py3 \
+            tail -f /dev/null
         
-        # Stop and remove old container
-        echo "→ Stopping and removing old container..."
-        docker stop "$CONTAINER_NAME" 2>/dev/null || true
-        docker rm "$CONTAINER_NAME" 2>/dev/null || true
-        echo "✓ Old container removed"
+        echo "✓ Container created and started"
+        sleep 2
     fi
-    
-    # Start new container in detached mode
-    echo "→ Starting new container..."
-    docker run -d \
-        --name "$CONTAINER_NAME" \
-        --gpus all \
-        --ipc=host \
-        --ulimit memlock=-1 \
-        --ulimit stack=67108864 \
-        -v $(pwd):/workspace/LLaMA-Factory \
-        -v ~/.cache/huggingface:/root/.cache/huggingface \
-        -w /workspace/LLaMA-Factory \
-        nvcr.io/nvidia/pytorch:25.10-py3 \
-        tail -f /dev/null
-    
-    echo "✓ Container started"
-    sleep 2
 fi
 
 CONTAINER_SETUP_TIME=$(($(date +%s) - CONTAINER_START_TIME))
