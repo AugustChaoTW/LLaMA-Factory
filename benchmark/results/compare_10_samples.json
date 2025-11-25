@@ -1,0 +1,106 @@
+{
+  "ikala_correct": 0,
+  "base_correct": 0,
+  "rows": [
+    {
+      "index": 1,
+      "correct": "",
+      "ikala_raw": "analysisassistantfinal答案是 B。此兩向",
+      "ikala_choice": "B",
+      "ikala_ok": false,
+      "base_raw": "analysisassistantfinalA",
+      "base_choice": "A",
+      "base_ok": false
+    },
+    {
+      "index": 2,
+      "correct": "",
+      "ikala_raw": "analysisassistantfinal答案是 C。",
+      "ikala_choice": "C",
+      "ikala_ok": false,
+      "base_raw": "analysisassistantfinalC",
+      "base_choice": "C",
+      "base_ok": false
+    },
+    {
+      "index": 3,
+      "correct": "",
+      "ikala_raw": "analysisassistantfinal答案是 A。\\( y =",
+      "ikala_choice": "A",
+      "ikala_ok": false,
+      "base_raw": "analysisassistantfinalC",
+      "base_choice": "C",
+      "base_ok": false
+    },
+    {
+      "index": 4,
+      "correct": "",
+      "ikala_raw": "analysisassistantfinal答案是 D。",
+      "ikala_choice": "D",
+      "ikala_ok": false,
+      "base_raw": "analysisassistantfinalB",
+      "base_choice": "B",
+      "base_ok": false
+    },
+    {
+      "index": 5,
+      "correct": "",
+      "ikala_raw": "analysisassistantfinal答案是 A。\\( \\frac",
+      "ikala_choice": "A",
+      "ikala_ok": false,
+      "base_raw": "analysisassistantfinalA\n\n",
+      "base_choice": "A",
+      "base_ok": false
+    },
+    {
+      "index": 6,
+      "correct": "",
+      "ikala_raw": "analysisassistantfinal答案是 A。",
+      "ikala_choice": "A",
+      "ikala_ok": false,
+      "base_raw": "analysisassistantfinalA",
+      "base_choice": "A",
+      "base_ok": false
+    },
+    {
+      "index": 7,
+      "correct": "",
+      "ikala_raw": "analysisassistantfinal答案是 D。1",
+      "ikala_choice": "D",
+      "ikala_ok": false,
+      "base_raw": "analysisassistantfinalC",
+      "base_choice": "C",
+      "base_ok": false
+    },
+    {
+      "index": 8,
+      "correct": "",
+      "ikala_raw": "analysisassistantfinal答案是 C。",
+      "ikala_choice": "C",
+      "ikala_ok": false,
+      "base_raw": "analysisassistantfinalC",
+      "base_choice": "C",
+      "base_ok": false
+    },
+    {
+      "index": 9,
+      "correct": "",
+      "ikala_raw": "analysisassistantfinal答案是 A。b=1",
+      "ikala_choice": "A",
+      "ikala_ok": false,
+      "base_raw": "analysisassistantfinalA",
+      "base_choice": "A",
+      "base_ok": false
+    },
+    {
+      "index": 10,
+      "correct": "",
+      "ikala_raw": "analysisassistantfinal答案是 C。\\(n-t",
+      "ikala_choice": "C",
+      "ikala_ok": false,
+      "base_raw": "analysisassistantfinalC",
+      "base_choice": "C",
+      "base_ok": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "n": 200,
+  "ikala_correct": 106,
+  "base_correct": 93,
+  "ikala_acc": 0.53,
+  "base_acc": 0.465,
+  "both_correct": 77,
+  "both_wrong": 78,
+  "n_diff": 66
+}

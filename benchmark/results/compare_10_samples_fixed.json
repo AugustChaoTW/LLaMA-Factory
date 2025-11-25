@@ -1,0 +1,116 @@
+{
+  "ikala_correct": 3,
+  "base_correct": 6,
+  "rows": [
+    {
+      "index": 1,
+      "correct_text": "答案是 A。此兩向量的外積（cross product）為[-3 -3 3]T",
+      "correct_choice": "A",
+      "ikala_choice": "B",
+      "ikala_ok": false,
+      "base_choice": "A",
+      "base_ok": true,
+      "ikala_raw": "analysisassistantfinal答案是 B。此兩向",
+      "base_raw": "analysisassistantfinalA"
+    },
+    {
+      "index": 2,
+      "correct_text": "答案是 C。條件機率密度函數 \\[ f_{X|Y}(x|y) = \\begin{cases} \\frac{1}{y}, & 0 \\leq y \\leq x \\leq 1 \\\\ 0, & 其他 \\end{cases} \\]",
+      "correct_choice": "C",
+      "ikala_choice": "C",
+      "ikala_ok": true,
+      "base_choice": "C",
+      "base_ok": true,
+      "ikala_raw": "analysisassistantfinal答案是 C。",
+      "base_raw": "analysisassistantfinalC"
+    },
+    {
+      "index": 3,
+      "correct_text": "答案是 C。\\( y = 2e^{-2(t-1)} - 2e^{-3(t-1)} \\)",
+      "correct_choice": "C",
+      "ikala_choice": "A",
+      "ikala_ok": false,
+      "base_choice": "C",
+      "base_ok": true,
+      "ikala_raw": "analysisassistantfinal答案是 A。\\( y =",
+      "base_raw": "analysisassistantfinalC"
+    },
+    {
+      "index": 4,
+      "correct_text": "答案是 B。3",
+      "correct_choice": "B",
+      "ikala_choice": "D",
+      "ikala_ok": false,
+      "base_choice": "B",
+      "base_ok": true,
+      "ikala_raw": "analysisassistantfinal答案是 D。",
+      "base_raw": "analysisassistantfinalB"
+    },
+    {
+      "index": 5,
+      "correct_text": "答案是 D。\\( \\frac{1}{44\\sqrt{11}} \\)",
+      "correct_choice": "D",
+      "ikala_choice": "A",
+      "ikala_ok": false,
+      "base_choice": "A",
+      "base_ok": false,
+      "ikala_raw": "analysisassistantfinal答案是 A。\\( \\frac",
+      "base_raw": "analysisassistantfinalA\n\n"
+    },
+    {
+      "index": 6,
+      "correct_text": "答案是 A。\\(\\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix}\\)",
+      "correct_choice": "A",
+      "ikala_choice": "A",
+      "ikala_ok": true,
+      "base_choice": "A",
+      "base_ok": true,
+      "ikala_raw": "analysisassistantfinal答案是 A。",
+      "base_raw": "analysisassistantfinalA"
+    },
+    {
+      "index": 7,
+      "correct_text": "答案是 B。0.4",
+      "correct_choice": "B",
+      "ikala_choice": "D",
+      "ikala_ok": false,
+      "base_choice": "C",
+      "base_ok": false,
+      "ikala_raw": "analysisassistantfinal答案是 D。1",
+      "base_raw": "analysisassistantfinalC"
+    },
+    {
+      "index": 8,
+      "correct_text": "答案是 C。2",
+      "correct_choice": "C",
+      "ikala_choice": "C",
+      "ikala_ok": true,
+      "base_choice": "C",
+      "base_ok": true,
+      "ikala_raw": "analysisassistantfinal答案是 C。",
+      "base_raw": "analysisassistantfinalC"
+    },
+    {
+      "index": 9,
+      "correct_text": "答案是 B。b = -\\frac{1}{2}",
+      "correct_choice": "B",
+      "ikala_choice": "A",
+      "ikala_ok": false,
+      "base_choice": "A",
+      "base_ok": false,
+      "ikala_raw": "analysisassistantfinal答案是 A。b=1",
+      "base_raw": "analysisassistantfinalA"
+    },
+    {
+      "index": 10,
+      "correct_text": "答案是 A。\\(m-t\\);",
+      "correct_choice": "A",
+      "ikala_choice": "C",
+      "ikala_ok": false,
+      "base_choice": "C",
+      "base_ok": false,
+      "ikala_raw": "analysisassistantfinal答案是 C。\\(n-t",
+      "base_raw": "analysisassistantfinalC"
+    }
+  ]
+}

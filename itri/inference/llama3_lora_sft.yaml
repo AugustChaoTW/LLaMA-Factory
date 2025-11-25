@@ -8,19 +8,8 @@ trust_remote_code: true
 stage: sft
 finetuning_type: lora
 
-### inference - Optimized for NVIDIA GB300 (8x B300 GPU, 268GB each)
-infer_backend: vllm  # vLLM for maximum throughput on GB300
-
-### vLLM Configuration - GB300 Optimized
-vllm_enforce_eager: false  # Enable CUDA graph for faster inference
-vllm_max_model_len: 8192  # Maximum context length
-vllm_gpu_memory_utilization: 0.95  # High utilization (268GB per GPU allows this)
-vllm_tensor_parallel_size: 2  # 2-way tensor parallelism for 70B model
-vllm_pipeline_parallel_size: 1  # No pipeline parallelism needed
-vllm_max_num_seqs: 256  # High batch size for throughput
-vllm_max_num_batched_tokens: 16384  # Large batch token budget
-vllm_block_size: 32  # PagedAttention block size (optimized for B300)
-vllm_swap_space: 16  # CPU swap space in GB (optional, for overflow)
+### inference
+infer_backend: huggingface  # use standard HF backend for compatibility
 
 ### generation
 do_sample: true

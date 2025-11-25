@@ -1,0 +1,16 @@
+{
+  "n": 200,
+  "ikala_correct": 115,
+  "base_correct": 111,
+  "ikala_acc": 0.575,
+  "base_acc": 0.555,
+  "both_correct": 111,
+  "both_wrong": 85,
+  "n_diff": 4,
+  "mcnemar": {
+    "b": 4,
+    "c": 0,
+    "chi2_cc": 2.25,
+    "p": 0.13361440253771617
+  }
+}

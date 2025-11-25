@@ -1,0 +1,1402 @@
+[
+  {
+    "index": 1,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：給定兩向量u=[1 1 2]T及 v=[2 -1 1]T ，下列選項何者錯誤？\n\n選項：\nA. 此兩向量的外積（cross product）為[-3 -3 3]T\nB. 此兩向量的夾角為 π/3\nC. 此兩向量的內積（inner product）為 3\nD. 此兩向量的範數（norm）乘積為 6",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 2,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：2已知\\(X\\)和\\(Y\\)的聯合機率密度函數 (Joint probability density function) 為 \\[ f_{X,Y}(x,y) = \\begin{cases} 2, & 0 \\leq y \\leq x \\leq 1 \\\\ 0, & 其他 \\end{cases} \\] 下列何者錯誤？\n\n選項：\nA. 在 0 ≤ x ≤1 ， fX( x) = 2 x\nB. 條件機率密度函數 \\[ f_{Y|X}(y|x) = \\begin{cases} \\frac{1}{x}, & 0 \\leq y \\leq x \\leq 1 \\\\ 0, & 其他 \\end{cases} \\]\nC. 條件機率密度函數 \\[ f_{X|Y}(x|y) = \\begin{cases} \\frac{1}{y}, & 0 \\leq y \\leq x \\leq 1 \\\\ 0, & 其他 \\end{cases} \\]\nD. 在 0 ≤ y ≤1 ， fY( y) = 2(1 - y)",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 3,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：利用拉普拉斯轉換（Laplacetransform）解下列二階微分方程式y\"+5y'+6y=2δ(t-1)，y(0)=0 ， y'(0) = 0 ，其中 δ (t ) 為脈衝函數（unit impulse），對於 t > 1 ，下列何者正確？\n\n選項：\nA. \\( y = 2e^{-2(t-1)} + 2e^{-3(t-1)} \\)\nB. \\( y = 2e^{2(t-1)} + 2e^{-3(t-1)} \\)\nC. \\( y = 2e^{-2(t-1)} - 2e^{-3(t-1)} \\)\nD. \\( y = 2e^{-2(t-1)} - 2e^{3(t-1)} \\)",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 4,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：令 \\( A = \\left[ \\begin{array}{ccc} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 0 \\end{array} \\right] \\)，則矩陣 \\( e^A \\) 的像空間(image space)維度為何？\n\n選項：\nA. 1\nB. 3\nC. 4\nD. 2",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 5,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：\\( \\lim_{x \\to 11} \\frac{\\sqrt{x} - \\sqrt{11}}{x^2 - 121} = ? \\)\n\n選項：\nA. \\( \\frac{1}{22\\sqrt{11}} \\)\nB. \\( \\frac{1}{11\\sqrt{11}} \\)\nC. 不存在\nD. \\( \\frac{1}{44\\sqrt{11}} \\)",
+    "correct": "D",
+    "response": "analysisassistantfinalA\n\n"
+  },
+  {
+    "index": 6,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列矩陣何者是不可被「對角線化（diagonalizable）」？\n\n選項：\nA. \\(\\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix}\\)\nB. \\(\\begin{bmatrix} 1 & 2 \\\\ 1 & 1 \\end{bmatrix}\\)\nC. \\(\\begin{bmatrix} 1 & 1 \\\\ 2 & 1 \\end{bmatrix}\\)\nD. \\(\\begin{bmatrix} 2 & 1 \\\\ 1 & 1 \\end{bmatrix}\\)",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 7,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：若原函數 \\( f(t) = Ae^{-t} \\cos(2t) + Be^{-t} \\sin(2t) \\)，對應的拉普拉斯轉換 \\( F(s) = \\frac{2s + 5}{s^2 + as + b} \\)，A, B, a, b 為實數。則 a/b 為何值？\n\n選項：\nA. 0.1\nB. 0.4\nC. 2\nD. 1",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 8,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：令矩陣 \\( A = \\left[ \\begin{array}{cccc} 1 & 0 & 1 & 1 \\\\ 2 & 0 & 2 & 2 \\\\ 0 & 1 & 0 & 3 \\end{array} \\right] \\)，則 \\( A^T A \\) 的秩(rank)為何？\n\n選項：\nA. 3\nB. 4\nC. 2\nD. 1",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 9,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：機率質量函數 \\( P_X(x) \\) 為 \\[ P_X(x) = \\begin{cases} \\frac{1}{4}, & x = 0 \\\\ \\frac{1}{2}, & x = 1 \\\\ \\frac{1}{4}, & x = 2 \\\\ 0, & 其他 \\end{cases} \\] 若 \\( X \\) 期望值為 \\( a \\) 和變異數為 \\( b \\)，則下列何者正確？\n\n選項：\nA. b=1\nB. b = -\\frac{1}{2}\nC. a=2\nD. a = -\\frac{1}{2}",
+    "correct": "B",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 10,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設 \\(\\bm{A}\\) 是 \\(m \\times n\\) 矩陣，\\(\\bm{A}^{\\mathrm{T}}\\) 是 \\(\\bm{A}\\) 的轉置，若 \\(\\bm{\\eta}_1, \\bm{\\eta}_2, \\cdots, \\bm{\\eta}_t\\) 是齊次方程組 \\(\\bm{A}^{\\mathrm{T}}\\bm{x}=\\bm{0}\\) 的基礎解系，則秩 \\(r(\\bm{A})=\\)\n\n選項：\nA. \\(m-t\\);\nB. \\(n-m\\).\nC. \\(n-t\\);\nD. \\(t\\);",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 11,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求微分方程式 \\( \\frac{d^2y}{dx^2} + \\cos(x) \\frac{dy}{dx} + \\sin(x)y = 1 - x^3 \\), \\( y(0) = 1 \\), \\( \\frac{dy}{dx}(0) = 0 \\) 若此方程式的級數解可表示為，則 c3 為何？ \n\n選項：\nA. \\( C_3 = \\frac{1}{6} \\)\nB. \\( C_3 = \\frac{1}{3} \\)\nC. \\( C_3 = -\\frac{1}{3} \\)\nD. \\( C_3 = -\\frac{1}{6} \\)",
+    "correct": "C",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 12,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：已知 \\( f(x) = x + \\frac{a}{x-1} \\), \\( (a > 0) \\)之相對極小值為 \\( 3 \\), 則 \\( a \\) 為？\n\n選項：\nA. 3\nB. 2\nC. 4\nD. 1",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 13,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設 \\(\\bm{A}\\) 為三階可逆矩陣，將 \\(\\bm{A}\\) 的第 \\(1\\) 行乘以 \\(-2\\) 得到矩陣 \\(\\bm{B}\\)。\n\n選項：\nA. \\((A)\\bm{A}^{-1}\\) 的第 \\(1\\) 行乘以 \\(-2\\) 得到矩陣 \\(\\bm{B}^{-1}\\)；\nB. \\((D)\\bm{A}^{-1}\\) 的第一列乘以 \\(\\cfrac{1}{2}\\) 得到矩陣 \\(\\bm{B}^{-1}\\)。\nC. \\((B)\\bm{A}^{-1}\\) 的第一列乘以 \\(-\\cfrac{1}{2}\\) 得到矩陣 \\(\\bm{B}^{-1}\\)；\nD. \\((C)\\bm{A}^{-1}\\) 的第 \\(1\\) 行乘以 \\(2\\) 得到矩陣 \\(\\bm{B}^{-1}\\)；",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 14,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設 A =\n\\(\\begin{bmatrix}\na_{11} & a_{12} & a_{13} \\\\\na_{21} & a_{22} & a_{23} \\\\\na_{31} & a_{32} & a_{33} \\\\\n\\end{bmatrix}\\),\nB =\n\\(\\begin{bmatrix}\na_{21} & a_{22} & a_{23} \\\\\na_{31} & a_{32} + ka_{33} & a_{33} \\\\\na_{11} & a_{12} + ka_{13} & a_{13} \\\\\n\\end{bmatrix}\\),\nP =\n\\(\\begin{bmatrix}\n0 & 1 & 0 \\\\\n0 & 0 & 1 \\\\\n1 & 0 & 0 \\\\\n\\end{bmatrix}\\),\n\\( P_2 =\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & k & 1 \\\\\n\\end{bmatrix}\\),\n則 A = ( ).\n\n選項：\nA. \\( P_1^{-1}BP_2^{-1} \\)\nB. \\( P_2^{-1}BP_1^{-1} \\)\nC. \\( P_1^{-1}P_2^{-1}B \\)\nD. \\( BP_1^{-1}P_2^{-1} \\).",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 15,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：矩陣 \\( A = \\begin{bmatrix} 0 & -2 & -3 \\\\ 1 & 3 & 3 \\\\ 0 & 0 & 1 \\end{bmatrix} \\) 的3個特徵向量 (eigenvectors) 為 \\( \\begin{bmatrix} -2 \\\\ 1 \\\\ 0 \\end{bmatrix} \\), \\( \\begin{bmatrix} -3 \\\\ 0 \\\\ 1 \\end{bmatrix} \\), \\( \\begin{bmatrix} -1 \\\\ 1 \\\\ 1 \\end{bmatrix} \\)，則下列敘述何者為誤？\n\n選項：\nA. \\( \\begin{bmatrix} -2 \\\\ 1 \\\\ 0 \\end{bmatrix} \\) 是 \\( A^3 + 6 A^2 \\) 的一個特徵向量\nB. \\( \\begin{bmatrix} -3 \\\\ 0 \\\\ 1 \\end{bmatrix} \\) 是 \\( A^5 + 4 A^3 - A \\) 的一個特徵向量\nC. \\( \\begin{bmatrix} -1 \\\\ 1 \\\\ 1 \\end{bmatrix} \\) 是 \\( A^2 - 2 A \\) 的一個特徵向量\nD. \\( \\begin{bmatrix} -1 \\\\ 1 \\\\ 0 \\end{bmatrix} \\) 是 \\( A^5 - 3 A^4 + 2 A^2 \\) 的一個特徵向量",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 16,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設 g(x,y)= \\frac{\\sin x}{e^x + y^2} \\), 則 g(0,1 )=?\n\n選項：\nA. \\( -\\frac{1}{4} \\)\nB. \\( \\frac{1}{4} \\)\nC. \\( -\\frac{1}{2} \\)\nD. \\( \\frac{1}{2} \\)",
+    "correct": "D",
+    "response": "analysisassistantfinalB\n\n"
+  },
+  {
+    "index": 17,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：二階常微分方程式y\"+4y'+3y=0，y(0)=3，y'(0)=-5的解為何？\n\n選項：\nA. \\( y = 2e^{-x} + e^{-3x} \\)\nB. \\( y = 2e^{-x} + 3e^{-3x} \\)\nC. \\( y = 7e^{x} - 4e^{3x} \\)\nD. \\( y = 2e^{x} + 3e^{-3x} \\)",
+    "correct": "A",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 18,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：\\( \\lim_{x \\to \\infty} \\frac{\\ln x}{x^{1/111}} = ? \\)\n\n選項：\nA. \\( 0 \\)\nB. \\( \\text{不存在} \\)\nC. \\( \\frac{1}{111} \\)\nD. \\( 111 \\)",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 19,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：已知x≠0 時，\\( f(x) = x^{10} \\sin \\left( \\frac{1}{x} \\right) \\), \\( f(x) \\) 在 \\( x = 0 \\) 連續，則 \\( f(0) = ? \\)？\n\n選項：\nA. -1\nB. \\( \\frac{1}{10} \\)\nC. 0\nD. 1",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 20,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：若 \\( f(x, y) = -\\frac{xy}{x + y^2 + 1} \\), 則 \\( f_x(2,1) \\) = ?\n\n選項：\nA. 1/2\nB. 1/3\nC. 1/8\nD. 1/4",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 21,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：已知 \\( f(x) = x^4 - x^2 \\)， \\( x \\in [0,1] \\)，則\\( f(x) \\)在 \\([0，1]\\) 中最小值為何？\n\n選項：\nA. \\( -\\frac{1}{4} \\)\nB. \\( -\\frac{1}{3} \\)\nC. \\( -\\frac{1}{2} \\)\nD. \\( -\\frac{1}{5} \\)",
+    "correct": "A",
+    "response": "analysisassistantfinalA\n\n"
+  },
+  {
+    "index": 22,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：某雜訊的機率密度函數（probability density function）為[-1,3] 的均勻分佈，其變異數（variance）為 A。經過增益為 5 的放大器放大以後，其變異數為 B。則 A,B 各值為何？\n\n選項：\nA. ( A = \\frac{4}{3}, B = \\frac{20}{3} \\)\nB. \\( A = \\frac{16}{3}, B = \\frac{80}{3} \\)\nC. \\( A = \\frac{4}{3}, B = \\frac{100}{3} \\)\nD. \\( A = \\frac{16}{3}, B = \\frac{400}{3} \\)",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 23,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：若某曲線的斜率為 4x 且通過點 (2,9) ，求其曲線方程式？\n\n選項：\nA. \\( y = \\frac{1}{4}x^2 + 8 \\)\nB. \\( y = \\frac{1}{2}x^2 + 7 \\)\nC. \\( y = 2x^2 + 1 \\)\nD. \\( y = 4x^2 - 7 \\)",
+    "correct": "C",
+    "response": "analysisassistantfinalB\n\n"
+  },
+  {
+    "index": 24,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：這個無窮級數 \\( f(z) = (\\frac{1}{z} + \\frac{1}{z^2}+  \\frac{1}{z^3} + \\ldots) + (1 + \\frac{z}{3} + \\frac{z^2}{9} + \\frac{z^3}{27} + \\frac{z^4}{81} + \\ldots) \\) 的 收斂域 (Region of convergence) 為何？\n\n選項：\nA. \\( |z| > 1 \\) 或 \\( |z| < \\frac{1}{3} \\)\nB. \\( |z| > 3 \\) 或 \\( |z| < 1 \\)\nC. \\frac{1}{3} \\leq |z| < 1\nD. 1 < |z| < 3",
+    "correct": "D",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 25,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列哪一個是下方方程式的解？\n\n\\[ \\begin{bmatrix} 1 & 2 & 3 & 1 \\\\ 2 & 2 & 1 & 2 \\\\ 3 & 1 & 1 & 3 \\\\ 1 & 2 & 3 & 2 \\end{bmatrix} \\begin{bmatrix} 1 & 2 & 3 & 4 \\\\ 5 & 6 & 7 & 8 \\\\ 0 & 0 & 0 & 0 \\\\ 9 & 10 & 11 & 12 \\end{bmatrix} + \\begin{bmatrix} 1 & -2 & -3 & -1 \\\\ -2 & 2 & 1 & -2 \\\\ -3 & 1 & 1 & 3 \\\\ -1 & -2 & 3 & -2 \\end{bmatrix} \\begin{bmatrix} 1 & 2 & 3 & 4 \\\\ 5 & 6 & 7 & 8 \\\\ 0 & 0 & 0 & 0 \\\\ 9 & 10 & 11 & 12 \\end{bmatrix} = ? \\]\n\n選項：\nA. \\[ \\begin{bmatrix} 2 & 4 & 6 & 8 \\\\ 20 & 24 & 28 & 32 \\\\ 64 & 72 & 80 & 88 \\\\ 0 & 0 & 0 & 0 \\end{bmatrix} \\]\nB. \\[ \\begin{bmatrix} 2 & 4 & 6 & 8 \\\\ 20 & 24 & 28 & 32 \\\\ 64 & 76 & 88 & 80 \\\\ 0 & 0 & 0 & 0 \\end{bmatrix} \\]\nC. \\[ \\begin{bmatrix} 2 & 4 & 6 & 8 \\\\ 20 & 24 & 28 & 32 \\\\ 64 & 72 & 88 & 80 \\\\ 0 & 0 & 0 & 0 \\end{bmatrix} \\]\nD. \\[ \\begin{bmatrix} 2 & 4 & 6 & 8 \\\\ 20 & 24 & 28 & 32 \\\\ 64 & 72 & 88 & 80 \\\\ 0 & 0 & 4 & 0 \\end{bmatrix} \\]",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 26,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：哪些陳述是正確的？\n\n選項：\nA. 對於前一個問題中相同的設定，系統 \\( x_1u_1 + x_2u_2 = v \\) 的最小平方法解是 \\( x_1 = \\frac{11}{7} \\) 和 \\( x_2 = -\\frac{4}{7} \\)。\nB. 如果 \\( B = \\{v_1, v_2,..., v_n\\} \\) 是 V 的一組非有序基底，則對於 V 中的任何向量 u，無法通過以下方法來確定 u 的坐標\nC. 設 V 為一個內積空間，\\( \\langle u_1,u_2 \\rangle \\) 表示任意兩個向量 \\( u_1,u_2 \\) 在 V 中的內積。如果 \\( B = \\{v_1, v_2,..., v_n\\} \\) 是 V 的一組有序基底，那麼對於 V 中的任何向量 u，u 的坐標可以通過\n\\[ [u]_B = \\left[ \\langle u,v_1 \\rangle, \\langle u,v_2 \\rangle, ... , \\langle u,v_n \\rangle \\right]^T \\] 來給出\nD. 設 \\( u_1 = (-1,2,1) \\)，\\( u_2 = (1,1,-2) \\)，\\( v = (10,5,10) \\)，且 \\( S = \\text{span}(u_1,u_2) \\)。向量 v 與集合 S 之間的（最短）距離是 \\( \\frac{17\\sqrt{30}}{7} \\)。",
+    "correct": "A",
+    "response": "analysisassistantfinalA\n\n"
+  },
+  {
+    "index": 27,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：假設 \\( F(x) = \\int_{4}^{x^2} \\sqrt{t^2 + 8} dt \\), \\( F'(-1) = ? \\)\n\n選項：\nA. \\( -6 \\)\nB. \\( 6 \\)\nC. \\( 3 \\)\nD. \\( -3 \\)",
+    "correct": "A",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 28,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求線段 \\( y = x \\), \\( 0 \\leq x \\leq 1 \\) 線 x 軸旋轉所成圓的表面積？\n\n選項：\nA. \\( \\sqrt{2\\pi} \\)\nB. \\( \\frac{3\\sqrt{2\\pi}}{2} \\)\nC. \\( \\frac{\\sqrt{2\\pi}}{2} \\)\nD. \\( 2\\sqrt{2\\pi} \\)",
+    "correct": "A",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 29,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：令 \\( C: |z| = 3 \\) 為以原點為圓心且半徑為3的圓，則該圓在複數平面上的方向與出發點的選擇對於 \\( \\int_C \\frac{e^z}{z} \\,dz \\) 之值為何？\n\n選項：\nA. \\(2\\pi i\\)\nB. \\(0\\)\nC. \\(-\\pi i\\)\nD. \\(-2\\pi i\\)",
+    "correct": "C",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 30,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列哪些是正確的？\n\n選項：\nA. 如果 \\( A, B \\in \\mathbb{R}^{m \\times k} \\)，那麼計算 \\( A + B \\) 的複雜度是 \\( O(m+k) \\)。\nB. 如果 \\( A \\in \\mathbb{R}^{m \\times k} \\)，\\( B \\in \\mathbb{R}^{k \\times m} \\)，\\( u \\in \\mathbb{R}^{m \\times 1} \\) 且 \\( k \\ll m \\)，那麼計算 \\( (AB)u \\) 的成本比 \\( A(Bu) \\) 來得多\nC. 如果 \\( A \\in \\mathbb{R}^{m \\times m} \\) 是可逆的，使用高斯消元法找到 \\( A^{-1} \\) 的複雜度是 \\( O(m^3) \\)。\nD. 如果 \\( A \\in \\mathbb{R}^{m \\times k} \\)，\\( B \\in \\mathbb{R}^{k \\times n} \\)，那麼計算 \\( AB \\) 的複雜度是 \\( O(mn+k) \\)。",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 31,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：二階常微分方程式(x-2)^2 y\"-5(x-2)y'+8y=0的解之型式為何？\n\n選項：\nA. y = c1 ( x - 2)^2 + c2 ( x - 2)^6\nB. y = c1 ( x - 2)^2 + c2 ( x - 2)^4\nC. y = c1 ( x - 2)^3 + c2 (x - 2)^5\nD. y = c1 ( x - 2)^3 + c2 ( x - 2)^4",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 32,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：我們決定使用一個矩陣來儲存所有網頁連結。如果網頁 i 有 n 個外部連結，而 j 是它連結的其中一個網站，那麼我們將 ij 元素設為 1/n。否則，如果 n = 0，則 ij 元素為零。以下哪些是不正確的？\n\n選項：\nA. 這個矩陣的秩 > (總網頁數 - 1)\nB. 每行的和為 0 或 1\nC. 零行是可能的，因為有些頁面沒有外部連結\nD. 零列是可能的，因為有些頁面從未被連結",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 33,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：令矩陣 \\( X = \\left[ \\begin{array}{ccccc} 1 & 0 & 0 & 0 \\\\ 2 & -1 & -1 & 1 \\\\ 0 & 0 & -9 & 9 \\\\ 3 & 0 & -5 & 5 \\end{array} \\right] \\)，下列何者不是 \\( X \\) 的特徵值(eigenvalue)？\n\n選項：\nA. 1\nB. -4\nC. -1\nD. 2",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 34,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：以下哪一個陳述是正確的：\n\n選項：\nA. 如果矩陣A的列是線性獨立的，那麼Ax = b對每個b都有唯一解。\nB. 如果U和W是向量空間V的兩個子空間，則U和W的交集也是V的子空間。\nC. 如果兩個方陣具有相同的行列式，那麼它們是相似的。\nD. 如果T是一個線性變換，且\\(\\{u_1, ..., u_k\\}\\)是T的定義域中一組線性獨立的集合，那麼\\(\\{T(u_1), ..., T(u_k)\\}\\)也是線性獨立的。\"",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 35,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：曲線 \\( y = x + \\frac{1}{x} \\) 與直線 \\( x = 1 \\), \\( x = 2 \\), \\( y = 0 \\), 所圍區域的面積 x 軸旋轉所形成的旋轉體積為？\n\n選項：\nA. \\( \\frac{29\\pi}{6} \\)\nB. \\( \\frac{23\\pi}{6} \\)\nC. \\( \\frac{35\\pi}{6} \\)\nD. ( \\frac{11\\pi}{6} \\)",
+    "correct": "A",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 36,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：\\( A = \\begin{bmatrix} -1 & 0 & 3 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 2 \\end{bmatrix} \\) 求在可逆矩陣 P 下對應對角化為 \\( P^{-1}AP = \\begin{bmatrix} -1 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 2 \\end{bmatrix} \\) • 則P的第一行行向量為何？\n\n選項：\nA. \\[ \\begin{bmatrix} 1 \\\\ 0 \\\\ 1 \\end{bmatrix} \\]\nB. \\[ \\begin{bmatrix} 1 \\\\ 1 \\\\ 0 \\end{bmatrix} \\]\nC. \\[ \\begin{bmatrix} -1 \\\\ 0 \\\\ 0 \\end{bmatrix} \\]\nD. \\[ \\begin{bmatrix} 0 \\\\ -1 \\\\ 1 \\end{bmatrix} \\]",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 37,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：因數 \\( f(t) = 2 \\cos(3t) \\), \\( 0 \\leq t \\leq \\frac{\\pi}{3} \\)，若在 \\( t=0 \\) 處, f(t)的傅立葉餘弦級數（Fourier cosine series）收斂到 A，傅立葉正弦級數（Fourier sine series）收斂到 B；在  \\( t = \\frac{\\pi}{3} \\) 處，f(t)的傅立葉餘弦級數（Fourier cosine series）收斂到 C，傅立葉正弦級數（Fourier sine series）收斂到 D。則 A,B,C,D 各值為何？ \n\n選項：\nA. A=2, B=0, C=-2, D=0\nB. A=2, B=0, C=2, D=0 1\nC. A=0, B=0, C=0, D=0\nD. A=0, B=2, C=-2, D=0",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 38,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：令 A, B 均為 n 階方陣，則下列何者恆成立？\n\n選項：\nA. det(AB)=det(BA)\nB. AB=BA\nC. det(A+B)=det(A )+det(B )\nD. (AB)T=ATBT",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 39,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：四個硬幣先後向上投擲後落地，會有十六種不同結果。定義一隨機變數 X，X 等於每一個結果 中硬幣人像朝上的個數，試問下列何者不正確？\n\n選項：\nA. X=2 的機率，即 P ( X = 2 ) = 0.375\nB. X 的變異數是 1.5\nC. X=3 的機率，即 P ( X = 3) = 0.25\nD. X 的平均值是 2",
+    "correct": "B",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 40,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：n 階方陣 A 與 B等價，則\n\n選項：\nA. |A| ≠ |B|\nB. 諾 |A| ≠ 0, 則 |B| ≠ 0\nC. |A| = -|B|\nD. |A| = |B|",
+    "correct": "B",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 41,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求定積分 \\( \\int_{-2}^{-1} \\frac{2x+4}{x^2 - 2} dx = ? \\)\n\n選項：\nA. \\( 2\\ln \\frac{5}{4} -1 \\)\nB. \\( 2\\ln \\frac{7}{6} -1 \\)\nC. \\( 2\\ln \\frac{9}{8} -1 \\)\nD. \\( 2\\ln \\frac{3}{2} -1 \\)",
+    "correct": "D",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 42,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：\\( \\mathbb{R}^2 \\) 的仿射變換是一個形式為 \\( T(x) = Ax + b \\) 的函數 \\( T : \\mathbb{R}^2 \\rightarrow \\mathbb{R}^2 \\)，其中 \\( A \\) 是一個可逆的 \\( 2 \\times 2 \\) 矩陣，\\( b \\) 屬於 \\( \\mathbb{R}^2 \\)。下列哪些陳述不是正確的？\n\n選項：\nA. \\( T^{-1}(x) = A^{-1}x + A^{-1}b \\)\nB. 仿射變換將平行直線映射為平行直線\nC. 仿射變換將直線映射為直線\nD. 沒有任何仿射變換能將直線映射成圓形",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 43,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：區域 \\( R = \\{(x, y): x^2 + y^2 \\leq 1\\} \\), 求 \\( \\iint_{R} e^{1+x^2+y^2} dxdy = ? \\)\n\n選項：\nA. π (e^2-e)\nB. 2π (e^2+e)\nC. 4π (e^2+e)\nD. 3π (e^2+e)",
+    "correct": "A",
+    "response": "analysisassistantfinalA\n\n"
+  },
+  {
+    "index": 44,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：已知 u, v 為向量空間（vector space）V 中的兩個非零向量（nonzero vector），下列敘述何者不恆真？\n\n選項：\nA. \\( \\| u + v \\| \\leq \\| u \\| + \\| v \\| \\)\nB. 若 \\( u, v \\) 為正交 (orthogonal)，則 \\( \\| u + v \\|^2 <= \\| u \\|^2 \\| v \\|^2 \\)\nC. \\( \\langle u, v \\rangle \\leq \\| u \\| \\| v \\| \\)\nD. 若 \\( u, v \\) 的夾角為 \\( \\theta \\)，則 \\( \\langle u, v \\rangle \\leq \\| u \\| \\| v \\| \\sin \\theta \\)",
+    "correct": "D",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 45,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：函數 f(t)之拉普拉斯轉換（Laplace transform）為ℒ{f(t)}，令 \\( \\mathcal{L}\\{f(t)\\} = \\frac{1}{s(s+1)^2} \\) ，則下列何者正確？ \n\n選項：\nA. \\( f(t) = -te^{-t} + e^{-t} + 1 \\)\nB. \\( f(t) = -te^{-t} - e^{-t} - 1 \\)\nC. \\( f(t) = te^{-t} + e^{-t} + 1 \\)\nD. \\( f(t) = -te^{-t} - e^{-t} + 1 \\)",
+    "correct": "D",
+    "response": "analysisassistantfinalA\n\n"
+  },
+  {
+    "index": 46,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：\\( \\int \\frac{2}{(x-1)(x-2)(x-3)} dx = ? \\)\n\n選項：\nA. \\( 2\\ln|x-1| + 2\\ln|x-2| + 2\\ln|x-3| + C \\)\nB. \\( \\ln|x-1| - 2\\ln|x-2| + 2\\ln|x-3| + C \\)\nC. \\( \\ln|x-1| - 2\\ln|x-2| + \\ln|x-3| + C \\)\nD. \\( \\ln|x-1| + 2\\ln|x-2| + \\ln|x-3| + C \\)",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 47,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：一微分方程式 \\( y'' - 2y' = 6e^{2x} - 4e^{-2x} \\) 的起始條件分別為 \\( y(0) = -1 \\) 及 \\( y'(0) = 6 \\)，其解為 \\( y(x) = ae^{2x} + bxe^{2x} + ce^{-2x} + d \\)，試問下列何者不正確？\n\n選項：\nA. \\( d = -\\frac{3}{2} \\)\nB. \\( b = 3 \\)\nC. \\( c = -\\frac{1}{2} \\)\nD. \\( a = -1 \\)",
+    "correct": "D",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 48,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求二重積分 \\( \\int_{0}^{1} \\int_{0}^{y^2} e^{x^2} dxdy = \\)\n\n選項：\nA. \\( \\frac{1}{e} - 1 \\)\nB. \\( e - 1 \\)\nC. \\( e + 1 \\)\nD. \\( \\frac{1}{e} + 1 \\)",
+    "correct": "B",
+    "response": "analysisassistantfinalB\n\n"
+  },
+  {
+    "index": 49,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設向量u=(3, -2, -5)，v=(1, 4, -4)，w = (0, 3, 2)，則u• (v✕ w ) 之值為何？其中運算元×表示為外積（cross product），u•v則表示為 u 和 v 的內積（inner product）\n\n選項：\nA. 84\nB. 92\nC. 49\nD. 56",
+    "correct": "C",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 50,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：若 \\( f(x) = xe^{\\frac{-x^2}{2}} \\), \\( f(x) \\)的臨界點為何？\n\n選項：\nA. \\( x = \\frac{\\sqrt{2}}{2}, -\\frac{\\sqrt{2}}{2} \\)\nB. \\( x = 1, -1 \\)\nC. \\( x = \\sqrt{2}, -\\sqrt{2} \\)\nD. \\( x = 0 \\)",
+    "correct": "B",
+    "response": "analysisassistantfinalA\n\n"
+  },
+  {
+    "index": 51,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：讓 \\( F(\\mathbb{R}) \\) 表示所有從 R 到 R 的函數的集合。選擇下列不是 \\( F(\\mathbb{R}) \\) 的子集合，它們是線性獨立的。\n\n選項：\nA. \\(\\{e^t, e^{2t}, ..., e^{nt}, ...\\}\\)\nB. \\(\\{t^2 - 2t + 5, 2t^2 - 5t + 10, t^2\\}\\)\nC. \\(\\{t, t \\sin t\\}\\)\nD. \\(\\{\\sin t, \\sin^2 t, \\cos^2 t, 1\\}\\)",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 52,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：一座山距離海平面的高度可用 z(x, y) = 3500-2x2-3y2 來表示，試求出在 P(-3, 2)這點朝上坡最陡峭 的方向？\n\n選項：\nA. [12, 12]\nB. [-12, 12]\nC. [-12, -12]\nD. [12, -12]",
+    "correct": "D",
+    "response": "analysisassistantfinalB\n\n"
+  },
+  {
+    "index": 53,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何者不是「可對角化的（Diagonalizable）」矩陣？\n\n選項：\nA. \\(\\begin{bmatrix} -3 & -2 \\\\ 4 & 3 \\end{bmatrix}\\)\nB. \\(\\begin{bmatrix} 1 & 4 \\\\ 2 & 3 \\end{bmatrix}\\)\nC. \\(\\begin{bmatrix} 1 & 1 \\\\ 4 & 1 \\end{bmatrix}\\)\nD. \\(\\begin{bmatrix} 1 & 1 \\\\ -4 & -3 \\end{bmatrix}\\)",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 54,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求 \\( \\int_{0}^{\\pi} x^2 \\cos(x) dx = ? \\) 的積分\n\n選項：\nA. \\( \\frac{\\pi}{2} \\)\nB. \\( \\frac{\\pi}{2} - 1 \\)\nC. \\( 0 \\)\nD. \\( \\pi - 1 \\)",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 55,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：矩陣 \\( A = \\begin{bmatrix} -3 & 0 & 0 \\\\ 0 & 4 & 0 \\\\ 0 & 0 & -1 \\end{bmatrix} \\)，則 \\( A^2 \\) 的特徵值 (eigenvalues)，不可能是下列哪一個？\n\n選項：\nA. 16\nB. 4\nC. 1\nD. 9",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 56,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求函數f(x)=4x3-8x2+7x-2在[ 0 , 1] 中，滿足均值定理的 c 為何？即滿足等式 \\( f''(c) = \\frac{f(1) - f(0)}{1-0} \\) 的 \\( c \\) 值為？\n\n選項：\nA. 0\nB. \\( \\frac{2}{3} \\)\nC. \\( \\frac{1}{3} \\)\nD. 1",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 57,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：李卡地方程式 (Riccati equation) \\( \\frac{dy}{dx} = \\frac{1}{3x}y^2 + \\frac{1}{x}y - \\frac{6}{x} \\)，則利用下列何公式代換，換為可以解决的標準微分方程式？\n\n選項：\nA. \\( y = -5 + \\frac{1}{u} \\)\nB. \\( y = 5 + \\frac{1}{u} \\)\nC. \\( y = 3 + \\frac{1}{u} \\)\nD. \\( y = -3 + \\frac{1}{u} \\)",
+    "correct": "C",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 58,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：令矩陣A=\\[\n\\begin{bmatrix}\n1 & -3 & 4 & -2 & 5 \\\\\n2 & -6 & 9 & -1 & 8 \\\\\n2 & -6 & 9 & -1 & 9 \\\\\n-1 & 3 & -4 & 2 & -5 \\\\\n\\end{bmatrix}\n\\]，則下列選項中何者為矩陣 A 的秩數（rank）？\n\n選項：\nA. 4\nB. 3\nC. 1\nD. 2",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 59,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設 X 為一具有常態分布(normal distribution)的連續隨機變數，其平均值(mean)為 1，標準差(standard deviation)為 2。若將其標準化為平均值為 0，標準差為 1 的標準常態分布(standard normal distribution)，對應的隨機變數為 Z。則 X 和 Z 的關係式為何？\n\n選項：\nA. Z=(1/2)(X-1)\nB. Z=(1/4)(X-1)^2\nC. Z=(1/2)X-1\nD. Z=X-1",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 60,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列方陣 A，何者存在矩陣 P 滿足 PTP=I，且 PTAP 為對角矩陣？\n\n選項：\nA. \\( A = \\begin{bmatrix} -1 & 1 & -3 \\\\ 1 & 0 & 2 \\\\ 2 & -1 & 1 \\end{bmatrix} \\)\nB. \\( A = \\begin{bmatrix} 3 & -2 & 1 \\\\ -2 & 1 & 0 \\\\ 1 & 0 & 4 \\end{bmatrix} \\)\nC. \\( A = \\begin{bmatrix} 3 & 2 & 4 \\\\ -3 & 1 & 5 \\\\ 0 & -1 & 2 \\end{bmatrix} \\)\nD. \\( A = \\begin{bmatrix} 3 & 0 & 6 \\\\ 0 & 1 & 0 \\\\ 1 & 0 & 5 \\end{bmatrix} \\)",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 61,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：\\( \\mathbb{R}^n \\) 的一個子集如果集合中每一對不同的向量都是正交的，則稱為正交集。一個向量 v 在子空間 W 上的正交投影被定義為一個向量，\\( w \\in W \\) 使得 \\( v = w + z \\)，其中 \\( z \\in W^{\\perp} \\)。以下哪些陳述是不正確的？\n\n選項：\nA. 對於 \\( \\mathbb{R}^n \\) 的任何子空間 W，\\( \\text{dim } W + \\text{dim } W^{\\perp} = n \\)\nB. 對於任何矩陣 A，\\( (\\text{Row } A)^{\\perp} = \\text{Null } A \\)。\nC. 任何非零向量的正交集都是線性獨立的。\nD. 每個子空間都有一個正交基。",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 62,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：\\( f'(x)=\\ln(1+x) \\)，則 \\( f^{(2021)}(0) = ? \\)\n\n選項：\nA. 2020!\nB. -2021!\nC. 2021!\nD. -2020!",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 63,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：某元件使用壽命X（單位：小時），其機率密度函數（probability density function）為f(x)=0.005ekx, x≥0 。則k值及元件平均使用壽命為何？\n\n選項：\nA. k=0.005 ，平均使用壽命∞小時\nB. k=-0.005 ，平均使用壽命200 小時\nC. k=0.005 ，平均使用壽命 200 小時\nD. k=-0.005 ，平均使用壽命∞小時",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 64,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求心臟線 (cardioid) r＝ 2 (1 +cosθ )的面積？\n\n選項：\nA. 4π\nB. 6π\nC. 8π\nD. 2π",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 65,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求 \\( f(x) = \\frac{1}{1 - x} \\)，在 \\( x = 0 \\) 的泰勒級數（Taylor Series）為何？\n\n選項：\nA. \\( \\sum_{k=0}^{\\infty} \\frac{(-1)^k x^k}{k} \\)\nB. \\( \\sum_{k=0}^{\\infty} \\frac{x^k}{k} \\)\nC. \\( \\sum_{k=0}^{\\infty} x^k \\)\nD. \\( \\sum_{k=0}^{\\infty} \\frac{x^k}{k!} \\)",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 66,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設 \\(\\bm{A},\\bm{B}\\) 都是四階非零矩陣，且 \\(\\bm{AB}=\\bm{O}\\)，則必有：\n\n選項：\nA. 若 \\(r(\\bm{A})=4\\)，則 \\(r(\\bm{B})=1\\)\nB. 若 \\(r(\\bm{A})=1\\)，則 \\(r(\\bm{B})=3\\)；\nC. 若 \\(r(\\bm{A})=2\\)，則 \\(r(\\bm{B})=2\\)；\nD. 若 \\(r(\\bm{A})=3\\)，則 \\(r(\\bm{B})=1\\)；",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 67,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：考慮向量 \\( \\mathbf{u} = \\left[ \\begin{array}{c} 1 \\\\ 2 \\\\ 1 \\end{array} \\right] \\) 和 \\( \\mathbf{v} = \\left[ \\begin{array}{c} 0 \\\\ 1 \\\\ 3 \\end{array} \\right] \\)。若 \\( \\mathbf{u} \\) 分解為 \\( \\mathbf{u}_1 + \\mathbf{u}_2 \\)，其中 \\( \\mathbf{u}_1 \\) 為 \\( \\mathbf{u} \\) 在 \\( \\mathbf{v} \\) 的投影 (projection)，則 \\( \\mathbf{u}_2 \\) 為何？\n\n選項：\nA. \\( \\left[ \\begin{array}{c} 0 \\\\ 0.5 \\\\ 1.5 \\end{array} \\right] \\)\nB. \\( \\left[ \\begin{array}{c} 1 \\\\ 1.5 \\\\ -0.5 \\end{array} \\right] \\)\nC. \\( \\left[ \\begin{array}{c} 0 \\\\ 0.5 \\\\ -1.5 \\end{array} \\right] \\)\nD. \\( \\left[ \\begin{array}{c} 1 \\\\ 1.5 \\\\ 0.5 \\end{array} \\right] \\)",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 68,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：假設 \\( Q = [q_1 \\ q_2 \\ q_3] = \\begin{bmatrix} 1 & 1 & 1 \\\\ 1 & 1 & -1 \\\\ 1 & -1 & -1 \\end{bmatrix} \\)。設 \\( S_{12} = \\text{span}(q_1, q_2) \\)，並且 \\( S_{23} = \\text{span}(q_2, q_3) \\)。哪些陳述是真的？\n\n選項：\nA. \\( Q \\) 的行向量形成行空間的一個基。\nB. \\( \\text{span}(q_1) \\) 是子空間 \\( S_{23} \\) 的正交補空間。\nC. 兩個子空間 \\( S_{12} \\) 和 \\( S_{23} \\) 的交集形成一個向量空間。\nD. 兩個子空間 \\( S_{12} \\) 和 \\( S_{23} \\) 的聯集形成一個向量空間。",
+    "correct": "C",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 69,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設 A, B A, B 均階矩陣，且 AB=A+B，則 (1) 若 A 可逆，則 B 可逆；(2) 若 B 可逆，則 A+B 可逆；(3) 若 B 可逆，則 A 可逆；(4) A-E 恆可逆。 上述命題中，正確的命題共有\n\n選項：\nA. 1 個\nB. 4 個\nC. 3 個\nD. 2 個",
+    "correct": "B",
+    "response": "analysisassistantfinalA. 1 個"
+  },
+  {
+    "index": 70,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：給定一複變函數(complex function) f(z) = \\frac{z+i}{sin(z)} ，則此函數在 z = 0 的殘餘數(residue)為何？ \n\n選項：\nA. 1\nB. -i\nC. 0\nD. i",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 71,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：給定兩向量 u=[2 -1 3]T及v=[4 -1 2]T，分解u為u1+u2，其中u1為u在v的垂直投影（orthogonal projection），則下列選項何者錯誤？\n\n選項：\nA. 向量 \\( u_1 = \\begin{bmatrix} 20/7 \\\\ -5/7 \\\\ 10/7 \\end{bmatrix} \\)\nB. \\( u_2 \\) 的範數 (norm) \\( ||u_2|| = \\sqrt{161/7} \\)\nC. 向量 \\( u_1 \\) 和 \\( u_2 \\) 的內積 (inner product) 為零\nD. 向量 \\( u_2 \\) 和 \\( v \\) 的外積 (cross product) 為零向量",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 72,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：考慮聯立方程組Ax=0，其中 A為R^{8x10}。若此方程組的通解含有6個任意常數，則A的值域空間 （rangespace）維度（dimension）為何？\n\n選項：\nA. 8\nB. 3\nC. 4\nD. 6",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 73,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：一微分方程式 \\( y'' + 4y = f(t) \\)，其中 \\( f(t) = \\begin{cases} 0, & \\text{for } 0 \\leq t < 4, \\\\ 3, & \\text{for } t \\geq 4 \\end{cases} \\)，其起始條件分別為 \\( y(0) = 1 \\) 及 \\( y'(0) = 0 \\)，其解為 \\( y(t) = \\cos(at) + b(c - \\cos(d(t - 4)))H(t - 4) \\)，其中 H(t)是 Heaviside 或 unit step 函數，試問下列何者不正確？\n\n選項：\nA. d=2\nB. a=2\nC. b = \\frac{3}{2}\nD. c=1",
+    "correct": "C",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 74,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：已知 \\( f(x,y) = \\sin x \\cos y \\)，在 \\(\\left(\\frac{\\pi}{2}, -\\pi\\right)\\) 附近，則 \\( f(x,y) \\) 的最高點，則下列何者為真？\n\n選項：\nA. \\( f(x, y) \\) 無最小值\nB. \\( f\\left(\\frac{\\pi}{2}, \\pi\\right) \\) 為相對極大值\nC. \\( f\\left(\\frac{\\pi}{2}, \\pi\\right) \\) 為相對極小值\nD. \\( \\left(\\frac{\\pi}{2}, \\pi\\right) \\) 是 \\( f(x, y) \\) 的鞍點",
+    "correct": "C",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 75,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：\\( \\int \\frac{e^{\\sqrt{x}}}{\\sqrt{x}} dx = ? \\)\n\n選項：\nA. \\( 2e^{\\sqrt{x}} + C \\)\nB. \\( \\sqrt{x}e^{\\sqrt{x}} + C \\)\nC. \\( e^{\\sqrt{x}} + C \\)\nD. \\( 2\\sqrt{x}e^{\\sqrt{x}} + C \\)",
+    "correct": "A",
+    "response": "analysisassistantfinalA\n\n"
+  },
+  {
+    "index": 76,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：假設 \\( x^y = y^x \\), \\( (x,y > 0) \\),  求 \\( \\frac{dy}{dx} = ? \\)\n\n選項：\nA. \\( \\frac{xy \\ln x - y^2}{xy \\ln y - x^2} \\)\nB. \\( \\frac{xy \\ln y - y^2}{xy \\ln x - x^2} \\)\nC. \\( \\frac{xy \\ln y - x^2}{xy \\ln x - y^2} \\)\nD. \\( \\frac{xy \\ln x - x^2}{xy \\ln y - y^2} \\)",
+    "correct": "B",
+    "response": "analysisassistantfinalB\n\n"
+  },
+  {
+    "index": 77,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設 A 為 n 階方陣，且滿足 A^2 = E 則下列結論正確的是？\n\n選項：\nA. A≠ E，則 A+E 不可逆\nB. A≠ E，則 A+E 可逆\nC. A+E 可逆\nD. A+E 可逆",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 78,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：給定 \\( Z = X + iY = (1 - i)^{20} = re^{i \\theta} \\) ，則下列敘述何者錯誤？\n\n選項：\nA. \\( \\theta = 0 \\)\nB. \\( Z = -2^{10} \\)\nC. \\( Y = 0 \\)\nD. \\( r = 2^{10} \\)",
+    "correct": "A",
+    "response": "analysisassistantfinalA\n\n"
+  },
+  {
+    "index": 79,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：令矩陣 \\( A = \\begin{bmatrix} -3 & 4 & 1 \\\\ 0 & 4 & 1 \\\\ 0 & 0 & -1 \\end{bmatrix} \\), 則 \\( A^2 \\) 的特徵值 (eigenvalues) 不是下列那一個選項？\n\n選項：\nA. 9\nB. 1\nC. 16\nD. 4",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 80,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：\\( A = \\begin{bmatrix} 3 & 1 \\\\ 2 & 4 \\end{bmatrix} \\)，其反矩陣 (Inverse matrix) 為 \\( B = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix} \\)，下列何者正確？\n\n選項：\nA. d = 0.3\nB. a = -0.1\nC. c = 0.2\nD. b = 0.1",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 81,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求定積分 \\( \\int_{0}^{1} xe^{-x} dx = ? \\)\n\n選項：\nA. \\( -1 + 2e^{-1} \\)\nB. \\( 1 - 2e^{-1} \\)\nC. \\( -1 - 2e^{-1} \\)\nD. \\( 1 + 2e^{-1} \\)",
+    "correct": "B",
+    "response": "analysisassistantfinalB\n\n"
+  },
+  {
+    "index": 82,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：令 f ( t ) = cos ( π t ) δ ( t - 1)，其中δ( t )為脈衝函數 (impulse function)， f ( t ) 的拉氏轉換 (Laplace transform)為何？\n\n選項：\nA. -e^(-s)\nB. e^(-s)\nC. -e^(s)\nD. 0",
+    "correct": "A",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 83,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設\n\n\\[ \\begin{bmatrix} 1 & 2 & 3 \\\\ 2 & 4 & 7 \\\\ 3 & 5 & 3 \\end{bmatrix} \\]\n\n等於\n\n\\[ \\begin{bmatrix} 1 & 0 & 0 \\\\ l_{21} & 1 & 0 \\\\ l_{31} & l_{32} & 1 \\end{bmatrix} \\begin{bmatrix} u_{11} & u_{12} & u_{13} \\\\ 0 & u_{22} & u_{23} \\\\ 0 & 0 & u_{33} \\end{bmatrix} \\]\n\n以下哪些是正確的？\n\n選項：\nA. \\( u_{11} = 1 \\)\nB. \\( u_{12} = 2 \\)\nC. \\( l_{21} = 2 \\)\nD. 以上方程式不可能成立，因此無法得到 \\( u_{11} \\)、\\( u_{12} \\)，等等。",
+    "correct": "D",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 84,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：矩陣 \\( A = \\begin{bmatrix} -1 & 0 & 0 & 0 \\\\ 8 & 1 & 0 & 0 \\\\ -4 & -8 & 1 & 0 \\\\ 5 & -4 & 8 & -1 \\end{bmatrix} \\) 和矩陣 \\( B = \\begin{bmatrix} -1 & 1 & -1 & -3 \\\\ 0 & 2 & 2 & -1 \\\\ 0 & 0 & -3 & 1 \\\\ 0 & 0 & 0 & 4 \\end{bmatrix} \\)，則此二矩陣的乘積 \\( AB \\) 之行列式 \\( \\text{Determinant} \\) 為何？\n\n選項：\nA. det( AB) = 12\nB. det( AB) = 24\nC. det( AB) = -24\nD. det( AB) = -12",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 85,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：極坐標方程為 \\( r = e^{\\theta} \\), \\( 1 \\leq \\theta \\leq 2 \\) 的面積為何？\n\n選項：\nA. \\( \\pi(e^2 - e) \\)\nB. \\( \\sqrt{2}(e^2 - e) \\)\nC. \\( e^2 - e \\)\nD. \\( 2(e^2 - e) \\)",
+    "correct": "B",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 86,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設 A, B, C 為同階矩陣，且 ABC=E，則下列哪一個等式不一定成立(　)。\n\n選項：\nA. B^-1A^-1C^-1=E\nB. CAB=E\nC. BCA=E\nD. C^-1A^-1B^-1=E。",
+    "correct": "D",
+    "response": "analysisassistantfinalA\n\n"
+  },
+  {
+    "index": 87,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：函數 \\( f(x) = 3x - (x - 1)^{\\frac{3}{2}} \\) 最大值為何？\n\n選項：\nA. 7\nB. 5\nC. 1\nD. 3",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 88,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：考慮聯立方程組 Ax=0，其中 A∈R^(8x10)。若此方程組的通解含有 6 個任意常數，則A的值域空間（range space）維度（dimension）為何？ \n\n選項：\nA. 6\nB. 3\nC. 8\nD. 4",
+    "correct": "D",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 89,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：向量a=[1,2,3]，向量b=[-4,-5,-6]，設兩向量之夾角為θ，則cosθ = ？\n\n選項：\nA. \\( \\frac{-\\sqrt{3}}{2} \\)\nB. \\( \\frac{16\\sqrt{22}}{77} \\)\nC. \\( \\frac{\\sqrt{3}}{2} \\)\nD. \\( \\frac{-16\\sqrt{22}}{77} \\)",
+    "correct": "D",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 90,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：對於兩個 \\( n \\times n \\) 矩陣 A 和 B，交換子被定義為 \\([A, B] = AB - BA\\)。讓 0 表示 \\( n \\times n \\) 零矩陣。對於 \\( n \\times n \\) 矩陣 A、B 和 C，以下哪個陳述是不正確的？\n\n選項：\nA. \\([A, BC] = [A, B]C + B[A, C]\\).\nB. \\([A,[B, C]] + [B,[A, C]] + [C,[A, B]] = 0\\).\nC. \\([A, B + C] = [A, B] + [A, C]\\).\nD. \\([A, B] = -[B, A]\\).",
+    "correct": "B",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 91,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：已知f(x ,y)=x3+y3-12x-3y，則相對極大值發生在哪一點？\n\n選項：\nA. ( 2 , 1 )\nB. ( -2 , 1 )\nC. ( 2 , -1 )\nD. ( -2 , -1 )",
+    "correct": "D",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 92,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求 \\( f(x) = 3^x \\) 在 \\( x = 0 \\) 的泰勒級數為何？\n\n選項：\nA. \\( \\sum_{n=0}^{\\infty} \\frac{1}{n!} x^{3n} \\)\nB. \\( \\sum_{n=0}^{\\infty} \\frac{(\\ln 3)^n}{n!} x^n \\)\nC. \\( \\sum_{n=0}^{\\infty} \\frac{1}{n!} (3x)^n \\)\nD. \\( \\sum_{n=0}^{\\infty} \\frac{\\ln 3}{n!} x^n \\)",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 93,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求極坐標 \\( r = e^{-2\\theta} \\), \\( \\ln 2 \\leq \\theta \\leq \\ln 4 \\) 圖曲長？\n\n選項：\nA. \\( 2\\sqrt{5} \\)\nB. \\( 6\\sqrt{5} \\)\nC. \\( 8\\sqrt{5} \\)\nD. \\( 4\\sqrt{5} \\)",
+    "correct": "B",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 94,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列函數何者可以執行線性轉換？\n\n選項：\nA. T ( x, y, w ) =< 4 y - 2 x, y + 3 x, 0, 0 >\nB. T ( x, y, u, v, w ) =< u - v - w, w + u, z, 0,1 >\nC. T ( x, y ) =< x - y,sin ( x - y ) >\nD. T ( x, y ) =< x - y, x + y, 2 xy, 2 y, x - 2 y >",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 95,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：\\( \\frac{d}{dx} \\int_{0}^{x^2} \\sqrt{1+t^{110}} dt = ? \\)\n\n選項：\nA. 2x√(1+x^110)\nB. √(1+x^220)\nC. √(1+x^110)\nD. 2x√(1+x^220)",
+    "correct": "D",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 96,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求極限 \\( \\lim_{x \\to 0^+} \\frac{e^{-\\frac{1}{x}}}{x} = ? \\)\n\n選項：\nA. 2\nB. 0\nC. 4\nD. -1",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 97,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設n (n≥3) 可逆矩陣A的伴隨矩陣為A*，常數k≠0, 則(kA)* 等同於 ( ).\n\n選項：\nA. k^-1A*.\nB. knA*\nC. k^-1A*\nD. kA*",
+    "correct": "C",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 98,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：請計極限 \\( \\lim_{x \\to 0^+} \\left( -\\frac{1}{2}x^2 - x^2 \\ln x - \\frac{1}{2} \\right) = ? \\)\n\n選項：\nA. \\(-\\frac{1}{4}\\)\nB. -1\nC. \\(\\frac{1}{2}\\)\nD. -2",
+    "correct": "C",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 99,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：設函數 \\( f(x) = \\begin{cases} -1, & -\\pi < x < 0 \\\\ 1, & 0 < x < \\pi \\end{cases} \\) 且 \\( f(x + 2\\pi) = f(x) \\)，將此函數展開 (Fourier series) 展開成 \\( \\frac{4}{\\pi} (a\\sin{x} + b\\sin{2x} + c\\sin{3x} + d\\sin{4x} + \\ldots) \\)，則 \\( a + b + c + d = \\)？\n\n選項：\nA. 2\nB. 3\nC. 1\nD. 4",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 100,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：由曲線 y= x2 與直線 y =x + 2 所圍封閉區域之面積為何？\n\n選項：\nA. 7/2\nB. 5/2\nC. 11/2\nD. 9/2",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 101,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：一平行六面體(parallelepiped)的三個不互相平行的邊緣向量分別是[2, 0, 3]、[0, 4, 1]、[5, 6, 0]，試 求此一平行六面體的體積。\n\n選項：\nA. 72\nB. 12\nC. 36\nD. 144",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 102,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：求由 \\( y = \\sqrt{x} \\)，\\( y = 2 \\) 和 \\( x = 0 \\)所圍區域繞 x 軸旋轉所得之旋轉體體積？\n\n選項：\nA. \\( \\frac{32\\pi}{5} \\)\nB. \\( \\frac{32\\pi}{11} \\)\nC. \\( \\frac{32\\pi}{7} \\)\nD. \\( \\frac{32\\pi}{9} \\)",
+    "correct": "A",
+    "response": "analysisassistantfinalA\n\n"
+  },
+  {
+    "index": 103,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列的複數函數中，何者是解析函數（Analyticfunction）？\n\n選項：\nA. f ( x, y ) = x^2 + y^2 - 2 y + i(2 xy - 2 x)\nB. f ( x, y ) = x^2 - y^2 - 2 y + i(2 xy + 2 x)\nC. f(x,y)=x2-iy 2\nD. f ( x, y) = x - iy",
+    "correct": "B",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 104,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列牙齒何者不易由牙冠來區別左側或右側？\n\n選項：\nA. 上顎乳犬齒\nB. 上顎正中乳門齒\nC. 下顎乳犬齒\nD. 下顎正中乳門齒",
+    "correct": "D",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 105,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：當嵌體窩洞修形後較深的地方，決定要以氫氧化鈣糊劑做覆髓，其周邊至少需露出多少牙本質，以供玻璃離子黏合劑做為基底的操作？\n\n選項：\nA. 0.2～0.4 mm\nB. 1.1～1.5 mm\nC. 1.6～2.0 mm\nD. 0.5～1.0 mm",
+    "correct": "D",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 106,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於齒槽牙齒外傷的建議固定期間，下列敘述何者較不合理？\n\n選項：\nA. 牙齒鬆動（mobile tooth）固定約為 7～10 天\nB. 牙齒位移（tooth displacement）固定時間約為 2～3 周\nC. 牙根發育未完成的再植牙（replanted tooth with wide open apical foramen）約 7～10 天\nD. 牙根斷裂（root fracture）2～4 個月",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 107,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：為建立可撤式局部義齒之理想咬合，下列何者錯誤？\n\n選項：\nA. 試戴金屬支架時，不能修正咬合誤差\nB. 記錄已修整咬合後之中心咬合關係\nC. 須先分析現有咬合狀況\nD. 可修整原有牙齒之不協調咬合狀態",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 108,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何者不是決定可撤式局部義齒置入及取出途徑（path of placement and removal）之因素？\n\n選項：\nA. 引導面（guiding plane）\nB. 干擾（interference）之部位\nC. 間接固位體（indirect retainer）的位置\nD. 美觀（esthetics）需求",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 109,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：局部組織發炎造成降低局部麻醉劑作用效果，其主要原因，下列何者錯誤？\n\n選項：\nA. 局部組織鈉離子通道數目與功能的改變\nB. 局部組織的 pH 值降低\nC. 局部組織血流量的增加\nD. 局部組織對兒茶酚胺（catecholamine）作用效果的增加",
+    "correct": "D",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 110,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於印模用石膏（impression plaster），何者正確？\n\n選項：\nA. 可添加硫酸鉀（potassium sulfate），以減少硬化膨脹（setting expansion）\nB. 用於對口腔軟組織的功能印模（functional impression）\nC. 為 Type 2 石膏製品（gypsum products）\nD. 水粉比（W/P ratio）多在 0.2～0.3",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 111,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於骨折第一級癒合（primary healing）所需條件的敘述，下列何者錯誤？\n\n選項：\nA. 骨折兩端間沒有活動度（mobility）\nB. 骨折兩端要直接接觸，不能有空隙\nC. 骨折區沒有感染\nD. 骨折區有良好的血液供應",
+    "correct": "B",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 112,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：單側缺牙而製作雙側可撤式局部義齒，下列何者不是其優點？\n\n選項：\nA. 降低可撤式局部義齒誤吞的危險性\nB. 增加可撤式局部義齒的穩定性（stability）\nC. 減少可撤式局部義齒配戴的異物感\nD. 將咬合力平均分散",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 113,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下顎雙側矢向分裂骨切開術（bilateral sagittal split osteotomy）引起下唇永久或暫時神經感覺異常（neurosensory disturbance），最可能是下列何者受損？\n\n選項：\nA. 舌神經（lingual nerve）\nB. 顏面神經（facial nerve）\nC. 下齒槽神經（inferior alveolar nerve）\nD. 頰神經（buccal nerve）",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 114,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：在進行口腔手術前時，發現病人的肚子痛、胡言亂語、十分疲勞、血壓降低、肌肉疼痛、嘔心、意識不淸、 虛弱，可能發生的疾病為何？\n\n選項：\nA. 血糖過低（hypoglycemia）\nB. 癲癇（seizure）\nC. 急性腎上腺功能不足（acute adrenal insufficiency）\nD. 急性甲狀腺風暴（acute thyroid storm）",
+    "correct": "C",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 115,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何者不屬於T helper-1（Th-1）細胞反應有關的細胞激素（cytokine）？\n\n選項：\nA. interleukin-10\nB. interleukin-2\nC. tumor necrosis factor-α\nD. interferon-γ",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 116,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：若將受感染的牙本質碎屑推出根尖孔時，常會造成根尖周圍組織感染，在感染區域中最常發現的是那二種菌？\n\n選項：\nA. Actinomyces israelii及Propionibacterium propionicum\nB. Fusobacterium nucleatum及Fusobacterium periodonticum\nC. Streptococcus sanguinis及Enterococcus faecalis\nD. Streptococcus anginosus及Streptococcus mitisi",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 117,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：當病人進行阻生齒手術前，有下列何種情況時，最需給與預防性抗生素？\n\n選項：\nA. 裝置心臟節律器\nB. 曾經患有感染性心內膜炎，現已痊癒\nC. 接受過冠狀動脈繞道手術\nD. 接受過冠狀動脈支架植入",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 118,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何腦神經最常引發頭頸顏面疼痛？\n\n選項：\nA. 第七對\nB. 第九對\nC. 第八對\nD. 第十對",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 119,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：Alanine與alpha-ketoglutarate進行轉胺作用（transamination）後形成之產物，為下列何者？\n\n選項：\nA. glutamate；oxaloacetate\nB. aspartate；pyruvate\nC. aspartate；oxaloacetate\nD. glutamate；pyruvate",
+    "correct": "D",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 120,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於內頸動脈的敘述，下列何者正確？\n\n選項：\nA. 眼動脈為其分支\nB. 其走向為沿著胸鎖乳突肌後緣，並跨過此肌肉外面而進入顱底\nC. 位於外頸動脈之內側面\nD. 在頸部有一個分支血管",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 121,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於口腔念珠菌病（candidiasis）的敘述，下列何者錯誤？\n\n選項：\nA. 口角炎（angular cheilitis），會在嘴角呈現白色斑狀，易發生在全口無牙患者\nB. 其中 pseudomembranous type，因舌頭絲狀乳突（filiform papillae）喪失，形成裸露表面\nC. 容易發生於 AIDS 或是接受化療的病人\nD. 通常是由 candida albicans 所感染的",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 122,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：以電腦輔助設計/加工（CAD/CAM）製作的氧化鋯（zirconia）牙冠具有何種特色？\n\n選項：\nA. 無法作為後牙三單位牙橋（posterior three-unit bridge）\nB. 與二氧化矽陶瓷透光度相似\nC. 抗壓強度比二氧化矽陶瓷低\nD. 可取代金屬做為薄蓋冠（coping）",
+    "correct": "D",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 123,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：Streptococcus mutans 的耐酸性成因是 ATPase 活化將細胞質何種物質移出細胞外？\n\n選項：\nA. Na 離子\nB. K 離子\nC. Ca 離子\nD. H 離子",
+    "correct": "D",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 124,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列那條神經支配牙髓腔的感覺？\n\n選項：\nA. 前上齒槽神經（anterior superior alveolar nerve）\nB. 舌神經（lingual nerve）\nC. 鼻腭神經（nasopalatine nerve）\nD. 長頰神經（long buccal nerve）",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 125,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於三叉神經所負責的感覺區域，不包括下列何者？\n\n選項：\nA. 硬腭\nB. 臉頰\nC. 舌根\nD. 額頭",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 126,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於涎石（sialolith）的敘述，下列何者錯誤？\n\n選項：\nA. 顯微鏡下其外圍多成同心圓層狀鈣化（concentric laminated calcification）\nB. 最常見於腮腺（parotid gland）的管道系統內\nC. 慢性唾腺炎（chronic sialadenitis）有助其生成\nD. 其阻塞管道可有黏液細胞變生（mucous cell metaplasia）出現",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 127,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：相較於長石陶瓷（feldspathic porcelain），氧化鋯較不適合做為前牙瓷貼面（veneer）的原因，下列何者錯誤？\n\n選項：\nA. 強度不足\nB. 對牙齒黏著性不佳\nC. 不夠美觀\nD. 造成對咬牙磨耗",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 128,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於牙根尖手術用藥的敘述，下列何者錯誤？\n\n選項：\nA. 須注意肝腎功能不佳的病人服用止痛藥所造成的傷害\nB. 病人在手術前30分鐘服用止痛劑（NSAID）可以減少手術後疼痛\nC. 手術前後使用chlorhexidine gluconate（0.12%）進行口腔內消毒，可以減少口腔內的細菌量\nD. 手術前服用抗生素可以減少牙根尖手術術後感染與併發症的機會",
+    "correct": "D",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 129,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：有關原核細胞DNA replication相關酶功能，下列敘述何者正確？\n\n選項：\nA. topoisomerase負責合成RNA primer\nB. DNA ligase負責合成RNA primer\nC. DNA polymerase I 負責將RNA primer移除\nD. DNA polymaerase Ⅲ負責將RNA primer移除",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 130,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何者不屬於 chemical disinfectants？\n\n選項：\nA. iodophors\nB. phenols\nC. chloramphenicol\nD. glutaraldehyde",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 131,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下顎門齒矯正後又發生擁擠，下列何種裝置較不適宜來排列牙齒？\n\n選項：\nA. 夾狀（clip-on）維持器\nB. 固定式（fixed）維持器\nC. 透明（clear）維持器\nD. 定位矯正器（positioner）",
+    "correct": "B",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 132,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列黏合劑（cement）中，何者之微滲漏（microleakage）最小？\n\n選項：\nA. 玻璃離子體（glass ionomer）黏合劑\nB. 聚羧酸鋅（zinc polycarboxylate）黏合劑\nC. 磷酸鋅（zinc phosphate）黏合劑\nD. 樹脂離子體（resin ionomer）黏合劑",
+    "correct": "D",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 133,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於乳齒提早脫落，對其繼生齒萌發造成的影響，下列敘述何者錯誤？\n\n選項：\nA. 若乳齒在正常換牙時期的6個月內脫落，通常會加速繼生齒萌發\nB. 乳臼齒在4歲時脫落會使繼生齒約延緩1年萌出\nC. 第一乳臼齒在7歲後脫落，通常會延緩繼生齒萌發\nD. 若上顎乳犬齒在6歲時脫落，通常會延緩繼生齒萌發",
+    "correct": "C",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 134,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：以系統化建構設計（systematically developing design）可撤式局部義齒的支架時，下列何者應優先考慮？\n\n選項：\nA. 支持（support）的方式\nB. 缺牙區與相鄰支柱牙的連接方式\nC. 固位裝置與支持部分的連接方式\nD. 固位（retention）的方式",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 135,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：有關直接數位放射線影像（direct digital radiography），下列敘述何者正確？\n\n選項：\nA. 口內數位放射線影像檔案大小約 20 kilobytes\nB. 感應片（receptor）較易摺損\nC. CMOS system 屬於這類數位放射線影像\nD. PSP system 屬於這類數位放射線影像",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 136,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於血管性水腫（angioedema）之敘述，下列何者正確？\n\n選項：\nA. 為 IgG 所引起的過敏反應\nB. 改用 angiotensin II receptor blockers 仍然會有很高的機會產生血管性水腫\nC. 無論是那種原因引起的血管性水腫，都可以用 antihistamine 有效治療\nD. 使用 ACE inhibitors 可能會引起血管性水腫",
+    "correct": "D",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 137,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：相較於implant framework傳統作法，口內掃描與CAD/CAM technology能夠提供的優點不包括下列何者？\n\n選項：\nA. CAD/CAM technology可減少鑄造及銲接誤差\nB. CAD/CAM technology可使用ceramic或titanium為framework材質\nC. 口內掃描可減少印模時軟組織的塌陷形變\nD. 口內掃描準確度優於傳統印模法",
+    "correct": "D",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 138,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：從顏面（facial）觀察，通常恆門齒牙冠的遠心側較近心側為突出（convex），下列何者例外？\n\n選項：\nA. 上顎側門齒\nB. 下顎側門齒\nC. 上顎正中門齒\nD. 下顎正中門齒",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 139,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於中心自由（freedom in centric）的敘述，下列何者錯誤？\n\n選項：\nA. 不應建立於全口義齒的咬合\nB. 涵蓋長中心（ long centric）\nC. 可藉由咬合調整得到\nD. 在年輕的自然齒列不常見到",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 140,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於牙周組織神經傳導的敘述，下列何者錯誤？\n\n選項：\nA. 本體感受神經（proprioceptive nerves）經三叉神經傳到牙周組織\nB. 牙齦不含本體感受器（proprioceptors）\nC. 牙周組織含有機械性刺激接受器（mechanoreceptor）\nD. 記錄痛覺、觸覺、壓力的神經，其滋養（trophic）中心在中腦核（mesencephalic nucleus）",
+    "correct": "D",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 141,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何者是造成下顎唇側溝（labial sulcus）變淺的主要肌肉？\n\n選項：\nA. 頦肌（mentalis muscle）\nB. 口輪匝肌（obicularis oris muscle）\nC. 頰肌（buccinator muscle）\nD. 降下唇肌（depressor labii muscle）",
+    "correct": "A",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 142,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於下顎全口義齒邊緣（border）的敘述，下列何者錯誤？\n\n選項：\nA. 下顎枝（mandibular ramus）限制義齒之遠伸性（distal extention）\nB. 頦肌（mentalis muscle）限制唇側凸緣的長度\nC. 口輪匝肌（orbicularis oris muscle）限制唇側凸緣的寬度\nD. 頰肌（buccinator muscle）限制義齒之遠伸性（distal extention）",
+    "correct": "C",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 143,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：根管治療時，下列何種情形最有可能使用抗生素？\n\n選項：\nA. 根管封填後\nB. 竇管（sinus tract）產生時\nC. 預防症狀突發（flare-up）\nD. 持續腫脹",
+    "correct": "D",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 144,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：根尖 X 光片中，何種發現最可以用來區分根尖牙骨質骨發育不良（periapicalcemento-osseousdysplasia）及造牙骨質細胞瘤（cementoblastoma）？\n\n選項：\nA. 完整牙周韌帶（periodontal ligamant）之有無\nB. 放射線不透性團塊旁是否有放射線透過性環帶（peripheralradiolucent rim）\nC. 牽涉之牙齒是否有齒槽嵴（alveolar crest）之破壞\nD. 病灶邊界是否清晰（well-demarcated）",
+    "correct": "A",
+    "response": "analysisassistantfinalB\n\n"
+  },
+  {
+    "index": 145,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於史康門生長曲線（Scammon's curves of growth）與顏面發育之敘述，下列何者錯誤？\n\n選項：\nA. 淋巴組織（lymphoid tissue）在青春期達到發育最高峰\nB. 下顎骨生長發育曲線較上顎骨類似全身生長發育曲線\nC. 上顎骨生長發育曲線較下顎骨類似神經系統發育曲線\nD. 神經系統發育在6歲時已大致完成",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 146,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於腸病毒（enterovirus）的敘述，下列何者正確？\n\n選項：\nA. 大部分的疱疹性咽峽炎（herpangina）症狀都很輕微，且潰瘍常出現在前硬腭（anterior hard palate）\nB. 手足口症（hand-foot-and-mouth disease）有可能因為腸病毒 71 型（enterovirus 71）的感染所產生\nC. 麻疹（measles）是因腸病毒感染所引起\nD. 所有腸病毒（enterovirus）的感染都需要積極治療，包括使用抗病毒藥物，例如 acyclovir 類的藥物",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 147,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於 pilocarpine 的敘述，下列何者錯誤？\n\n選項：\nA. 其最常見之副作用為盜汗（sweating）\nB. 不可使用於不穩定氣喘（uncontrolled asthma）之病患\nC. 可用來治療口乾症（xerostomia），劑量為一天三次\nD. 其為 selective M2 及 M4 muscarinic receptor agonists",
+    "correct": "D",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 148,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何種神經的主要作用是感覺疼痛及温度改變？①A alpha fiber ②A beta fiber ③A delta fiber ④C fiber\n\n選項：\nA. ①③\nB. ③④\nC. ①②\nD. ②④",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 149,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：以正顎手術治療上顎骨之發育不足（maxillary deficiency），最常施行之術式為下列何者？\n\n選項：\nA. 上顎前段截骨術\nB. 口內雙側垂直下顎枝切開術\nC. 雙側矢向劈裂截骨術\nD. 勒福一型截骨術",
+    "correct": "D",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 150,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：右側髁狀突頸部（condylar neck）骨折產生位移，於張口時下列何種情況最常見？\n\n選項：\nA. 髁頭（condylar head）往左前移位，頦部（chin）往右偏移\nB. 髁頭（condylar head）往左前移位，頦部（chin）往左偏移\nC. 髁頭（condylar head）往右前移位，頦部（chin）往左偏移\nD. 髁頭（condylar head）往右前移位，頦部（chin）往右偏移",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 151,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：使用酸蝕－沖洗牙本質黏著劑系統（etch-and-rinse system）時，酸蝕後牙本質表面應處於何種狀況會有較好的黏著效果？\n\n選項：\nA. 非常乾燥，用氣槍吹到呈現斑白狀的脫水表面\nB. 微濕，用氣槍吹到表面有光澤但無明顯水分\nC. 潮濕，使用棉花吸取大部分水，但仍保留表面水滴\nD. 乾燥，用氣槍吹到表面失去光澤",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 152,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何者不是以超音波骨刀（piezosurgery）施行手術的優點？\n\n選項：\nA. 減少組織損傷，避免取骨時影響活性，有效保存類成骨細胞（osteoblast-like）的數目\nB. 進行骨整形手術（osteoplasty）時，在傷口復原期間能減少額外的骨質流失\nC. 穩定且可調整強度的沖洗系統，所產生的空穴現象（cavitation）能避免翻瓣時的軟組織損傷\nD. 相較於傳統鑽針處理的植牙位置，能減少術後（7～14天）手術位置周圍的促炎性細胞激素之生成",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 153,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：臨床上最常見導致腎上腺皮質功能不足（adrenocortical insufficiency）之原因是：\n\n選項：\nA. 長期服用皮質類固醇（corticosteroid）引起的繼發性腎上腺皮質功能不足（secondary adrenocortical\ninsufficiency）\nB. 克新氏症候群（Cushing's syndrome）\nC. 長期糖尿病（diabetes mellitus）引起的缺血性病變導致腎上腺組織壞死\nD. 艾迪生氏病（Addison's disease）",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 154,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於閉顎反射（jaw-closing reflex），下列敘述何者錯誤？\n\n選項：\nA. 可經由輕敲下巴產生\nB. 又稱為顎跳反射（jaw jerk reflex）\nC. 是多突觸反射，不受中樞神經的調節與影響\nD. 與下顎在休憩位置時的張性活動（tonic reflex）有關",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 155,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於口內復形物檢查時的發現，下列何者最不需要重新置換填補？\n\n選項：\nA. 鄰接接觸面（interproximal contact）無法讓牙線通過\nB. 銀粉邊緣溝（amalgam marginal ditching）\nC. 前牙樹脂復形物邊緣變色（marginal staining）\nD. 復形物上有斷裂線（fracture line）",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 156,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：病患基於某種理由而拒絕接受 X 光攝影，使牙醫師無法進行診斷與治療時，牙醫師應優先考慮如何處理？\n\n選項：\nA. 說服患者接受必要的 X 光攝影\nB. 強迫患者接受 X 光攝影\nC. 轉介給其他牙醫師\nD. 拒絕治療患者",
+    "correct": "A",
+    "response": "analysisassistantfinalA\n\n"
+  },
+  {
+    "index": 157,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於目前透明排列器（clear plastic aligner）的敘述，下列何者錯誤？\n\n選項：\nA. 要使門牙前移 3 mm的距離，約需要配戴 15 組牙托（trays）\nB. 其設計的移動距離每次約 0.2 mm\nC. 此材料在熱成形前後的厚度不會改變\nD. 透明排列器易受壓力釋放及吸水而影響牙齒移動的能力",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 158,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何種藥物，較不會影響矯正牙齒移動速率？\n\n選項：\nA. 類固醇（corticosteriod）\nB. 三環類抗憂鬱製劑（tricyclic antidepressants）\nC. 雙磷酸鹽（bisphosphonates）\nD. 雌激素（estrogen）",
+    "correct": "D",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 159,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：顎下腺及舌下腺的主要分泌管道分別為何？\n\n選項：\nA. Wharton's duct 和 Bartholin's duct\nB. Stensen's duct 和 Wharton's duct\nC. Bartholin's duct 和 Stensen's duct\nD. ducts of Rivinus 和 Wharton's duct",
+    "correct": "A",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 160,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列那些因素最易造成上、下前牙6顆牙齒大小Bolton比值大於正常值？①上顎前牙6顆牙齒近遠心寬度過小 ②上顎前牙6顆牙齒近遠心寬度過大 ③下顎前牙6顆牙齒近遠心寬度過小 ④下顎前牙6顆牙齒近遠心寬度過大\n\n選項：\nA. ②④\nB. ②③\nC. ①③\nD. ①④",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 161,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：2顆鄰接乳齒都需要做不鏽鋼牙套時，其製作方式下列敘述何者錯誤？\n\n選項：\nA. 鄰接面之修磨至少要打開1.5 mm\nB. 牙齒修磨後要將所有的線角（line angle）修磨圓滑\nC. 咬合面應兩顆同時修磨，以確保不致過度修磨\nD. 黏著2顆不鏽鋼牙套的次序應與試戴的次序相同",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 162,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於麻醉藥注射過程的敘述，下列何者最為合理？\n\n選項：\nA. 麻醉注射前的準備過程中，要用乾淨的紗布，去除食物殘渣，維持注射區域清潔\nB. 注射前所塗抹的表面麻醉劑，要盡量延伸到注射以外的部位\nC. 應使用含酒精的消毒劑，消毒口腔黏膜打算注射處，預防注射引起的感染\nD. 注射過程絕對不可以跟病人講話溝通，因為要專心一致，準確完成注射",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 163,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於恆牙小臼齒的描述，下列何者正確？\n\n選項：\nA. 從頰側面觀察，牙冠向齒頸線變窄\nB. 從鄰接面觀察，齒頸線的曲率弧度（curvature）較前牙明顯\nC. 從咬合面觀察，牙冠向舌側變寬\nD. 從頰側面觀察，通常遠心鄰接點較接近咬合面",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 164,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何者無法獲得最大程度的錨定（maximum anchorage）？\n\n選項：\nA. stabilizing lingual arch\nB. bone screw\nC. headgear\nD. incisal labial root torque",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 165,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何者為最佳直接覆髓（direct pulp capping）材料？\n\n選項：\nA. 聚羧酸鋅黏合劑（zinc polycarboxylate cement）\nB. 氫氧化鈣黏合劑（calcium hydroxide cement）\nC. 磷酸鋅黏合劑（zinc phosphatecement）\nD. 玻璃離子體黏合劑（glass ionomercement）",
+    "correct": "B",
+    "response": "analysisassistantfinalB\n\n"
+  },
+  {
+    "index": 166,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於唇腭裂手術，下列敘述何者正確？\n\n選項：\nA. 硬腭的修復通常在軟腭修復之前\nB. 腭裂修復後的疤痕不會影響上顎發育\nC. 提早修復硬腭有助於後續的矯正治療\nD. 唇裂的修復越早越好",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 167,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：前牙單顆植體，為考量美觀因素，植入體肩台（shoulder）之位置為何？\n\n選項：\nA. 位於鄰牙頰側骨嵴以下1～2 mm\nB. 與鄰牙頰側骨嵴同高\nC. 位於鄰牙頰側CEJ以下1～2 mm\nD. 與鄰牙頰側CEJ同高",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 168,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：牛奶咖啡斑（café-au-lait spots）與下列何種疾病最有關？\n\n選項：\nA. 顆粒細胞瘤（granular cell tumor）\nB. 外傷性神經瘤（traumatic neuroma）\nC. 橫紋肌瘤（rhabdomyoma）\nD. 麥克滾-阿爾布萊德氏症候群（McCune-Albright syndrome）",
+    "correct": "D",
+    "response": "analysisassistantfinalD\n\n"
+  },
+  {
+    "index": 169,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於贅生牙（supernumerary tooth）的敘述，下列何者正確？①上顎中線區的贅生牙，一般來說適合的手術拔除的時機是鄰近的正中門齒牙根形成2/3時 ②如果沒有擋到門牙萌發，贅生牙則不必拔除 ③贅生牙最常見為錐狀 ④正中贅齒（mesiodens）發生位置主要在唇側 ⑤蕾期（bud stage）或帽蓋期（cap stage）的發育異常造成\n\n選項：\nA. ①③⑤\nB. ①②⑤\nC. ②③④\nD. ①④⑤",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 170,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：選擇上顎前牙作為覆蓋式義齒的支柱牙時，下列何者最不易產生組織倒凹而使義齒不易置入的問題？\n\n選項：\nA. 側門齒\nB. 選用以上牙齒都無組織倒凹的問題\nC. 犬齒\nD. 正中門齒",
+    "correct": "A",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 171,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於舌骨的構造，下列敘述何者錯誤？\n\n選項：\nA. 介於舌與喉之間\nB. 有成對的大角和小角\nC. 舌骨大致是Ｕ型骨\nD. 大角是第二鰓弓的殘留",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 172,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：在製作蠟型之前，若齒模上有缺損需先填補時，下列何種材料最合適？\n\n選項：\nA. 樹脂（resin）\nB. 汞齊（amalgam）\nC. 硬石膏（stone）\nD. 玻璃離子體黏合劑（glass ionomer cement）",
+    "correct": "A",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 173,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：懷孕婦女因荷爾蒙的影響可能會有較嚴重的牙齦發炎，與下列何種細菌最有關？\n\n選項：\nA. Porphyromonas gingivalis\nB. Prevotella intermedia\nC. Fusobacterium nucleatum\nD. Treponema denticola",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 174,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於上顎第一小臼齒的牙根敘述，下列何者正確？\n\n選項：\nA. 一般為雙牙根，舌側牙根較長且彎向近心側\nB. 一般為單一牙根，牙根尖彎向近心側\nC. 一般為單一牙根，牙根尖彎向遠心側\nD. 一般為雙牙根，頰側牙根較長且彎向遠心側",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 175,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於微粒型複合樹脂（microfill composites）與混雜型複合樹脂（hybrid composite）的敘述，下列何者錯誤？\n\n選項：\nA. 微粒型複合樹脂適合用在第五類（Class V）窩洞的填補\nB. 填料的含量和聚合收縮產生的應力成正比\nC. 微粒型複合樹脂的填料含量比混雜型複合樹脂少\nD. 混雜型複合樹脂的彈性係數比微粒型複合樹脂高",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 176,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於惡性混合瘤（malignant mixed tumor）的敘述，下列何者錯誤？\n\n選項：\nA. 外生多形性腺癌（carcinoma ex pleomorphic adenoma）常呈現分化良好的腺癌（well-differentiated adenocarcinoma）\nB. 主要治療方式為手術切除\nC. 轉移性混合瘤（metastasizing mixed tumor）具有與良性混合瘤相同之病理表徵，且最易轉移至骨骼或肺臟\nD. 癌肉瘤（carcinosarcoma）之肉瘤（sarcoma）部分，常較上皮癌（carcinoma）部分為多",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 177,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：患者下門牙中線偏移（deviation），可能的原因為下列何者？①下顎牙齒擁擠 ②下顎智齒缺失 ③一側下顎牙齒缺失\n\n選項：\nA. 僅①③\nB. 僅②③\nC. ①②③\nD. 僅①②",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 178,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：在製作析量牙冠（surveyed crown）時，下列敘述何者錯誤？\n\n選項：\nA. 預留固位倒凹（retentive undercut）時，應考慮未來的牙鈎（clasp）材質\nB. 若使用type Ⅳ gold為牙鈎材質，則預留固位倒凹量應為0.12～0.25 mm\nC. 在咬合－齒頸徑（occlusal-cervical dimension）上的引導面（guiding plane）應愈長愈好\nD. 在前牙製作析量牙冠，並放置舌面隆凸鈎座（cingulum rest），可改善自然牙上放切端鈎座（incisal rest）的\n美觀問題",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 179,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：葡萄糖（glucose）進入肝細胞後，會立刻進行下列那一個反應而留在細胞內？\n\n選項：\nA. 在第一個碳上磷酸化\nB. 在第六個碳上磷酸化\nC. 轉化成果糖（fructose）\nD. 轉化成半乳糖（galactose）",
+    "correct": "B",
+    "response": "analysisassistantfinalA\n\n"
+  },
+  {
+    "index": 180,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列那一種序列不參與維持真核細胞染色體（chromosome）的完整結構？\n\n選項：\nA. 複製起點（origin of replication）\nB. 著絲粒（centromere）\nC. 引子（primer）\nD. 端粒（telomere）",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 181,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何者屬於不可逆性之臨床流行病學指數？\n\n選項：\nA. PMA Index\nB. Periodontal Disease Index of Ramfjord\nC. Periodontal Index of Russell\nD. Papillary Bleeding Index",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 182,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列關於即裝全口義齒（immediate complete denture）排牙工作的敘述，何者錯誤？\n\n選項：\nA. 修磨模型宜保守\nB. 牙周囊袋的深度為修磨模型的重要參考之一\nC. 須拔除的牙齒雖多半已移位，但對未來排牙的位置仍具參考價值\nD. 拔牙處宜修磨成凹陷狀",
+    "correct": "D",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 183,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於圍箍效應（ferrule effect）的敘述，下列何者錯誤？\n\n選項：\nA. ferrule愈長愈能增加牙齒的斷裂抗力\nB. ferrule能增加抵抗根柱（post）產生的側向力\nC. ferrule的設計可以增加齒頸部的拉應力（tensile strength）\nD. ferrule必須在健康的齒質上，高度至少需要2～3 mm",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 184,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：唾液中含有下列何種成分，可破壞細菌細胞壁 peptidoglycan 的結構？\n\n選項：\nA. 乳過氧化物酶（lactoperoxidase）\nB. 溶菌酶（lysozyme）\nC. 乳鐵蛋白（lactoferrin）\nD. 澱粉酶（amylase）",
+    "correct": "B",
+    "response": "analysisassistantfinalB\n\n"
+  },
+  {
+    "index": 185,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：有關牙髓內膠原蛋白（collagen）的敘述，下列何者正確？\n\n選項：\nA. 造牙本質細胞（odontoblasts）只有分泌type I膠原蛋白\nB. 通常冠部牙髓的膠原蛋白數量會比根尖部牙髓多\nC. 隨著年齡增加，膠原蛋白的數量會減少\nD. 主要是由type I 及type II的膠原蛋白所組成",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 186,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：較大之第五類型（Class V）汞齊填補，下列何者可增加窩洞固位性（retention）？\n\n選項：\nA. 打固位釘（retention pin）\nB. 製備四個小凹（retention coves）\nC. 製作鴿尾形（dovetail）\nD. 斜面（bevel）",
+    "correct": "B",
+    "response": "analysisassistantfinalC\n\n"
+  },
+  {
+    "index": 187,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列那項不是牙科植體成功的必備要件？\n\n選項：\nA. 個別植體不會有生理性搖動\nB. 植入後，每年的平均垂直骨喪失小於 0.3 mm\nC. 植體周圍沒有放射線穿透性影像\nD. 植體周圍沒有感染",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 188,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於牙科治療的感染性心內膜炎（infective endocarditis, IE）預防的敘述，下列何者正確？\n\n選項：\nA. 侵襲性牙周炎（或是early-onset periodontitis）的年輕牙周病患的牙齦下致病菌A.actinomycetemcomitans 與IE\n有關\nB. 患者曾有過心內膜炎的病史，目前健康，執行口腔手術前不需要事先抗生素防治IE\nC. 根據2008年美國心臟學會建議：所有先天性心臟病患者都是IE高危險群，需要術前抗生素預防\nD. IE高風險病患需要良好的口腔衛生教育，建議使用oral irrigators加強清潔效果",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 189,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：若於 X 光片上發現患者之顎骨有多發性骨瘤（multiple osteomas）時，最常建議病人接受下列何種進一步之檢查？\n\n選項：\nA. 大腸鏡檢查（colonoscopy）\nB. 肺部之低劑量電腦斷層掃描（low dose computed tomography）\nC. 臨床檢查曲伏斯德克氏徵象（Chvostek sign）\nD. FGFR1 基因點突變（point mutation）分析",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 190,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何者不是以造袋術（marsupialization）治療含齒囊腫（dentigerous cyst）的適應症？\n\n選項：\nA. 囊腫沾黏下顎齒槽神經管\nB. 嚴重心血管疾病患者\nC. 懷疑為造釉細胞瘤\nD. 懷疑為造釉細胞瘤",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 191,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：在臨床上，如果有機會接觸病人的部位，就要施用標準預防措施（standard precautions），但下列何者除外？\n\n選項：\nA. 完整皮膚\nB. 血液\nC. 唾液\nD. 完整黏膜",
+    "correct": "A",
+    "response": "analysisassistantfinalA"
+  },
+  {
+    "index": 192,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：下列何者不是上甲狀腺動脈的分支？\n\n選項：\nA. 環甲動脈\nB. 舌骨上動脈\nC. 胸鎖乳突分支\nD. 上喉動脈",
+    "correct": "B",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 193,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：低銅汞齊合金（low copper amalgam alloy）填補後，產生化學腐蝕（chemical corrosion），汞齊表面變成黑色，這種顏色的改變，與下列何種化合物有關？\n\n選項：\nA. Ag - S\nB. Ag - Cu\nC. Ag - Hg\nD. Ag - Sn",
+    "correct": "A",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 194,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於解釋牙本質敏感之「流體動力學說（hydrodynamic theory）」的敘述，下列何者錯誤？\n\n選項：\nA. 獲得多數實驗及形態學資訊（morphological data）的支持\nB. 與牙本質小管（dentinal tubules）內液體受到外界刺激的流動有關\nC. 局部麻醉劑塗抹於暴露牙本質時，可減少牙齒的敏感，此現象可支持流體動力學說理論\nD. 與拉士克神經叢（plexus of Raschkow）有關",
+    "correct": "C",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 195,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：對於可撤式局部義齒環周牙鈎（circumferential clasp）的敘述，下列何者正確？①鄰接小連接體（proximal minor connector）提供穩定（stabilization）功能 ②鄰接板（proximal plate）提供抗衡（reciprocation）功能 ③咬合鈎靠（occlusal rest）提供支持（support）功能 ④頰側固位牙鈎臂（buccal retentive clasp arm）的剛硬部分（rigid portion），可提供抗衡（reciprocation）功能\n\n選項：\nA. ②③\nB. ①④\nC. ②④\nD. ①③",
+    "correct": "D",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 196,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：欲拔除此阻生齒，較合適之手術步驟為：①將牙齒分段 ②清創及縫合 ③去除覆蓋之骨頭 ④翻瓣 ⑤利用牙挺將牙齒移除\n\n選項：\nA. ④→①→③→⑤→②\nB. ③→①→⑤\nC. ④→⑤→②\nD. ④→③→①→⑤→②",
+    "correct": "D",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 197,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：當下顎後牙前拉（posterior tooth protraction）時，下列何者可以加強門齒錨定（anchorage）？\n\n選項：\nA. 門齒近心側牙根傾斜（mesial root tipping）\nB. 門齒舌側牙根扭矩（lingual root torque）\nC. 門齒遠心側牙根傾斜（distal root tipping）\nD. 門齒唇側牙根扭矩（labial root torque）",
+    "correct": "B",
+    "response": "analysisassistantfinalB"
+  },
+  {
+    "index": 198,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：利用環線力學（loop mechanics）來關閉空間時，下列敘述何者正確？\n\n選項：\nA. 不需考慮磨擦力\nB. 只能以不鏽鋼線彎環線（loop）\nC. 不需用山形彎折（gable bend）做牙根平行力矩（paralleling moment）\nD. 環線（loop）越大，產生力量越大",
+    "correct": "A",
+    "response": "analysisassistantfinalD"
+  },
+  {
+    "index": 199,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：病毒感染可能與腫瘤發生有關，但下列何者最不可能？\n\n選項：\nA. Epstein-Barr 病毒（EBV）\nB. 人類乳突病毒（HPV）\nC. 第一型單純疱疹病毒（HSV-1）\nD. B 型肝炎病毒（HBV）",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  },
+  {
+    "index": 200,
+    "subject": "",
+    "question": "請回答以下選擇題。\n\n問題：關於幼兒的口腔保健的敘述，下列何者錯誤？\n\n選項：\nA. 幼兒長第一顆牙之後就可以塗氟\nB. 第一次拜訪牙醫師時間應在1歲以前\nC. 3歲上幼稚園以後就應該讓兒童自行刷牙\nD. 幼兒長第一顆牙之後就應該開始刷牙",
+    "correct": "C",
+    "response": "analysisassistantfinalC"
+  }
+]

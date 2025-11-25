@@ -11,19 +11,8 @@ finetuning_type: lora
 template: gpt
 cutoff_len: 8192
 
-### inference - Optimized for NVIDIA GB300 (8x B300 GPU, 268GB each)
-infer_backend: vllm  # vLLM for maximum throughput
-
-### vLLM Configuration - GB300 Optimized for 120B Model
-vllm_enforce_eager: false  # Enable CUDA graph
-vllm_max_model_len: 8192  # Maximum context length
-vllm_gpu_memory_utilization: 0.92  # Slightly lower for 120B model
-vllm_tensor_parallel_size: 4  # 4-way tensor parallelism for 120B
-vllm_pipeline_parallel_size: 1
-vllm_max_num_seqs: 128  # Conservative for large model
-vllm_max_num_batched_tokens: 12288
-vllm_block_size: 32
-vllm_swap_space: 32  # More swap for 120B model
+### inference
+infer_backend: huggingface
 
 ### generation
 do_sample: true
