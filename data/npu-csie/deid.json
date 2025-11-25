@@ -1,0 +1,2502 @@
+[
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 secops_liu 與 vpn_guest 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {secops_liu, vpn_guest}；依出現順序映射為 帳號1、帳號2；生成去識別化句子與對照表；不改動原意。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> secops_liu\n帳號2 -> vpn_guest"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 dev123 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {dev123}；映射為 帳號1；維持語意與事件描述。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> dev123"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 alice 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {alice}；映射為 帳號1；保持原敘述不變。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> alice"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 alice 與 secops_liu 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {alice, secops_liu}；依序映射為 帳號1、帳號2；輸出去識別化句與對照表。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> alice\n帳號2 -> secops_liu"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 user_test 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {user_test}；映射為 帳號1；保持敘述原樣。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> user_test"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 bob_admin 與 admin01 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {bob_admin, admin01}；依序映射為 帳號1、帳號2；生成對照表。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> bob_admin\n帳號2 -> admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nroot_tony、netops、bob_admin、alice 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {root_tony, netops, bob_admin, alice}；依序映射為 帳號1..4；輸出群組對照表。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> root_tony\n帳號2 -> netops\n帳號3 -> bob_admin\n帳號4 -> alice"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nalice、secops_liu、netops、admin01、backup_bot 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {alice, secops_liu, netops, admin01, backup_bot}；依序映射為 帳號1..5；注意『PowerShell』為任務內容而非帳號，但原回覆已列出對照維持不動。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> alice\n帳號2 -> secops_liu\n帳號3 -> netops\n帳號4 -> admin01\n帳號5 -> backup_bot\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nroot_tony、user_test、audit_log、dev123、sys_monitor 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {root_tony, user_test, audit_log, dev123, sys_monitor}；映射為 帳號1..5；『PowerShell』視為腳本名稱而非帳號，但原回覆已列對照維持不改。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> root_tony\n帳號2 -> user_test\n帳號3 -> audit_log\n帳號4 -> dev123\n帳號5 -> sys_monitor\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 audit_log 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {audit_log}；映射為 帳號1；產生對照表。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> audit_log"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 user_test 與 sys_monitor 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {user_test, sys_monitor}；依序映射為 帳號1、帳號2；輸出一致格式。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> user_test\n帳號2 -> sys_monitor"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\naudit_log、netops、secops_liu、alice 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {audit_log, netops, secops_liu, alice}；依序映射為 帳號1..4；維持句型與語氣。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> audit_log\n帳號2 -> netops\n帳號3 -> secops_liu\n帳號4 -> alice"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 backup_bot 與 alice 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {backup_bot, alice}；依序映射為 帳號1、帳號2；輸出對照表。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> backup_bot\n帳號2 -> alice"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 secops_liu 與 vpn_guest 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>與第1筆相同型態：{secops_liu, vpn_guest} → 帳號1、帳號2；保持一致性產生輸出。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> secops_liu\n帳號2 -> vpn_guest"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nvpn_guest、netops、root_tony、sys_monitor、alice 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {vpn_guest, netops, root_tony, sys_monitor, alice}；依序映射為 帳號1..5；PowerShell 為腳本說明，原回覆列於對照表維持不動。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> vpn_guest\n帳號2 -> netops\n帳號3 -> root_tony\n帳號4 -> sys_monitor\n帳號5 -> alice\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 root_tony 與 alice 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {root_tony, alice}；依序映射為 帳號1、帳號2；輸出對照表與去識別化句子。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> root_tony\n帳號2 -> alice"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nvpn_guest、bob_admin、sys_monitor、alice、user_test 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {vpn_guest, bob_admin, sys_monitor, alice, user_test}；映射為 帳號1..5；保留原回覆中對 PowerShell 的對照列。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> vpn_guest\n帳號2 -> bob_admin\n帳號3 -> sys_monitor\n帳號4 -> alice\n帳號5 -> user_test\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nnetops、admin01、vpn_guest、audit_log 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {netops, admin01, vpn_guest, audit_log}；依序映射為 帳號1..4；產出對照表。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> netops\n帳號2 -> admin01\n帳號3 -> vpn_guest\n帳號4 -> audit_log"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nroot_tony、backup_bot、audit_log、dev123、sys_monitor 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {root_tony, backup_bot, audit_log, dev123, sys_monitor}；映射為 帳號1..5；PowerShell 非帳號，但保留原回覆的列示。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> root_tony\n帳號2 -> backup_bot\n帳號3 -> audit_log\n帳號4 -> dev123\n帳號5 -> sys_monitor\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 dev123 與 admin01 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {dev123, admin01}；依序映射為 帳號1、帳號2；生成一致格式輸出。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> dev123\n帳號2 -> admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 secops_liu 與 root_tony 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {secops_liu, root_tony}；依序映射為 帳號1、帳號2；不更動敘述邏輯。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> secops_liu\n帳號2 -> root_tony"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nnetops、secops_liu、bob_admin 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {netops, secops_liu, bob_admin}；依序映射為 帳號1..3；輸出對照表。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> netops\n帳號2 -> secops_liu\n帳號3 -> bob_admin"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 root_tony 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {root_tony}；映射為 帳號1；維持語意。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> root_tony"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsys_monitor、alice、vpn_guest、backup_bot 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {sys_monitor, alice, vpn_guest, backup_bot}；依序映射為 帳號1..4；輸出群組對照。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> sys_monitor\n帳號2 -> alice\n帳號3 -> vpn_guest\n帳號4 -> backup_bot"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nnetops、user_test、root_tony 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {netops, user_test, root_tony}；依序映射為 帳號1..3；產生對照表。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> netops\n帳號2 -> user_test\n帳號3 -> root_tony"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nbob_admin、netops、admin01、audit_log、root_tony 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {bob_admin, netops, admin01, audit_log, root_tony}；依序映射為 帳號1..5；保留原回覆中的 PowerShell 對照列。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> bob_admin\n帳號2 -> netops\n帳號3 -> admin01\n帳號4 -> audit_log\n帳號5 -> root_tony\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nbackup_bot、vpn_guest、root_tony、netops、user_test 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {backup_bot, vpn_guest, root_tony, netops, user_test}；依序映射為 帳號1..5；維持對 PowerShell 的原列示。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> backup_bot\n帳號2 -> vpn_guest\n帳號3 -> root_tony\n帳號4 -> netops\n帳號5 -> user_test\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsecops_liu、root_tony、user_test、bob_admin 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {secops_liu, root_tony, user_test, bob_admin}；依序映射為 帳號1..4；輸出群組對照。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> secops_liu\n帳號2 -> root_tony\n帳號3 -> user_test\n帳號4 -> bob_admin"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsys_monitor、alice、backup_bot 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {sys_monitor, alice, backup_bot}；依序映射為 帳號1..3；輸出去識別化敘述。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> sys_monitor\n帳號2 -> alice\n帳號3 -> backup_bot"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 dev123 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>重複型單一帳號案例；{dev123} → 帳號1；輸出一致格式。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> dev123"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 admin01 與 netops 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {admin01, netops}；依序映射為 帳號1、帳號2；生成對照表。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> admin01\n帳號2 -> netops"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 audit_log 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取 {audit_log}；映射為 帳號1；輸出一對一對照。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> audit_log"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsecops_liu、vpn_guest、sys_monitor、bob_admin 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取 {secops_liu, vpn_guest, sys_monitor, bob_admin}；依序映射為 帳號1..4；輸出群組對照。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> secops_liu\n帳號2 -> vpn_guest\n帳號3 -> sys_monitor\n帳號4 -> bob_admin"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 bob_admin 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取 {bob_admin}；映射為 帳號1；輸出去識別化描述。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> bob_admin"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 secops_liu 與 root_tony 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>重複型雙帳號案例；{secops_liu, root_tony} → 帳號1、帳號2；保持格式一致。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> secops_liu\n帳號2 -> root_tony"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nnetops、dev123、alice、user_test、audit_log 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取 {netops, dev123, alice, user_test, audit_log}；映射為 帳號1..5；保留原回覆中『PowerShell』對照列。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> netops\n帳號2 -> dev123\n帳號3 -> alice\n帳號4 -> user_test\n帳號5 -> audit_log\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 vpn_guest 與 backup_bot 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取 {vpn_guest, backup_bot}；映射為 帳號1、帳號2；輸出對照表並維持事件描述不變。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> vpn_guest\n帳號2 -> backup_bot"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 root_tony 與 netops 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {root_tony, netops}；依序映射為 帳號1、帳號2；生成去識別化敘述與對照表。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> root_tony\n帳號2 -> netops"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nroot_tony、admin01、sys_monitor 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {root_tony, admin01, sys_monitor}；依序映射為 帳號1..3；輸出群組對照與去識別化句子。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> root_tony\n帳號2 -> admin01\n帳號3 -> sys_monitor"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\naudit_log、vpn_guest、admin01、netops、backup_bot 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {audit_log, vpn_guest, admin01, netops, backup_bot}；依序映射為 帳號1..5；『PowerShell』為腳本描述，原回覆對照表有列，故維持不動。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> audit_log\n帳號2 -> vpn_guest\n帳號3 -> admin01\n帳號4 -> netops\n帳號5 -> backup_bot\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsys_monitor、user_test、dev123 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {sys_monitor, user_test, dev123}；依序映射為 帳號1..3；輸出對照表與去識別化說明。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> sys_monitor\n帳號2 -> user_test\n帳號3 -> dev123"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsecops_liu、dev123、vpn_guest 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {secops_liu, dev123, vpn_guest}；依序映射為 帳號1..3；保持語意一致輸出。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> secops_liu\n帳號2 -> dev123\n帳號3 -> vpn_guest"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\ndev123、audit_log、sys_monitor、bob_admin 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {dev123, audit_log, sys_monitor, bob_admin}；依序映射為 帳號1..4；輸出群組對照。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> dev123\n帳號2 -> audit_log\n帳號3 -> sys_monitor\n帳號4 -> bob_admin"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nroot_tony、secops_liu、sys_monitor、user_test 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {root_tony, secops_liu, sys_monitor, user_test}；依序映射為 帳號1..4；產出去識別化敘述與對照。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> root_tony\n帳號2 -> secops_liu\n帳號3 -> sys_monitor\n帳號4 -> user_test"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsys_monitor、backup_bot、secops_liu、admin01 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {sys_monitor, backup_bot, secops_liu, admin01}；依序映射為 帳號1..4；輸出一致格式結果。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> sys_monitor\n帳號2 -> backup_bot\n帳號3 -> secops_liu\n帳號4 -> admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\ndev123、secops_liu、netops 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {dev123, secops_liu, netops}；依序映射為 帳號1..3；產出對照表與敘述。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> dev123\n帳號2 -> secops_liu\n帳號3 -> netops"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 audit_log 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {audit_log}；映射為 帳號1；保持事件語意不變。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> audit_log"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nadmin01、audit_log、netops 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {admin01, audit_log, netops}；依序映射為 帳號1..3；輸出對照表。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> admin01\n帳號2 -> audit_log\n帳號3 -> netops"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nbob_admin、netops、audit_log、sys_monitor 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {bob_admin, netops, audit_log, sys_monitor}；依序映射為 帳號1..4；產出群組去識別化輸出。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> bob_admin\n帳號2 -> netops\n帳號3 -> audit_log\n帳號4 -> sys_monitor"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nuser_test、dev123、alice 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {user_test, dev123, alice}；依序映射為 帳號1..3；維持語意輸出。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> user_test\n帳號2 -> dev123\n帳號3 -> alice"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\ndev123、netops、backup_bot、audit_log、user_test 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {dev123, netops, backup_bot, audit_log, user_test}；依序映射為 帳號1..5；『PowerShell』為腳本名，原回覆列於對照表，照舊保留。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> dev123\n帳號2 -> netops\n帳號3 -> backup_bot\n帳號4 -> audit_log\n帳號5 -> user_test\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nroot_tony、dev123、sys_monitor、netops 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {root_tony, dev123, sys_monitor, netops}；依序映射為 帳號1..4；輸出群組去識別化句與對照。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> root_tony\n帳號2 -> dev123\n帳號3 -> sys_monitor\n帳號4 -> netops"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nbackup_bot、dev123、audit_log、user_test 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {backup_bot, dev123, audit_log, user_test}；依序映射為 帳號1..4；輸出一致格式結果。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> backup_bot\n帳號2 -> dev123\n帳號3 -> audit_log\n帳號4 -> user_test"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\ndev123、secops_liu、user_test、alice、netops 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {dev123, secops_liu, user_test, alice, netops}；依序映射為 帳號1..5；PowerShell 仍依原回覆列入對照表。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> dev123\n帳號2 -> secops_liu\n帳號3 -> user_test\n帳號4 -> alice\n帳號5 -> netops\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 secops_liu 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {secops_liu}；映射為 帳號1；產生對照與去識別化描述。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> secops_liu"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nuser_test、admin01、bob_admin、sys_monitor、root_tony 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {user_test, admin01, bob_admin, sys_monitor, root_tony}；依序映射為 帳號1..5；PowerShell 依原回覆列入對照表。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> user_test\n帳號2 -> admin01\n帳號3 -> bob_admin\n帳號4 -> sys_monitor\n帳號5 -> root_tony\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nnetops、user_test、alice、secops_liu、bob_admin 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {netops, user_test, alice, secops_liu, bob_admin}；依序映射為 帳號1..5；保留 PowerShell 對照列以維持與原回覆一致。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> netops\n帳號2 -> user_test\n帳號3 -> alice\n帳號4 -> secops_liu\n帳號5 -> bob_admin\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 dev123 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {dev123}；映射為 帳號1；輸出一對一對照與不改動敘述。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> dev123"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 user_test 與 bob_admin 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {user_test, bob_admin}；依序映射為 帳號1、帳號2；輸出去識別化句與對照表。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> user_test\n帳號2 -> bob_admin"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nalice、user_test、sys_monitor 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {alice, user_test, sys_monitor}；依序映射為 帳號1..3；產生群組對照。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> alice\n帳號2 -> user_test\n帳號3 -> sys_monitor"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 bob_admin 與 alice 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {bob_admin, alice}；依序映射為 帳號1、帳號2；輸出對照與去識別化敘述。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> bob_admin\n帳號2 -> alice"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 admin01 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {admin01}；映射為 帳號1；保持原事件語意不變。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nbob_admin、admin01、secops_liu、alice 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {bob_admin, admin01, secops_liu, alice}；依序映射為 帳號1..4；輸出群組對照。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> bob_admin\n帳號2 -> admin01\n帳號3 -> secops_liu\n帳號4 -> alice"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsecops_liu、vpn_guest、alice 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {secops_liu, vpn_guest, alice}；依序映射為 帳號1..3；輸出一致格式內容。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> secops_liu\n帳號2 -> vpn_guest\n帳號3 -> alice"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nuser_test、secops_liu、backup_bot、sys_monitor 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {user_test, secops_liu, backup_bot, sys_monitor}；依序映射為 帳號1..4；產出對照表與句子。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> user_test\n帳號2 -> secops_liu\n帳號3 -> backup_bot\n帳號4 -> sys_monitor"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 vpn_guest 與 sys_monitor 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {vpn_guest, sys_monitor}；依序映射為 帳號1、帳號2；輸出對照與去識別化敘述。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> vpn_guest\n帳號2 -> sys_monitor"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nuser_test、dev123、root_tony、audit_log、bob_admin 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {user_test, dev123, root_tony, audit_log, bob_admin}；依序映射為 帳號1..5；PowerShell 依原回覆維持在對照表中。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> user_test\n帳號2 -> dev123\n帳號3 -> root_tony\n帳號4 -> audit_log\n帳號5 -> bob_admin\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 audit_log 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {audit_log}；映射為 帳號1；維持事件描述不變。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> audit_log"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 audit_log 與 admin01 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {audit_log, admin01}；依序映射為 帳號1、帳號2；輸出對照與去識別化句子。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> audit_log\n帳號2 -> admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 dev123 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {dev123}；映射為 帳號1；輸出一對一對照。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> dev123"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsecops_liu、sys_monitor、backup_bot、vpn_guest、bob_admin 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {secops_liu, sys_monitor, backup_bot, vpn_guest, bob_admin}；依序映射為 帳號1..5；PowerShell 依原回覆保留在對照表中。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> secops_liu\n帳號2 -> sys_monitor\n帳號3 -> backup_bot\n帳號4 -> vpn_guest\n帳號5 -> bob_admin\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nbob_admin、dev123、secops_liu、root_tony 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {bob_admin, dev123, secops_liu, root_tony}；依序映射為 帳號1..4；輸出群組對照與去識別化。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> bob_admin\n帳號2 -> dev123\n帳號3 -> secops_liu\n帳號4 -> root_tony"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nnetops、admin01、alice、dev123、root_tony 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {netops, admin01, alice, dev123, root_tony}；依序映射為 帳號1..5；PowerShell 按原回覆保留。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> netops\n帳號2 -> admin01\n帳號3 -> alice\n帳號4 -> dev123\n帳號5 -> root_tony\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\ndev123、alice、audit_log、admin01、sys_monitor 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {dev123, alice, audit_log, admin01, sys_monitor}；依序映射為 帳號1..5；保留原回覆中的 PowerShell 對照列以維持一致。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> dev123\n帳號2 -> alice\n帳號3 -> audit_log\n帳號4 -> admin01\n帳號5 -> sys_monitor\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 backup_bot 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {backup_bot}；映射為 帳號1；產生去識別化敘述與一對一對照表。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> backup_bot"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nvpn_guest、admin01、secops_liu、user_test、root_tony 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {vpn_guest, admin01, secops_liu, user_test, root_tony}；映射為 帳號1..5；注意『PowerShell』為腳本描述，原回覆列於對照表，照原樣保留。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> vpn_guest\n帳號2 -> admin01\n帳號3 -> secops_liu\n帳號4 -> user_test\n帳號5 -> root_tony\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nnetops、bob_admin、audit_log、alice 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {netops, bob_admin, audit_log, alice}；依序映射為 帳號1..4；輸出群組對照與去識別化句子。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> netops\n帳號2 -> bob_admin\n帳號3 -> audit_log\n帳號4 -> alice"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\ndev123、user_test、audit_log、root_tony 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {dev123, user_test, audit_log, root_tony}；映射為 帳號1..4；輸出群組對照。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> dev123\n帳號2 -> user_test\n帳號3 -> audit_log\n帳號4 -> root_tony"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 secops_liu 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {secops_liu}；映射為 帳號1；保持事件語意不變並生成對照表。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> secops_liu"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\naudit_log、user_test、netops、bob_admin、backup_bot 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {audit_log, user_test, netops, bob_admin, backup_bot}；映射為 帳號1..5；『PowerShell』為腳本描述，原對照表已列，照原樣保留。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> audit_log\n帳號2 -> user_test\n帳號3 -> netops\n帳號4 -> bob_admin\n帳號5 -> backup_bot\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 backup_bot 與 user_test 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {backup_bot, user_test}；依序映射為 帳號1、帳號2；輸出去識別化句與對照表。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> backup_bot\n帳號2 -> user_test"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 sys_monitor 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {sys_monitor}；映射為 帳號1；產生對照表並維持語意不變。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> sys_monitor"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsecops_liu、root_tony、bob_admin 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {secops_liu, root_tony, bob_admin}；依序映射為 帳號1..3；輸出群組對照。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> secops_liu\n帳號2 -> root_tony\n帳號3 -> bob_admin"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 alice 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {alice}；映射為 帳號1；輸出去識別化敘述與對照表。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> alice"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nuser_test、audit_log、dev123、admin01 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {user_test, audit_log, dev123, admin01}；映射為 帳號1..4；輸出群組對照與固定句式。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> user_test\n帳號2 -> audit_log\n帳號3 -> dev123\n帳號4 -> admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\naudit_log、vpn_guest、backup_bot、sys_monitor 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {audit_log, vpn_guest, backup_bot, sys_monitor}；依序映射為 帳號1..4；輸出群組對照。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> audit_log\n帳號2 -> vpn_guest\n帳號3 -> backup_bot\n帳號4 -> sys_monitor"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsys_monitor、dev123、bob_admin 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {sys_monitor, dev123, bob_admin}；映射為 帳號1..3；輸出一致格式的對照與句子。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> sys_monitor\n帳號2 -> dev123\n帳號3 -> bob_admin"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nroot_tony、admin01、secops_liu、backup_bot 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {root_tony, admin01, secops_liu, backup_bot}；映射為 帳號1..4；產生群組對照。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> root_tony\n帳號2 -> admin01\n帳號3 -> secops_liu\n帳號4 -> backup_bot"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 bob_admin 與 root_tony 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {bob_admin, root_tony}；依序映射為 帳號1、帳號2；輸出對照與去識別化敘述。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> bob_admin\n帳號2 -> root_tony"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 admin01 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {admin01}；映射為 帳號1；產生對照表並維持語意。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 netops 與 vpn_guest 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {netops, vpn_guest}；依序映射為 帳號1、帳號2；輸出對照與固定句式。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> netops\n帳號2 -> vpn_guest"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nbob_admin、sys_monitor、backup_bot、vpn_guest、dev123 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {bob_admin, sys_monitor, backup_bot, vpn_guest, dev123}；映射為 帳號1..5；『PowerShell』為腳本名，對照表依原文保留。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> bob_admin\n帳號2 -> sys_monitor\n帳號3 -> backup_bot\n帳號4 -> vpn_guest\n帳號5 -> dev123\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nbob_admin、audit_log、netops、root_tony、sys_monitor 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {bob_admin, audit_log, netops, root_tony, sys_monitor}；映射為 帳號1..5；保留 PowerShell 於對照表以維持一致。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> bob_admin\n帳號2 -> audit_log\n帳號3 -> netops\n帳號4 -> root_tony\n帳號5 -> sys_monitor\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nuser_test、bob_admin、audit_log、backup_bot、admin01 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {user_test, bob_admin, audit_log, backup_bot, admin01}；映射為 帳號1..5；PowerShell 非帳號，但依原回覆放在對照表中。</thinking>\n\n帳號1、帳號2、帳號3、帳號4、帳號5 五個帳號執行相同排程任務，內容含異常 PowerShell 腳本，建議立即停用該批帳號。\n\n【對照表】\n帳號1 -> user_test\n帳號2 -> bob_admin\n帳號3 -> audit_log\n帳號4 -> backup_bot\n帳號5 -> admin01\n帳號6 -> PowerShell"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nnetops、dev123、bob_admin 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {netops, dev123, bob_admin}；映射為 帳號1..3；輸出對照與標準句式。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> netops\n帳號2 -> dev123\n帳號3 -> bob_admin"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 netops 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。",
+    "input": "",
+    "output": "<thinking>抽取單一帳號 {netops}；映射為 帳號1；輸出去識別化描述與對照表。</thinking>\n\n帳號 帳號1 在非上班時間登入內部主機並嘗試存取高權限資料夾，已觸發風險控管程序。\n\n【對照表】\n帳號1 -> netops"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nadmin01、dev123、bob_admin、root_tony 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {admin01, dev123, bob_admin, root_tony}；依序映射為 帳號1..4；輸出群組對照與固定句式。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> admin01\n帳號2 -> dev123\n帳號3 -> bob_admin\n帳號4 -> root_tony"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nroot_tony、netops、backup_bot 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {root_tony, netops, backup_bot}；映射為 帳號1..3；輸出一致格式的對照。</thinking>\n\n帳號1、帳號2、帳號3 三個帳號在短時間內存取同一份敏感報表，行為特徵與內部威脅案例吻合。\n\n【對照表】\n帳號1 -> root_tony\n帳號2 -> netops\n帳號3 -> backup_bot"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n帳號 dev123 與 sys_monitor 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {dev123, sys_monitor}；依序映射為 帳號1、帳號2；輸出對照與去識別化句。</thinking>\n\n帳號 帳號1 與 帳號2 同時於深夜登入同一台主機，且皆執行疑似掃描工具，系統已記錄相關行為。\n\n【對照表】\n帳號1 -> dev123\n帳號2 -> sys_monitor"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nadmin01、backup_bot、netops、secops_liu 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。",
+    "input": "",
+    "output": "<thinking>抽取帳號 {admin01, backup_bot, netops, secops_liu}；依序映射為 帳號1..4；輸出群組對照與固定句式。</thinking>\n\n帳號1、帳號2、帳號3、帳號4 四組帳號曾於封鎖前訪問外部惡意網站，已列入觀察清單並限制網路存取權限。\n\n【對照表】\n帳號1 -> admin01\n帳號2 -> backup_bot\n帳號3 -> netops\n帳號4 -> secops_liu"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：sec-tower01、workstation-bob、kali-redteam、macbook-lisa，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>抽取設備 {sec-tower01, workstation-bob, kali-redteam, macbook-lisa}；依序映射為 設備1..4；輸出去識別化句與對照表。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備1 -> sec-tower01\n設備2 -> workstation-bob\n設備3 -> kali-redteam\n設備4 -> macbook-lisa"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：laptop-admin01、kali-redteam、sec-tower01、vm-centos-core，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>抽取設備 {laptop-admin01, kali-redteam, sec-tower01, vm-centos-core}；依序生成對照；注意原回覆的設備序號不連續，維持原樣。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備5 -> laptop-admin01\n設備3 -> kali-redteam\n設備1 -> sec-tower01\n設備6 -> vm-centos-core"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nworkstation-bob 和 iot-camera-5 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取設備 {workstation-bob, iot-camera-5}；映射為 設備1、設備2；保留『IP』『C2』於對照表中（非設備）。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備2 -> workstation-bob\n設備7 -> iot-camera-5\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 vm-centos-core 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>抽取單一設備 {vm-centos-core}；映射為 設備1；產生對照表（原回覆將其記為設備6，依原樣保留）。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備6 -> vm-centos-core"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 sec-tower01 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>抽取單一設備 {sec-tower01}；映射為 設備1；輸出對照表。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備1 -> sec-tower01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsec-tower01 和 kali-redteam 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取設備 {sec-tower01, kali-redteam}；映射為 設備1、設備2；保留『IP』『C2』於對照表。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備1 -> sec-tower01\n設備3 -> kali-redteam\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nkali-redteam、workstation-bob、laptop-admin01 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取設備 {kali-redteam, workstation-bob, laptop-admin01}；映射為 設備1..3；網段數字(10,0,24)依原對照表保留。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備3 -> kali-redteam\n設備2 -> workstation-bob\n設備5 -> laptop-admin01\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nmacbook-lisa、ubuntu-db01、sec-tower01 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取設備 {macbook-lisa, ubuntu-db01, sec-tower01}；映射為 設備1..3；網段數字(10,0,24)依原對照表保留。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備4 -> macbook-lisa\n設備13 -> ubuntu-db01\n設備1 -> sec-tower01\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nserver-192-168-1-10、sec-tower01、macbook-lisa、iot-camera-5、laptop-admin01 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>抽取設備 {server-192-168-1-10, sec-tower01, macbook-lisa, iot-camera-5, laptop-admin01}；映射為 設備1..5；維持原對照序號。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備14 -> server-192-168-1-10\n設備1 -> sec-tower01\n設備4 -> macbook-lisa\n設備7 -> iot-camera-5\n設備5 -> laptop-admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：server-192-168-1-10、ubuntu-db01、sec-tower01、laptop-admin01，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>抽取設備 {server-192-168-1-10, ubuntu-db01, sec-tower01, laptop-admin01}；映射為 設備1..4；輸出對照表（沿用原號碼）。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備14 -> server-192-168-1-10\n設備13 -> ubuntu-db01\n設備1 -> sec-tower01\n設備5 -> laptop-admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nserver-192-168-1-10 和 vm-centos-core 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取設備 {server-192-168-1-10, vm-centos-core}；映射為 設備1、設備2；保留『IP』『C2』於對照表。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備14 -> server-192-168-1-10\n設備6 -> vm-centos-core\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 server-192-168-1-10 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>抽取單一設備 {server-192-168-1-10}；映射為 設備1；輸出對照表（原回覆對應設備14，照登）。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備14 -> server-192-168-1-10"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 laptop-admin01 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>抽取單一設備 {laptop-admin01}；映射為 設備1；輸出對照表（原回覆對應設備5，照登）。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備5 -> laptop-admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：workstation-bob、laptop-admin01、macbook-lisa、iot-camera-5，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>抽取設備 {workstation-bob, laptop-admin01, macbook-lisa, iot-camera-5}；依序映射為 設備1..4；輸出群組對照。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備2 -> workstation-bob\n設備5 -> laptop-admin01\n設備4 -> macbook-lisa\n設備7 -> iot-camera-5"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：sec-tower01、ubuntu-db01、iot-camera-5、vm-centos-core，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>抽取設備 {sec-tower01, ubuntu-db01, iot-camera-5, vm-centos-core}；映射為 設備1..4；輸出對照表。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備1 -> sec-tower01\n設備13 -> ubuntu-db01\n設備7 -> iot-camera-5\n設備6 -> vm-centos-core"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 ubuntu-db01 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>抽取單一設備 {ubuntu-db01}；映射為 設備1；輸出對照表（原回覆對應設備13，照登）。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備13 -> ubuntu-db01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nubuntu-db01 和 win10-john 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取設備 {ubuntu-db01, win10-john}；映射為 設備1、設備2；保留『IP』『C2』於對照表。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備13 -> ubuntu-db01\n設備15 -> win10-john\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nserver-192-168-1-10 和 iot-camera-5 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取設備 {server-192-168-1-10, iot-camera-5}；映射為 設備1、設備2；保留『IP』『C2』於對照表。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備14 -> server-192-168-1-10\n設備7 -> iot-camera-5\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\niot-camera-5、laptop-admin01、macbook-lisa、sec-tower01、workstation-bob 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>抽取設備 {iot-camera-5, laptop-admin01, macbook-lisa, sec-tower01, workstation-bob}；映射為 設備1..5；維持原對照。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備7 -> iot-camera-5\n設備5 -> laptop-admin01\n設備4 -> macbook-lisa\n設備1 -> sec-tower01\n設備2 -> workstation-bob"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nworkstation-bob 和 server-192-168-1-10 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取設備 {workstation-bob, server-192-168-1-10}；映射為 設備1、設備2；保留『IP』『C2』於對照表。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備2 -> workstation-bob\n設備14 -> server-192-168-1-10\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nmacbook-lisa、win10-john、iot-camera-5 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取設備 {macbook-lisa, win10-john, iot-camera-5}；映射為 設備1..3；網段數字(10,0,24)依原對照表保留。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備4 -> macbook-lisa\n設備15 -> win10-john\n設備7 -> iot-camera-5\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsec-tower01、server-192-168-1-10、workstation-bob 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取設備 {sec-tower01, server-192-168-1-10, workstation-bob}；映射為 設備1..3；網段數字(10,0,24)依原對照表保留。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備1 -> sec-tower01\n設備14 -> server-192-168-1-10\n設備2 -> workstation-bob\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 workstation-bob 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>抽取單一設備 {workstation-bob}；映射為 設備1；輸出對照（原回覆對應設備2，照登）。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備2 -> workstation-bob"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nserver-192-168-1-10 和 ubuntu-db01 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取設備 {server-192-168-1-10, ubuntu-db01}；映射為 設備1、設備2；保留『IP』『C2』於對照表。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備14 -> server-192-168-1-10\n設備13 -> ubuntu-db01\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 win10-john 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>抽取單一設備 {win10-john}；映射為 設備1；輸出對照（原回覆對應設備15，照登）。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備15 -> win10-john"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 sec-tower01 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>抽取單一設備 {sec-tower01}；映射為 設備1；輸出對照表。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備1 -> sec-tower01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nvm-centos-core、sec-tower01、macbook-lisa、workstation-bob、ubuntu-db01 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>抽取設備 {vm-centos-core, sec-tower01, macbook-lisa, workstation-bob, ubuntu-db01}；映射為 設備1..5；依原序號保留。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備6 -> vm-centos-core\n設備1 -> sec-tower01\n設備4 -> macbook-lisa\n設備2 -> workstation-bob\n設備13 -> ubuntu-db01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nworkstation-bob、iot-camera-5、ubuntu-db01 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取設備 {workstation-bob, iot-camera-5, ubuntu-db01}；映射為 設備1..3；網段數字(10,0,24)依原對照表保留。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備2 -> workstation-bob\n設備7 -> iot-camera-5\n設備13 -> ubuntu-db01\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nlaptop-admin01、win10-john、workstation-bob 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取設備 {laptop-admin01, win10-john, workstation-bob}；映射為 設備1..3；網段數字(10,0,24)依原對照表保留。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備5 -> laptop-admin01\n設備15 -> win10-john\n設備2 -> workstation-bob\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：win10-john、laptop-admin01、vm-centos-core、workstation-bob，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>抽取設備 {win10-john, laptop-admin01, vm-centos-core, workstation-bob}；依序映射為 設備1..4；輸出對照表。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備15 -> win10-john\n設備5 -> laptop-admin01\n設備6 -> vm-centos-core\n設備2 -> workstation-bob"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsec-tower01 和 server-192-168-1-10 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取設備 {sec-tower01, server-192-168-1-10}；映射為 設備1、設備2；保留『IP』『C2』於對照表。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備1 -> sec-tower01\n設備14 -> server-192-168-1-10\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nubuntu-db01、win10-john、laptop-admin01、macbook-lisa、sec-tower01 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>抽取設備 {ubuntu-db01, win10-john, laptop-admin01, macbook-lisa, sec-tower01}；映射為 設備1..5；輸出對照表。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備13 -> ubuntu-db01\n設備15 -> win10-john\n設備5 -> laptop-admin01\n設備4 -> macbook-lisa\n設備1 -> sec-tower01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：iot-camera-5、macbook-lisa、kali-redteam、win10-john，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>抽取設備 {iot-camera-5, macbook-lisa, kali-redteam, win10-john}；依序映射為 設備1..4；輸出對照表。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備7 -> iot-camera-5\n設備4 -> macbook-lisa\n設備3 -> kali-redteam\n設備15 -> win10-john"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：laptop-admin01、workstation-bob、ubuntu-db01、macbook-lisa，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>抽取設備 {laptop-admin01, workstation-bob, ubuntu-db01, macbook-lisa}；依序映射為 設備1..4；輸出群組對照。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備5 -> laptop-admin01\n設備2 -> workstation-bob\n設備13 -> ubuntu-db01\n設備4 -> macbook-lisa"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 ubuntu-db01 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>抽取單一設備 {ubuntu-db01}；映射為 設備1；輸出對照（原回覆對應設備13，照登）。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備13 -> ubuntu-db01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nlaptop-admin01 和 macbook-lisa 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取設備 {laptop-admin01, macbook-lisa}；映射為 設備1、設備2；保留『IP』『C2』於對照表。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備5 -> laptop-admin01\n設備4 -> macbook-lisa\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 sec-tower01 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>抽取單一設備 {sec-tower01}；映射為 設備1；輸出對照表。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備1 -> sec-tower01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nlaptop-admin01、win10-john、sec-tower01 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取設備 {laptop-admin01, win10-john, sec-tower01}；映射為 設備1..3；網段數字(10,0,24)依原對照表保留。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備5 -> laptop-admin01\n設備15 -> win10-john\n設備1 -> sec-tower01\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nmacbook-lisa、iot-camera-5、sec-tower01 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取設備 {macbook-lisa, iot-camera-5, sec-tower01}；依原回覆對應為 設備4、設備7、設備1；保留網段數字 10、0、24 的對照。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備4 -> macbook-lisa\n設備7 -> iot-camera-5\n設備1 -> sec-tower01\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nvm-centos-core 和 laptop-admin01 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取設備 {vm-centos-core, laptop-admin01}；按原回覆對應 設備6、設備5；保留 IP 與 C2 的對照。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備6 -> vm-centos-core\n設備5 -> laptop-admin01\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nkali-redteam、server-192-168-1-10、vm-centos-core、sec-tower01、laptop-admin01 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>抽取設備組 {kali-redteam, server-192-168-1-10, vm-centos-core, sec-tower01, laptop-admin01}；維持原對照序號。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備3 -> kali-redteam\n設備14 -> server-192-168-1-10\n設備6 -> vm-centos-core\n設備1 -> sec-tower01\n設備5 -> laptop-admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 kali-redteam 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>單一設備 {kali-redteam}；依原回覆對應 設備3。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備3 -> kali-redteam"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：server-192-168-1-10、vm-centos-core、iot-camera-5、kali-redteam，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>群組 {server-192-168-1-10, vm-centos-core, iot-camera-5, kali-redteam}；維持原對照序號。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備14 -> server-192-168-1-10\n設備6 -> vm-centos-core\n設備7 -> iot-camera-5\n設備3 -> kali-redteam"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：ubuntu-db01、server-192-168-1-10、macbook-lisa、workstation-bob，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>群組 {ubuntu-db01, server-192-168-1-10, macbook-lisa, workstation-bob}；按原回覆維持編號。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備13 -> ubuntu-db01\n設備14 -> server-192-168-1-10\n設備4 -> macbook-lisa\n設備2 -> workstation-bob"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：win10-john、ubuntu-db01、workstation-bob、macbook-lisa，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>群組 {win10-john, ubuntu-db01, workstation-bob, macbook-lisa}；沿用原對照：15、13、2、4。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備15 -> win10-john\n設備13 -> ubuntu-db01\n設備2 -> workstation-bob\n設備4 -> macbook-lisa"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nserver-192-168-1-10、sec-tower01、laptop-admin01、iot-camera-5、ubuntu-db01 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>群組 {server-192-168-1-10, sec-tower01, laptop-admin01, iot-camera-5, ubuntu-db01}；保持原對照。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備14 -> server-192-168-1-10\n設備1 -> sec-tower01\n設備5 -> laptop-admin01\n設備7 -> iot-camera-5\n設備13 -> ubuntu-db01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 server-192-168-1-10 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>單一設備 {server-192-168-1-10}；原對照是 設備14。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備14 -> server-192-168-1-10"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nserver-192-168-1-10 和 kali-redteam 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取 {server-192-168-1-10, kali-redteam}；保留 IP 與 C2；原對照 14、3。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備14 -> server-192-168-1-10\n設備3 -> kali-redteam\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nvm-centos-core、kali-redteam、workstation-bob、ubuntu-db01、win10-john 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>群組 {vm-centos-core, kali-redteam, workstation-bob, ubuntu-db01, win10-john}；沿用原對照 6、3、2、13、15。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備6 -> vm-centos-core\n設備3 -> kali-redteam\n設備2 -> workstation-bob\n設備13 -> ubuntu-db01\n設備15 -> win10-john"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nkali-redteam 和 server-192-168-1-10 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取 {kali-redteam, server-192-168-1-10}；保留 IP 與 C2；原對照 3、14。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備3 -> kali-redteam\n設備14 -> server-192-168-1-10\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 win10-john 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>單一設備 {win10-john}；原對照 設備15。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備15 -> win10-john"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nvm-centos-core、workstation-bob、macbook-lisa 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取 {vm-centos-core, workstation-bob, macbook-lisa}；原對照 6、2、4；保留 10、0、24。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備6 -> vm-centos-core\n設備2 -> workstation-bob\n設備4 -> macbook-lisa\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：sec-tower01、laptop-admin01、server-192-168-1-10、iot-camera-5，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>群組 {sec-tower01, laptop-admin01, server-192-168-1-10, iot-camera-5}；沿用原對照 1、5、14、7。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備1 -> sec-tower01\n設備5 -> laptop-admin01\n設備14 -> server-192-168-1-10\n設備7 -> iot-camera-5"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nvm-centos-core、kali-redteam、iot-camera-5 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取 {vm-centos-core, kali-redteam, iot-camera-5}；原對照 6、3、7；保留 10、0、24。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備6 -> vm-centos-core\n設備3 -> kali-redteam\n設備7 -> iot-camera-5\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 kali-redteam 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>重複條目（kali-redteam），維持原對照 設備3。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備3 -> kali-redteam"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nubuntu-db01 和 laptop-admin01 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取 {ubuntu-db01, laptop-admin01}；原對照 13、5；保留 IP 與 C2。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備13 -> ubuntu-db01\n設備5 -> laptop-admin01\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsec-tower01、ubuntu-db01、server-192-168-1-10 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取 {sec-tower01, ubuntu-db01, server-192-168-1-10}；原對照 1、13、14；保留 10、0、24。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備1 -> sec-tower01\n設備13 -> ubuntu-db01\n設備14 -> server-192-168-1-10\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nserver-192-168-1-10 和 sec-tower01 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取 {server-192-168-1-10, sec-tower01}；原對照 14、1；保留 IP 與 C2。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備14 -> server-192-168-1-10\n設備1 -> sec-tower01\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 kali-redteam 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>再次出現單一設備 {kali-redteam}；對照仍為 設備3。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備3 -> kali-redteam"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：macbook-lisa、kali-redteam、ubuntu-db01、vm-centos-core，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>群組 {macbook-lisa, kali-redteam, ubuntu-db01, vm-centos-core}；維持原對照 4、3、13、6。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備4 -> macbook-lisa\n設備3 -> kali-redteam\n設備13 -> ubuntu-db01\n設備6 -> vm-centos-core"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsec-tower01 和 macbook-lisa 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取 {sec-tower01, macbook-lisa}；原對照 1、4；保留 IP 與 C2。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備1 -> sec-tower01\n設備4 -> macbook-lisa\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\niot-camera-5、kali-redteam、laptop-admin01、sec-tower01、workstation-bob 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>群組 {iot-camera-5, kali-redteam, laptop-admin01, sec-tower01, workstation-bob}；維持原對照 7、3、5、1、2。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備7 -> iot-camera-5\n設備3 -> kali-redteam\n設備5 -> laptop-admin01\n設備1 -> sec-tower01\n設備2 -> workstation-bob"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 win10-john 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>再度出現 {win10-john}；對照為 設備15。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備15 -> win10-john"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nwin10-john 和 vm-centos-core 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>抽取 {win10-john, vm-centos-core}；原對照 15、6；保留 IP 與 C2 對照。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備15 -> win10-john\n設備6 -> vm-centos-core\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nubuntu-db01、vm-centos-core、kali-redteam、iot-camera-5、win10-john 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>群組 {ubuntu-db01, vm-centos-core, kali-redteam, iot-camera-5, win10-john}；沿用原對照 13、6、3、7、15。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備13 -> ubuntu-db01\n設備6 -> vm-centos-core\n設備3 -> kali-redteam\n設備7 -> iot-camera-5\n設備15 -> win10-john"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\niot-camera-5、laptop-admin01、sec-tower01 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取 {iot-camera-5, laptop-admin01, sec-tower01}；原對照 7、5、1；保留 10、0、24 對照。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備7 -> iot-camera-5\n設備5 -> laptop-admin01\n設備1 -> sec-tower01\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nlaptop-admin01、kali-redteam、iot-camera-5 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取 {laptop-admin01, kali-redteam, iot-camera-5}；原對照 5、3、7；保留 10、0、24。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備5 -> laptop-admin01\n設備3 -> kali-redteam\n設備7 -> iot-camera-5\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nvm-centos-core、kali-redteam、workstation-bob、server-192-168-1-10、macbook-lisa 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>群組 {vm-centos-core, kali-redteam, workstation-bob, server-192-168-1-10, macbook-lisa}；維持原對照 6、3、2、14、4。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備6 -> vm-centos-core\n設備3 -> kali-redteam\n設備2 -> workstation-bob\n設備14 -> server-192-168-1-10\n設備4 -> macbook-lisa"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nmacbook-lisa、sec-tower01、workstation-bob、laptop-admin01、server-192-168-1-10 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>群組 {macbook-lisa, sec-tower01, workstation-bob, laptop-admin01, server-192-168-1-10}；沿用原對照 4、1、2、5、14。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備4 -> macbook-lisa\n設備1 -> sec-tower01\n設備2 -> workstation-bob\n設備5 -> laptop-admin01\n設備14 -> server-192-168-1-10"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nmacbook-lisa、vm-centos-core、iot-camera-5 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>抽取 {macbook-lisa, vm-centos-core, iot-camera-5}；原對照 4、6、7；保留 10、0、24 對照值。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備4 -> macbook-lisa\n設備6 -> vm-centos-core\n設備7 -> iot-camera-5\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：ubuntu-db01、iot-camera-5、kali-redteam、laptop-admin01，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>群組 {ubuntu-db01, iot-camera-5, kali-redteam, laptop-admin01}；維持原對照 13、7、3、5。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備13 -> ubuntu-db01\n設備7 -> iot-camera-5\n設備3 -> kali-redteam\n設備5 -> laptop-admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nserver-192-168-1-10 和 sec-tower01 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>兩台設備 {server-192-168-1-10, sec-tower01}，保留 IP 與 C2 的對照，依原回覆對應 14、1。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備14 -> server-192-168-1-10\n設備1 -> sec-tower01\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nserver-192-168-1-10 和 win10-john 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>兩台設備 {server-192-168-1-10, win10-john}；保留 IP/C2；原對照 14、15。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備14 -> server-192-168-1-10\n設備15 -> win10-john\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nlaptop-admin01、win10-john、kali-redteam、macbook-lisa、sec-tower01 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>五台設備群組；沿用原對照 5、15、3、4、1。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備5 -> laptop-admin01\n設備15 -> win10-john\n設備3 -> kali-redteam\n設備4 -> macbook-lisa\n設備1 -> sec-tower01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nworkstation-bob、win10-john、ubuntu-db01 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>三台設備 {workstation-bob, win10-john, ubuntu-db01}；保留 10、0、24；原對照 2、15、13。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備2 -> workstation-bob\n設備15 -> win10-john\n設備13 -> ubuntu-db01\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nworkstation-bob 和 vm-centos-core 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>兩台設備 {workstation-bob, vm-centos-core}；保留 IP/C2；原對照 2、6。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備2 -> workstation-bob\n設備6 -> vm-centos-core\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nlaptop-admin01、macbook-lisa、win10-john、iot-camera-5、kali-redteam 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>五台設備群組；原對照 5、4、15、7、3。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備5 -> laptop-admin01\n設備4 -> macbook-lisa\n設備15 -> win10-john\n設備7 -> iot-camera-5\n設備3 -> kali-redteam"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nvm-centos-core 和 kali-redteam 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>兩台設備 {vm-centos-core, kali-redteam}；保留 IP/C2；原對照 6、3。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備6 -> vm-centos-core\n設備3 -> kali-redteam\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\niot-camera-5、workstation-bob、sec-tower01、laptop-admin01、server-192-168-1-10 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>五台設備群組；原對照 7、2、1、5、14。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備7 -> iot-camera-5\n設備2 -> workstation-bob\n設備1 -> sec-tower01\n設備5 -> laptop-admin01\n設備14 -> server-192-168-1-10"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsec-tower01、macbook-lisa、iot-camera-5 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>三台設備 {sec-tower01, macbook-lisa, iot-camera-5}；保留 10、0、24；原對照 1、4、7。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備1 -> sec-tower01\n設備4 -> macbook-lisa\n設備7 -> iot-camera-5\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nwin10-john、sec-tower01、server-192-168-1-10 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>三台設備 {win10-john, sec-tower01, server-192-168-1-10}；保留 10、0、24；原對照 15、1、14。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備15 -> win10-john\n設備1 -> sec-tower01\n設備14 -> server-192-168-1-10\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nlaptop-admin01、server-192-168-1-10、ubuntu-db01、sec-tower01、macbook-lisa 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>五台設備群組；原對照 5、14、13、1、4。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備5 -> laptop-admin01\n設備14 -> server-192-168-1-10\n設備13 -> ubuntu-db01\n設備1 -> sec-tower01\n設備4 -> macbook-lisa"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\niot-camera-5、laptop-admin01、ubuntu-db01 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>三台設備 {iot-camera-5, laptop-admin01, ubuntu-db01}；保留 10、0、24；原對照 7、5、13。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備7 -> iot-camera-5\n設備5 -> laptop-admin01\n設備13 -> ubuntu-db01\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nlaptop-admin01、vm-centos-core、iot-camera-5 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>三台設備 {laptop-admin01, vm-centos-core, iot-camera-5}；保留 10、0、24；原對照 5、6、7。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備5 -> laptop-admin01\n設備6 -> vm-centos-core\n設備7 -> iot-camera-5\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：macbook-lisa、ubuntu-db01、sec-tower01、win10-john，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>四台設備群組；原對照 4、13、1、15。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備4 -> macbook-lisa\n設備13 -> ubuntu-db01\n設備1 -> sec-tower01\n設備15 -> win10-john"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nwin10-john、vm-centos-core、laptop-admin01、ubuntu-db01、sec-tower01 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>五台設備群組；原對照 15、6、5、13、1。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備15 -> win10-john\n設備6 -> vm-centos-core\n設備5 -> laptop-admin01\n設備13 -> ubuntu-db01\n設備1 -> sec-tower01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：iot-camera-5、vm-centos-core、sec-tower01、kali-redteam，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>四台設備群組；原對照 7、6、1、3。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備7 -> iot-camera-5\n設備6 -> vm-centos-core\n設備1 -> sec-tower01\n設備3 -> kali-redteam"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\niot-camera-5、sec-tower01、laptop-admin01、server-192-168-1-10、ubuntu-db01 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>五台設備群組；原對照 7、1、5、14、13。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備7 -> iot-camera-5\n設備1 -> sec-tower01\n設備5 -> laptop-admin01\n設備14 -> server-192-168-1-10\n設備13 -> ubuntu-db01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：laptop-admin01、kali-redteam、工作station-bob、sec-tower01，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>四台設備群組；原對照 5、3、2、1。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備5 -> laptop-admin01\n設備3 -> kali-redteam\n設備2 -> workstation-bob\n設備1 -> sec-tower01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nwin10-john 和 ubuntu-db01 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>兩台設備 {win10-john, ubuntu-db01}；保留 IP/C2；原對照 15、13。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備15 -> win10-john\n設備13 -> ubuntu-db01\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nkali-redteam、workstation-bob、win10-john、iot-camera-5、laptop-admin01 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。",
+    "input": "",
+    "output": "<thinking>五台設備群組；原對照 3、2、15、7、5。</thinking>\n\n設備1、設備2、設備3、設備4、設備5 被判定為潛在感染裝置，其開機行為與惡意樣本高度相似。\n\n【對照表】\n設備3 -> kali-redteam\n設備2 -> workstation-bob\n設備15 -> win10-john\n設備7 -> iot-camera-5\n設備5 -> laptop-admin01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nkali-redteam 和 server-192-168-1-10 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>兩台設備 {kali-redteam, server-192-168-1-10}；保留 IP/C2；原對照 3、14。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備3 -> kali-redteam\n設備14 -> server-192-168-1-10\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 macbook-lisa 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>單一設備 {macbook-lisa}；原對照 4。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備4 -> macbook-lisa"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n設備 sec-tower01 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。",
+    "input": "",
+    "output": "<thinking>單一設備 {sec-tower01}；原對照 1。</thinking>\n\n設備 設備1 於深夜自動執行不明任務並觸發端點防護警示，建議進行行為分析與隔離。\n\n【對照表】\n設備1 -> sec-tower01"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nlaptop-admin01 和 server-192-168-1-10 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>兩台設備 {laptop-admin01, server-192-168-1-10}；保留 IP/C2；原對照 5、14。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備5 -> laptop-admin01\n設備14 -> server-192-168-1-10\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nsec-tower01 和 laptop-admin01 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>兩台設備 {sec-tower01, laptop-admin01}；保留 IP/C2；原對照 1、5。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備1 -> sec-tower01\n設備5 -> laptop-admin01\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nlaptop-admin01、workstation-bob、sec-tower01 三台設備同時掃描 10.0.0.0/24 區段，造成網路異常，已被系統自動封鎖。",
+    "input": "",
+    "output": "<thinking>三台設備 {laptop-admin01, workstation-bob, sec-tower01}；保留 10、0、24；原對照 5、2、1。</thinking>\n\n設備1、設備2、設備3 三台設備同時掃描 設備1設備11.設備11.設備11.設備11/設備12 區段，造成網路異常，已被系統自動封鎖。\n\n【對照表】\n設備5 -> laptop-admin01\n設備2 -> workstation-bob\n設備1 -> sec-tower01\n設備10 -> 10\n設備11 -> 0\n設備12 -> 24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下四個設備：laptop-admin01、kali-redteam、sec-tower01、vm-centos-core，皆於相近時間內存取受限資料夾，違反資安政策。",
+    "input": "",
+    "output": "<thinking>四台設備群組；原對照 5、3、1、6。</thinking>\n\n以下四個設備：設備1、設備2、設備3、設備4，皆於相近時間內存取受限資料夾，違反資安政策。\n\n【對照表】\n設備5 -> laptop-admin01\n設備3 -> kali-redteam\n設備1 -> sec-tower01\n設備6 -> vm-centos-core"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nlaptop-admin01 和 win10-john 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>兩台設備 {laptop-admin01, win10-john}；保留 IP/C2；原對照 5、15。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備5 -> laptop-admin01\n設備15 -> win10-john\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nmacbook-lisa 和 sec-tower01 同時對外連線至可疑 IP，疑似為 C2 傳輸行為，需進一步比對流量樣本。",
+    "input": "",
+    "output": "<thinking>兩台設備 {macbook-lisa, sec-tower01}；保留 IP/C2；原對照 4、1。</thinking>\n\n設備1 和 設備2 同時對外連線至可疑 設備8，疑似為 設備9 傳輸行為，需進一步比對流量樣本。\n\n【對照表】\n設備4 -> macbook-lisa\n設備1 -> sec-tower01\n設備8 -> IP\n設備9 -> C2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n181.157.188.118、10.229.238.9、109.190.44.32、13.224.112.164、48.211.4.216 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；保留 DMZ/黑名單措辭；依原對照 IP1~IP5。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 181.157.188.118\nIP2 -> 10.229.238.9\nIP3 -> 109.190.44.32\nIP4 -> 13.224.112.164\nIP5 -> 48.211.4.216"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 153.20.61.24、107.6.105.217、184.188.108.157、123.12.69.38 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留『出現在資安攻擊樣本/疑似受控制主機』；按原對照 IP1~IP4。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 153.20.61.24\nIP2 -> 107.6.105.217\nIP3 -> 184.188.108.157\nIP4 -> 123.12.69.38"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 171.142.57.140、221.195.87.9、26.143.147.155、174.210.174.224 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；相同語意保留；對照 IP1~IP4 對應原值。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 171.142.57.140\nIP2 -> 221.195.87.9\nIP3 -> 26.143.147.155\nIP4 -> 174.210.174.224"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n6.90.76.108 和 153.203.250.33 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留 3389/445 掃描語意；IP1 對 6.90.76.108，IP2 對 153.203.250.33。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 6.90.76.108\nIP2 -> 153.203.250.33"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 42.213.130.200 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；保留弱密碼/封鎖語意；對照 IP1。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 42.213.130.200"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 32.24.97.183、221.191.85.143、141.173.34.176、78.124.190.122 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；同上模板；對照 IP1~IP4 對應原值。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 32.24.97.183\nIP2 -> 221.191.85.143\nIP3 -> 141.173.34.176\nIP4 -> 78.124.190.122"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n169.147.58.162、114.60.190.34、41.195.57.4 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；保留 DNS/C2/警示語意；映射 IP1~IP3。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 169.147.58.162\nIP2 -> 114.60.190.34\nIP3 -> 41.195.57.4"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n20.199.166.235、98.60.16.139、36.168.76.61、163.41.180.216、41.49.28.7 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單語意保留；對照 IP1~IP5 依原順序。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 20.199.166.235\nIP2 -> 98.60.16.139\nIP3 -> 36.168.76.61\nIP4 -> 163.41.180.216\nIP5 -> 41.49.28.7"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 164.53.244.147、112.223.202.184、63.53.178.65、34.153.33.42 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；樣本/受控語意保留；對照如原。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 164.53.244.147\nIP2 -> 112.223.202.184\nIP3 -> 63.53.178.65\nIP4 -> 34.153.33.42"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 143.9.71.170 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；保留封鎖語意；IP1 對應原值。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 143.9.71.170"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 208.235.216.150 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>同上；單一 IP；IP1 映射 208.235.216.150。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 208.235.216.150"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 33.127.152.172 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一 IP；弱密碼/封鎖保留；IP1 對 33.127.152.172。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 33.127.152.172"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 121.183.59.3 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一 IP；同模板；IP1 映射 121.183.59.3。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 121.183.59.3"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n49.72.101.198、55.112.240.180、160.223.15.182 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；DNS/C2/警示保留；IP1~IP3 對應原序。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 49.72.101.198\nIP2 -> 55.112.240.180\nIP3 -> 160.223.15.182"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 118.41.39.183、177.18.180.72、70.12.160.87、204.110.206.2 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；樣本/受控語意保留；按原對照。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 118.41.39.183\nIP2 -> 177.18.180.72\nIP3 -> 70.12.160.87\nIP4 -> 204.110.206.2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 50.58.74.119、209.68.60.185、76.236.100.148、78.235.55.237 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；同上；維持 IP1~IP4 對應。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 50.58.74.119\nIP2 -> 209.68.60.185\nIP3 -> 76.236.100.148\nIP4 -> 78.235.55.237"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n22.56.150.67 和 169.67.138.236 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留掃描埠說明；依序映射 IP1、IP2。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 22.56.150.67\nIP2 -> 169.67.138.236"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 184.183.148.196 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；封鎖語意保留；對照 IP1。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 184.183.148.196"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n65.241.48.207、11.200.44.186、158.247.70.31、169.206.91.65、47.163.215.223 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單保留；IP1~IP5 依原順序。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 65.241.48.207\nIP2 -> 11.200.44.186\nIP3 -> 158.247.70.31\nIP4 -> 169.206.91.65\nIP5 -> 47.163.215.223"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n51.153.112.212、133.222.154.33、113.173.123.60 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；DNS/C2/警示語意保留；對照 IP1~IP3。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 51.153.112.212\nIP2 -> 133.222.154.33\nIP3 -> 113.173.123.60"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n54.153.117.159、17.105.23.79、222.192.74.117 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；語意同上；映射 IP1~IP3。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 54.153.117.159\nIP2 -> 17.105.23.79\nIP3 -> 222.192.74.117"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n203.90.207.197、109.163.44.35、82.102.192.120、163.30.31.41、69.86.4.237 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單保留；對照 IP1~IP5 按原序。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 203.90.207.197\nIP2 -> 109.163.44.35\nIP3 -> 82.102.192.120\nIP4 -> 163.30.31.41\nIP5 -> 69.86.4.237"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n28.163.200.117 和 68.92.208.192 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留掃描埠說明；IP1 映射 28.163.200.117，IP2 映射 68.92.208.192。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 28.163.200.117\nIP2 -> 68.92.208.192"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 183.38.228.67、144.150.43.44、192.141.55.162、195.216.37.181 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；樣本/受控語意保留；對照 IP1~IP4。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 183.38.228.67\nIP2 -> 144.150.43.44\nIP3 -> 192.141.55.162\nIP4 -> 195.216.37.181"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 82.151.84.46、157.252.71.29、69.90.139.12、46.112.103.196 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；同模板；維持 IP1~IP4 映射原值。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 82.151.84.46\nIP2 -> 157.252.71.29\nIP3 -> 69.90.139.12\nIP4 -> 46.112.103.196"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n182.131.235.214 和 148.223.35.28 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留掃描/可疑語意；IP1 對 182.131.235.214，IP2 對 148.223.35.28。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 182.131.235.214\nIP2 -> 148.223.35.28"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 97.230.13.229 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；保留封鎖語意；IP1 對應 97.230.13.229。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 97.230.13.229"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 4.126.29.188 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；同上；IP1=4.126.29.188。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 4.126.29.188"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n139.24.101.210 和 59.221.196.89 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留埠號 3389/445；對照 IP1、IP2 依原值。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 139.24.101.210\nIP2 -> 59.221.196.89"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n95.71.76.106 和 76.111.239.28 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；同掃描模板；對照 IP1=95.71.76.106、IP2=76.111.239.28。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 95.71.76.106\nIP2 -> 76.111.239.28"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 86.226.178.180 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；封鎖語意保留；IP1 映射 86.226.178.180。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 86.226.178.180"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n43.32.196.180、24.238.226.49、198.48.50.134、194.134.158.7、200.49.131.165 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單同前；IP1~IP5 依原對照。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 43.32.196.180\nIP2 -> 24.238.226.49\nIP3 -> 198.48.50.134\nIP4 -> 194.134.158.7\nIP5 -> 200.49.131.165"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 160.16.172.184、152.83.75.26、96.241.240.36、2.150.216.6 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；樣本/受控保留；映射 IP1~IP4。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 160.16.172.184\nIP2 -> 152.83.75.26\nIP3 -> 96.241.240.36\nIP4 -> 2.150.216.6"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 210.64.138.136、195.192.191.1、87.69.55.185、182.163.110.88 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；同模板；對照依原。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 210.64.138.136\nIP2 -> 195.192.191.1\nIP3 -> 87.69.55.185\nIP4 -> 182.163.110.88"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 166.230.90.99、159.177.1.113、203.121.252.146、64.156.16.60 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；語意保留；IP1~IP4 映射原值。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 166.230.90.99\nIP2 -> 159.177.1.113\nIP3 -> 203.121.252.146\nIP4 -> 64.156.16.60"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n175.150.167.248、47.180.60.250、144.54.23.204 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；DNS/C2/警示保留；對照 IP1~IP3。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 175.150.167.248\nIP2 -> 47.180.60.250\nIP3 -> 144.54.23.204"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n173.75.105.71、158.170.207.84、182.21.106.164、157.169.155.230、157.148.2.247 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單保留；按原順序對照 IP1~IP5。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 173.75.105.71\nIP2 -> 158.170.207.84\nIP3 -> 182.21.106.164\nIP4 -> 157.169.155.230\nIP5 -> 157.148.2.247"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 108.179.125.201 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；保留弱密碼/封鎖語意；對照 IP1 -> 108.179.125.201。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 108.179.125.201"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 50.91.140.183 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；同上模板；對照 IP1 -> 50.91.140.183。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 50.91.140.183"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n79.198.11.221 和 76.255.195.78 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留 3389/445 掃描語意；IP1 -> 79.198.11.221，IP2 -> 76.255.195.78。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 79.198.11.221\nIP2 -> 76.255.195.78"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 32.55.48.89、32.211.221.42、158.159.56.91、173.38.122.183 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留『攻擊樣本/疑似受控』語意；對照 IP1~IP4 按原序。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 32.55.48.89\nIP2 -> 32.211.221.42\nIP3 -> 158.159.56.91\nIP4 -> 173.38.122.183"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n149.189.160.10、156.26.138.91、193.251.127.172 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；保留 DNS/C2/警示語意；對照 IP1~IP3 依原序。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 149.189.160.10\nIP2 -> 156.26.138.91\nIP3 -> 193.251.127.172"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n168.210.108.111、117.169.143.35、117.216.136.224、102.248.38.96、43.27.148.176 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單語意保留；IP1~IP5 依原順序對應。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 168.210.108.111\nIP2 -> 117.169.143.35\nIP3 -> 117.216.136.224\nIP4 -> 102.248.38.96\nIP5 -> 43.27.148.176"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 72.4.93.96 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；保留弱密碼/封鎖語意；對照 IP1 -> 72.4.93.96。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 72.4.93.96"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 203.101.153.85 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；同模板；對照 IP1 -> 203.101.153.85。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 203.101.153.85"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n140.1.25.187 和 141.225.97.59 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留 3389/445 掃描語意；IP1 -> 140.1.25.187，IP2 -> 141.225.97.59。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 140.1.25.187\nIP2 -> 141.225.97.59"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n43.195.34.9、9.45.62.219、223.202.72.119、169.224.112.121、95.138.49.220 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單語意保留；IP1~IP5 依原序對應。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 43.195.34.9\nIP2 -> 9.45.62.219\nIP3 -> 223.202.72.119\nIP4 -> 169.224.112.121\nIP5 -> 95.138.49.220"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n109.10.233.41、222.248.170.49、92.18.55.155、214.186.163.75、210.35.124.52 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單語意保留；對照 IP1~IP5 按原序。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 109.10.233.41\nIP2 -> 222.248.170.49\nIP3 -> 92.18.55.155\nIP4 -> 214.186.163.75\nIP5 -> 210.35.124.52"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 15.44.33.158、68.125.104.64、195.17.134.5、90.50.23.46 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留『攻擊樣本/疑似受控』語意；IP1~IP4 按原序。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 15.44.33.158\nIP2 -> 68.125.104.64\nIP3 -> 195.17.134.5\nIP4 -> 90.50.23.46"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n194.197.251.18 和 45.55.169.241 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留掃描語意；IP1 -> 194.197.251.18，IP2 -> 45.55.169.241。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 194.197.251.18\nIP2 -> 45.55.169.241"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n93.204.244.53、22.233.130.249、91.78.123.5、39.61.182.22、205.199.162.160 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單語意保留；IP1~IP5 依原序。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 93.204.244.53\nIP2 -> 22.233.130.249\nIP3 -> 91.78.123.5\nIP4 -> 39.61.182.22\nIP5 -> 205.199.162.160"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n67.154.138.129 和 5.182.22.24 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留 3389/445 掃描語意；IP1 -> 67.154.138.129，IP2 -> 5.182.22.24。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 67.154.138.129\nIP2 -> 5.182.22.24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 86.110.39.14、155.88.206.173、201.174.183.231、188.21.74.132 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留樣本/受控語意；IP1~IP4 依原序。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 86.110.39.14\nIP2 -> 155.88.206.173\nIP3 -> 201.174.183.231\nIP4 -> 188.21.74.132"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 82.107.67.194 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；封鎖語意保留；對照 IP1 -> 82.107.67.194。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 82.107.67.194"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 120.88.135.231 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；同模板；對照 IP1 -> 120.88.135.231。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 120.88.135.231"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n220.224.187.73、77.140.119.202、202.67.73.65、132.58.219.29、42.40.31.83 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單語意保留；IP1~IP5 依原順序。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 220.224.187.73\nIP2 -> 77.140.119.202\nIP3 -> 202.67.73.65\nIP4 -> 132.58.219.29\nIP5 -> 42.40.31.83"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 79.67.90.37、181.118.167.237、91.153.18.32、140.185.170.90 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留樣本/受控語意；IP1~IP4 按原序對應。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 79.67.90.37\nIP2 -> 181.118.167.237\nIP3 -> 91.153.18.32\nIP4 -> 140.185.170.90"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n145.243.191.42、147.157.16.95、95.132.71.186 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；DNS/C2/警示語意保留；IP1~IP3 依原序。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 145.243.191.42\nIP2 -> 147.157.16.95\nIP3 -> 95.132.71.186"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n21.138.233.32、11.235.71.140、108.146.43.11、221.171.51.233、42.206.13.37 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單語意保留；IP1~IP5 按原順序。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 21.138.233.32\nIP2 -> 11.235.71.140\nIP3 -> 108.146.43.11\nIP4 -> 221.171.51.233\nIP5 -> 42.206.13.37"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n123.44.163.91 和 46.68.84.169 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留掃描語意；IP1 -> 123.44.163.91，IP2 -> 46.68.84.169。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 123.44.163.91\nIP2 -> 46.68.84.169"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n165.245.23.45、120.221.86.189、33.234.100.143 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；DNS/C2/警示語意保留；IP1~IP3 依原序對應。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 165.245.23.45\nIP2 -> 120.221.86.189\nIP3 -> 33.234.100.143"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n182.7.228.44、112.80.211.180、134.6.228.77 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；同 DNS/C2 模板；IP1~IP3 按原序。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 182.7.228.44\nIP2 -> 112.80.211.180\nIP3 -> 134.6.228.77"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 157.219.52.87 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；保留封鎖語意；對照 IP1 -> 157.219.52.87。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 157.219.52.87"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n109.29.13.94、56.160.6.215、112.70.196.201 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；DNS/C2/警示語意保留；IP1~IP3 依原序。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 109.29.13.94\nIP2 -> 56.160.6.215\nIP3 -> 112.70.196.201"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 138.44.20.79、56.22.37.54、75.75.237.93、163.193.11.89 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留樣本/受控語意；對照 IP1~IP4。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 138.44.20.79\nIP2 -> 56.22.37.54\nIP3 -> 75.75.237.93\nIP4 -> 163.193.11.89"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n164.174.105.18 和 161.210.96.189 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留掃描/埠號語意；IP1 -> 164.174.105.18，IP2 -> 161.210.96.189。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 164.174.105.18\nIP2 -> 161.210.96.189"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n138.151.250.157、77.70.160.233、157.70.218.135、2.184.96.103、115.108.29.54 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單語意保留；IP1~IP5 按原序對應。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 138.151.250.157\nIP2 -> 77.70.160.233\nIP3 -> 157.70.218.135\nIP4 -> 2.184.96.103\nIP5 -> 115.108.29.54"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n198.250.61.236 和 194.229.180.46 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；同掃描模板；IP1 -> 198.250.61.236，IP2 -> 194.229.180.46。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 198.250.61.236\nIP2 -> 194.229.180.46"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n201.141.2.21、28.187.177.220、3.254.250.237 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；DNS/C2/警示語意保留；IP1~IP3 依原序。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 201.141.2.21\nIP2 -> 28.187.177.220\nIP3 -> 3.254.250.237"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 205.155.85.32 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；保留弱密碼/封鎖語意；對照 IP1 -> 205.155.85.32。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 205.155.85.32"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 91.59.46.146 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；同模板；對照 IP1 -> 91.59.46.146。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 91.59.46.146"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n163.68.64.147 和 12.86.110.8 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留 3389/445 掃描語意；IP1 -> 163.68.64.147，IP2 -> 12.86.110.8。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 163.68.64.147\nIP2 -> 12.86.110.8"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n67.142.77.11、11.212.177.94、105.95.55.183、174.11.84.221、205.210.191.185 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單語意保留；IP1~IP5 依原順序對應。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 67.142.77.11\nIP2 -> 11.212.177.94\nIP3 -> 105.95.55.183\nIP4 -> 174.11.84.221\nIP5 -> 205.210.191.185"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 68.60.183.167、144.164.21.146、60.105.157.88、207.139.140.244 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留『攻擊樣本/疑似受控』語意；IP1~IP4 按原序。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 68.60.183.167\nIP2 -> 144.164.21.146\nIP3 -> 60.105.157.88\nIP4 -> 207.139.140.244"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 52.136.16.159、110.191.56.218、116.226.177.157、47.142.1.151 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；同樣本/受控語意；IP1~IP4 依原序。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 52.136.16.159\nIP2 -> 110.191.56.218\nIP3 -> 116.226.177.157\nIP4 -> 47.142.1.151"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 64.197.103.121 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；保留弱密碼/封鎖語意；對照 IP1 -> 64.197.103.121。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 64.197.103.121"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 172.48.216.196 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；同模板；對照 IP1 -> 172.48.216.196。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 172.48.216.196"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 197.185.188.139、173.211.211.192、30.14.146.16、98.247.73.64 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留樣本/受控語意；IP1~IP4 按原序。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 197.185.188.139\nIP2 -> 173.211.211.192\nIP3 -> 30.14.146.16\nIP4 -> 98.247.73.64"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 220.155.136.152 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；保留封鎖語意；對照 IP1 -> 220.155.136.152。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 220.155.136.152"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n26.50.37.42、66.151.68.53、166.164.20.200、53.214.175.92、192.139.28.142 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單語意保留；IP1~IP5 依原序對應。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 26.50.37.42\nIP2 -> 66.151.68.53\nIP3 -> 166.164.20.200\nIP4 -> 53.214.175.92\nIP5 -> 192.139.28.142"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 108.53.169.239、185.145.93.158、45.207.206.176、84.56.94.177 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留樣本/受控語意；IP1~IP4 依原序。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 108.53.169.239\nIP2 -> 185.145.93.158\nIP3 -> 45.207.206.176\nIP4 -> 84.56.94.177"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 163.172.82.84 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；封鎖語意保留；對照 IP1 -> 163.172.82.84。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 163.172.82.84"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 163.106.81.17、220.77.86.13、161.111.80.116、70.182.136.169 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留樣本/受控語意；IP1~IP4 按原序。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 163.106.81.17\nIP2 -> 220.77.86.13\nIP3 -> 161.111.80.116\nIP4 -> 70.182.136.169"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n3.173.88.239 和 167.113.148.240 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留 3389/445 掃描語意；IP1 -> 3.173.88.239，IP2 -> 167.113.148.240。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 3.173.88.239\nIP2 -> 167.113.148.240"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 108.232.226.18、199.150.48.104、151.129.154.94、1.39.208.17 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留樣本/受控語意；IP1~IP4 依原序。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 108.232.226.18\nIP2 -> 199.150.48.104\nIP3 -> 151.129.154.94\nIP4 -> 1.39.208.17"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 74.219.103.28 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；保留弱密碼/封鎖語意；對照 IP1 -> 74.219.103.28。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 74.219.103.28"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 209.109.134.240 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；同模板；對照 IP1 -> 209.109.134.240。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 209.109.134.240"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n213.104.180.9、185.126.213.2、8.62.197.116、214.124.251.125、77.26.81.43 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；保留 DMZ/黑名單語意；IP1~IP5 依原序對應。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 213.104.180.9\nIP2 -> 185.126.213.2\nIP3 -> 8.62.197.116\nIP4 -> 214.124.251.125\nIP5 -> 77.26.81.43"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 172.72.147.115、159.206.212.75、34.83.54.71、29.184.13.220 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留『攻擊樣本/疑似受控』語意；IP1~IP4 按原序對應。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 172.72.147.115\nIP2 -> 159.206.212.75\nIP3 -> 34.83.54.71\nIP4 -> 29.184.13.220"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 5.59.139.215 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；保留弱密碼/封鎖語意；對照 IP1 -> 5.59.139.215。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 5.59.139.215"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n205.58.178.80、168.202.252.208、184.194.61.144、34.99.115.131、14.10.134.241 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。",
+    "input": "",
+    "output": "<thinking>5 個 IP；DMZ/黑名單語意保留；IP1~IP5 依原序。</thinking>\n\nIP1、IP2、IP3、IP4、IP5 等 5 個 IP 對我方 DMZ 區段進行滲透測試，需列入黑名單。\n\n【對照表】\nIP1 -> 205.58.178.80\nIP2 -> 168.202.252.208\nIP3 -> 184.194.61.144\nIP4 -> 34.99.115.131\nIP5 -> 14.10.134.241"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n173.157.234.56、43.90.16.128、61.185.5.2 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；保留大量 DNS/C2 語意；IP1~IP3 按原序。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 173.157.234.56\nIP2 -> 43.90.16.128\nIP3 -> 61.185.5.2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n149.79.155.78 和 67.63.135.218 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留 3389/445 掃描語意；IP1 -> 149.79.155.78，IP2 -> 67.63.135.218。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 149.79.155.78\nIP2 -> 67.63.135.218"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 144.187.175.100、156.107.206.165、185.113.167.114、194.184.230.18 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留攻擊樣本/疑似受控語意；IP1~IP4 依原序。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 144.187.175.100\nIP2 -> 156.107.206.165\nIP3 -> 185.113.167.114\nIP4 -> 194.184.230.18"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n178.134.155.219 和 67.96.129.75 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。",
+    "input": "",
+    "output": "<thinking>2 個 IP；保留掃描語意；IP1 -> 178.134.155.219，IP2 -> 67.96.129.75。</thinking>\n\nIP1 和 IP2 被發現短時間內對 3389、445 進行掃描，屬可疑連線來源。\n\n【對照表】\nIP1 -> 178.134.155.219\nIP2 -> 67.96.129.75"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 60.188.255.52 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；保留封鎖語意；對照 IP1 -> 60.188.255.52。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 60.188.255.52"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n來源 IP 10.173.19.21 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；同模板；對照 IP1 -> 10.173.19.21。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 10.173.19.21"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n139.106.198.129、6.239.115.190、63.78.183.179 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。",
+    "input": "",
+    "output": "<thinking>3 個 IP；保留大量 DNS/C2 語意；IP1~IP3 依原序。</thinking>\n\nIP1、IP2、IP3 發出大量 DNS 請求並嘗試存取 C2 通道，觸發防火牆警示。\n\n【對照表】\nIP1 -> 139.106.198.129\nIP2 -> 6.239.115.190\nIP3 -> 63.78.183.179"
+  },
+  {
+    "instruction": "\n\n來源 IP 42.203.83.18 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。",
+    "input": "",
+    "output": "<thinking>單一來源 IP；原文含前置空行不變；對照 IP1 -> 42.203.83.18。</thinking>\n\n來源 IP IP1 多次嘗試登入內部伺服器，且使用弱密碼攻擊方式，已封鎖該位址。\n\n【對照表】\nIP1 -> 42.203.83.18"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n以下 IP 215.0.8.250、173.244.220.186、22.115.96.90、24.217.176.226 出現在資安攻擊樣本中，疑似受控制主機。",
+    "input": "",
+    "output": "<thinking>4 個 IP；保留攻擊樣本/疑似受控語意；IP1~IP4 按原序對應。</thinking>\n\n以下 IP IP1、IP2、IP3、IP4 出現在資安攻擊樣本中，疑似受控制主機。\n\n【對照表】\nIP1 -> 215.0.8.250\nIP2 -> 173.244.220.186\nIP3 -> 22.115.96.90\nIP4 -> 24.217.176.226"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nMAC 位址 1B:5D:68:05:E6:DE 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。",
+    "input": "",
+    "output": "<thinking>單一 MAC；保留非上班/未授權/觀察清單語意；對照 MAC1 -> 1B:5D:68:05:E6:DE。</thinking>\n\nMAC 位址 MAC1 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。\n\n【對照表】\nMAC1 -> 1B:5D:68:05:E6:DE"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nC3:5B:9F:61:93:A3、5F:BD:5B:64:04:DD、B6:93:8B:63:69:A9、C2:D2:E1:4F:DA:B4、9E:19:86:AC:4E:4D 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> C3:5B:9F:61:93:A3\nMAC2 -> 5F:BD:5B:64:04:DD\nMAC3 -> B6:93:8B:63:69:A9\nMAC4 -> C2:D2:E1:4F:DA:B4\nMAC5 -> 9E:19:86:AC:4E:4D"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n12:4B:69:C4:B4:31、2B:DA:BF:59:67:87、6A:B1:8C:FE:D8:98、4D:97:9F:42:C3:8B、05:6C:D3:E2:50:32 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> 12:4B:69:C4:B4:31\nMAC2 -> 2B:DA:BF:59:67:87\nMAC3 -> 6A:B1:8C:FE:D8:98\nMAC4 -> 4D:97:9F:42:C3:8B\nMAC5 -> 05:6C:D3:E2:50:32"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nFA:2D:03:88:04:BD、FB:CA:58:7F:05:8D、60:C7:16:B0:66:C4、E5:89:8B:D1:D9:54、FD:C4:6C:ED:52:41 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> FA:2D:03:88:04:BD\nMAC2 -> FB:CA:58:7F:05:8D\nMAC3 -> 60:C7:16:B0:66:C4\nMAC4 -> E5:89:8B:D1:D9:54\nMAC5 -> FD:C4:6C:ED:52:41"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nMAC 位址 6B:1C:6A:CC:A3:AD 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。",
+    "input": "",
+    "output": "<thinking>單一 MAC；保留非上班/未授權/觀察清單語意；對照 MAC1 -> 6B:1C:6A:CC:A3:AD。</thinking>\n\nMAC 位址 MAC1 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。\n\n【對照表】\nMAC1 -> 6B:1C:6A:CC:A3:AD"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nDD:31:E0:B6:42:9F、0E:71:A3:45:9A:FD、AF:BE:2B:66:A9:CE、1B:F9:D4:0A:BD:DE、21:10:FE:00:BB:7B 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> DD:31:E0:B6:42:9F\nMAC2 -> 0E:71:A3:45:9A:FD\nMAC3 -> AF:BE:2B:66:A9:CE\nMAC4 -> 1B:F9:D4:0A:BD:DE\nMAC5 -> 21:10:FE:00:BB:7B"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nE5:3A:FC:0D:D9:21、67:E4:B3:F8:6C:9A、75:98:94:21:52:7D、C2:CE:C8:CD:DF:71、08:3B:6F:1C:E1:46 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> E5:3A:FC:0D:D9:21\nMAC2 -> 67:E4:B3:F8:6C:9A\nMAC3 -> 75:98:94:21:52:7D\nMAC4 -> C2:CE:C8:CD:DF:71\nMAC5 -> 08:3B:6F:1C:E1:46"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 29:02:12:F3:C2:80、C9:8D:F4:40:C1:AF、9D:30:90:36:15:53、F2:C6:6D:46:74:E8 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 按原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 29:02:12:F3:C2:80\nMAC2 -> C9:8D:F4:40:C1:AF\nMAC3 -> 9D:30:90:36:15:53\nMAC4 -> F2:C6:6D:46:74:E8"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nMAC 位址 46:55:5B:41:BF:9E 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。",
+    "input": "",
+    "output": "<thinking>單一 MAC；非上班/未授權/觀察清單語意保留；對照 MAC1 -> 46:55:5B:41:BF:9E。</thinking>\n\nMAC 位址 MAC1 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。\n\n【對照表】\nMAC1 -> 46:55:5B:41:BF:9E"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n7F:E9:97:C1:E3:07、43:DF:0D:FD:04:1C、D5:F0:D7:7C:0D:34 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險端點語意保留；MAC1~MAC3 按原序。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 7F:E9:97:C1:E3:07\nMAC2 -> 43:DF:0D:FD:04:1C\nMAC3 -> D5:F0:D7:7C:0D:34"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n98:25:2D:CF:BA:88、6D:CA:69:B5:DF:FC、AC:04:A3:B9:2B:47 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線語意保留；MAC1~MAC3 按原序。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 98:25:2D:CF:BA:88\nMAC2 -> 6D:CA:69:B5:DF:FC\nMAC3 -> AC:04:A3:B9:2B:47"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nE5:CF:1C:7E:EA:33、9B:43:36:43:30:A6、0A:60:A4:95:66:85、EE:48:87:A5:6F:45、BB:C7:B6:66:C5:9E 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 依原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> E5:CF:1C:7E:EA:33\nMAC2 -> 9B:43:36:43:30:A6\nMAC3 -> 0A:60:A4:95:66:85\nMAC4 -> EE:48:87:A5:6F:45\nMAC5 -> BB:C7:B6:66:C5:9E"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n61:10:A5:EB:E3:A1 和 B4:22:B3:EF:E0:A7 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 對應原序。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 61:10:A5:EB:E3:A1\nMAC2 -> B4:22:B3:EF:E0:A7"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 47:6E:6F:9A:3B:08、27:67:CC:4C:41:FF、E2:75:30:B3:26:48、9D:80:99:30:F4:61 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 按原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 47:6E:6F:9A:3B:08\nMAC2 -> 27:67:CC:4C:41:FF\nMAC3 -> E2:75:30:B3:26:48\nMAC4 -> 9D:80:99:30:F4:61"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 19:AA:32:7F:F2:54、F9:2E:79:0C:D0:47、F0:BE:9F:94:6C:2C、1F:EC:40:B4:57:39 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 依原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 19:AA:32:7F:F2:54\nMAC2 -> F9:2E:79:0C:D0:47\nMAC3 -> F0:BE:9F:94:6C:2C\nMAC4 -> 1F:EC:40:B4:57:39"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n1C:F1:3D:FA:6E:F0、C8:64:E9:31:B6:60、FE:B1:AD:C8:A4:B9 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe/高風險端點語意保留；MAC1~MAC3 原序對應。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 1C:F1:3D:FA:6E:F0\nMAC2 -> C8:64:E9:31:B6:60\nMAC3 -> FE:B1:AD:C8:A4:B9"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nEE:FE:52:7B:D8:1E、4E:04:C2:93:27:B4、50:2C:B5:25:FF:6A 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線語意保留；MAC1~MAC3 按原序。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> EE:FE:52:7B:D8:1E\nMAC2 -> 4E:04:C2:93:27:B4\nMAC3 -> 50:2C:B5:25:FF:6A"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n39:74:EE:3C:9C:1B 和 36:FA:72:D4:36:B2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序對應。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 39:74:EE:3C:9C:1B\nMAC2 -> 36:FA:72:D4:36:B2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n35:2C:84:36:5A:C9、EB:02:72:A7:09:FE、05:F8:F3:DD:C7:5A、4A:FB:56:0D:2E:84、D6:B5:8F:83:9B:24 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> 35:2C:84:36:5A:C9\nMAC2 -> EB:02:72:A7:09:FE\nMAC3 -> 05:F8:F3:DD:C7:5A\nMAC4 -> 4A:FB:56:0D:2E:84\nMAC5 -> D6:B5:8F:83:9B:24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n93:AA:E9:F1:3D:1A 和 13:62:3C:B7:F3:91 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序對應。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 93:AA:E9:F1:3D:1A\nMAC2 -> 13:62:3C:B7:F3:91"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nB5:42:53:63:94:D4、41:32:53:BE:C0:A0、54:9F:6F:DE:08:72 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe/高風險端點語意保留；MAC1~MAC3 原序。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> B5:42:53:63:94:D4\nMAC2 -> 41:32:53:BE:C0:A0\nMAC3 -> 54:9F:6F:DE:08:72"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nMAC 位址 75:88:CA:0A:69:22 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。",
+    "input": "",
+    "output": "<thinking>單一 MAC；非上班/未授權/觀察清單語意保留；對照 MAC1 -> 75:88:CA:0A:69:22。</thinking>\n\nMAC 位址 MAC1 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。\n\n【對照表】\nMAC1 -> 75:88:CA:0A:69:22"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n66:64:76:58:5A:80 和 42:A9:C3:57:E3:25 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序對應。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 66:64:76:58:5A:80\nMAC2 -> 42:A9:C3:57:E3:25"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n81:EB:D7:07:42:00、7B:BA:44:BF:B7:C9、C6:19:AA:E4:6A:51、6F:7F:E1:F2:C6:D6、37:DE:5A:F6:C8:E0 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> 81:EB:D7:07:42:00\nMAC2 -> 7B:BA:44:BF:B7:C9\nMAC3 -> C6:19:AA:E4:6A:51\nMAC4 -> 6F:7F:E1:F2:C6:D6\nMAC5 -> 37:DE:5A:F6:C8:E0"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nFE:1A:FB:3A:65:40、FC:49:6C:C7:E3:07、06:50:82:3F:D8:C4 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險語意保留；MAC1~MAC3 原序。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> FE:1A:FB:3A:65:40\nMAC2 -> FC:49:6C:C7:E3:07\nMAC3 -> 06:50:82:3F:D8:C4"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n48:FE:63:60:FB:47、A2:FA:A4:EC:B8:7F、06:0F:DB:70:F4:0C、28:21:C6:1A:3D:3D、0A:D9:2B:CC:2F:A4 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 依原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> 48:FE:63:60:FB:47\nMAC2 -> A2:FA:A4:EC:B8:7F\nMAC3 -> 06:0F:DB:70:F4:0C\nMAC4 -> 28:21:C6:1A:3D:3D\nMAC5 -> 0A:D9:2B:CC:2F:A4"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nMAC 位址 2A:51:8C:95:2A:2E 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。",
+    "input": "",
+    "output": "<thinking>單一 MAC；非上班/未授權/觀察清單語意保留；對照 MAC1 -> 2A:51:8C:95:2A:2E。</thinking>\n\nMAC 位址 MAC1 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。\n\n【對照表】\nMAC1 -> 2A:51:8C:95:2A:2E"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n9C:76:38:F1:5F:49、5B:CA:4D:31:BF:EF、64:23:B8:65:F8:F1 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線語意保留；MAC1~MAC3 原序。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 9C:76:38:F1:5F:49\nMAC2 -> 5B:CA:4D:31:BF:EF\nMAC3 -> 64:23:B8:65:F8:F1"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 A7:E6:88:8C:3D:CD、88:72:CF:B9:94:41、9F:03:DB:4B:35:79、6B:E2:CC:F5:BA:12 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> A7:E6:88:8C:3D:CD\nMAC2 -> 88:72:CF:B9:94:41\nMAC3 -> 9F:03:DB:4B:35:79\nMAC4 -> 6B:E2:CC:F5:BA:12"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 DA:AD:77:65:2D:F2、94:1A:B3:85:16:7D、8B:0F:79:72:C7:3A、98:E0:07:C5:B4:B3 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> DA:AD:77:65:2D:F2\nMAC2 -> 94:1A:B3:85:16:7D\nMAC3 -> 8B:0F:79:72:C7:3A\nMAC4 -> 98:E0:07:C5:B4:B3"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 06:9F:CC:B9:A8:07、36:DE:E4:6F:7A:80、25:B0:61:32:D2:89、71:CA:CB:50:02:86 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 06:9F:CC:B9:A8:07\nMAC2 -> 36:DE:E4:6F:7A:80\nMAC3 -> 25:B0:61:32:D2:89\nMAC4 -> 71:CA:CB:50:02:86"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n15:DD:C5:7D:64:5C 和 85:17:EC:19:54:C0 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 15:DD:C5:7D:64:5C\nMAC2 -> 85:17:EC:19:54:C0"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 7F:60:EB:A4:C2:A9、06:13:EA:0C:85:59、E7:D3:E7:48:38:CE、DD:D1:20:A1:4E:0B 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 7F:60:EB:A4:C2:A9\nMAC2 -> 06:13:EA:0C:85:59\nMAC3 -> E7:D3:E7:48:38:CE\nMAC4 -> DD:D1:20:A1:4E:0B"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n44:BC:30:CE:CD:D2、78:5C:0C:10:17:AE、63:0C:CE:5D:B4:C3、0C:09:A1:57:8F:6B、A7:5B:6B:96:7D:2D 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 原序。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> 44:BC:30:CE:CD:D2\nMAC2 -> 78:5C:0C:10:17:AE\nMAC3 -> 63:0C:CE:5D:B4:C3\nMAC4 -> 0C:09:A1:57:8F:6B\nMAC5 -> A7:5B:6B:96:7D:2D"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n32:8A:45:C6:3A:D1、EC:F9:3A:9B:D6:29、D5:1D:95:1D:29:00 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線語意保留；MAC1~MAC3 原序。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 32:8A:45:C6:3A:D1\nMAC2 -> EC:F9:3A:9B:D6:29\nMAC3 -> D5:1D:95:1D:29:00"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 38:18:2D:CC:C1:AC、D1:A8:66:06:55:FC、35:E5:45:8B:A9:D3、BC:89:EC:E4:EB:16 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 38:18:2D:CC:C1:AC\nMAC2 -> D1:A8:66:06:55:FC\nMAC3 -> 35:E5:45:8B:A9:D3\nMAC4 -> BC:89:EC:E4:EB:16"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n1B:50:6C:20:3E:E1、49:9F:A8:EA:14:C3、8E:D2:84:04:03:F5、11:31:DD:F3:BE:A3、DE:31:F1:B3:70:AE 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> 1B:50:6C:20:3E:E1\nMAC2 -> 49:9F:A8:EA:14:C3\nMAC3 -> 8E:D2:84:04:03:F5\nMAC4 -> 11:31:DD:F3:BE:A3\nMAC5 -> DE:31:F1:B3:70:AE"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 46:09:3D:47:6B:EB、E0:71:DD:07:18:A7、BD:70:20:6D:D8:B6、3B:40:DE:52:FB:6A 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 46:09:3D:47:6B:EB\nMAC2 -> E0:71:DD:07:18:A7\nMAC3 -> BD:70:20:6D:D8:B6\nMAC4 -> 3B:40:DE:52:FB:6A"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 6B:AE:9D:36:5C:C0、BF:0C:E7:BA:87:77、21:F7:83:2A:3E:41、6C:94:6C:45:53:D5 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 6B:AE:9D:36:5C:C0\nMAC2 -> BF:0C:E7:BA:87:77\nMAC3 -> 21:F7:83:2A:3E:41\nMAC4 -> 6C:94:6C:45:53:D5"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 63:60:C2:A3:BD:55、BF:1B:EF:8C:A5:F4、00:F9:92:B9:A8:71、48:A1:0F:8B:51:27 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 63:60:C2:A3:BD:55\nMAC2 -> BF:1B:EF:8C:A5:F4\nMAC3 -> 00:F9:92:B9:A8:71\nMAC4 -> 48:A1:0F:8B:51:27"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n9A:C4:47:DF:97:6A、D5:C7:CE:E5:4E:DF、DB:54:60:5B:8D:E5 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險端點語意保留；MAC1~MAC3 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 9A:C4:47:DF:97:6A\nMAC2 -> D5:C7:CE:E5:4E:DF\nMAC3 -> DB:54:60:5B:8D:E5"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nDE:3A:CE:E8:1E:DF、BB:59:F4:4F:A4:06、C1:11:4C:DA:86:95 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線語意保留；MAC1~MAC3 原序對應。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> DE:3A:CE:E8:1E:DF\nMAC2 -> BB:59:F4:4F:A4:06\nMAC3 -> C1:11:4C:DA:86:95"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nC5:6A:67:A5:6A:FE 和 C6:73:1C:55:BD:81 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 對應原序。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> C5:6A:67:A5:6A:FE\nMAC2 -> C6:73:1C:55:BD:81"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n8F:EB:3A:11:C3:E6、64:0E:3C:94:39:92、80:49:B6:CE:98:98、16:8A:38:4B:1A:90、EB:4F:47:36:ED:2E 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> 8F:EB:3A:11:C3:E6\nMAC2 -> 64:0E:3C:94:39:92\nMAC3 -> 80:49:B6:CE:98:98\nMAC4 -> 16:8A:38:4B:1A:90\nMAC5 -> EB:4F:47:36:ED:2E"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nFE:55:9B:96:29:22、6C:1C:9F:47:46:8B、22:04:AA:E3:CB:EB、F8:AC:C6:60:DF:07、85:8B:57:33:10:A4 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> FE:55:9B:96:29:22\nMAC2 -> 6C:1C:9F:47:46:8B\nMAC3 -> 22:04:AA:E3:CB:EB\nMAC4 -> F8:AC:C6:60:DF:07\nMAC5 -> 85:8B:57:33:10:A4"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 43:4A:C9:EC:CF:FD、95:D4:19:84:98:3E、23:69:10:1B:AE:62、43:3C:A8:1F:8F:A5 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 按原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 43:4A:C9:EC:CF:FD\nMAC2 -> 95:D4:19:84:98:3E\nMAC3 -> 23:69:10:1B:AE:62\nMAC4 -> 43:3C:A8:1F:8F:A5"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nMAC 位址 77:EC:6B:ED:6B:1F 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。",
+    "input": "",
+    "output": "<thinking>單一 MAC；非上班/未授權/觀察清單語意保留；對照 MAC1 -> 77:EC:6B:ED:6B:1F。</thinking>\n\nMAC 位址 MAC1 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。\n\n【對照表】\nMAC1 -> 77:EC:6B:ED:6B:1F"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n57:01:09:7B:71:65、52:1D:8B:1C:EB:30、E7:DB:EA:58:7F:84、B3:F1:1B:15:DA:20、4C:7E:3E:F6:24:FA 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 依原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> 57:01:09:7B:71:65\nMAC2 -> 52:1D:8B:1C:EB:30\nMAC3 -> E7:DB:EA:58:7F:84\nMAC4 -> B3:F1:1B:15:DA:20\nMAC5 -> 4C:7E:3E:F6:24:FA"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n7B:B7:AC:C5:E8:AA、90:71:D7:3A:A3:EF、CA:04:B4:59:AD:80、08:FB:05:00:BD:34、AD:9F:F2:AE:9C:B8 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> 7B:B7:AC:C5:E8:AA\nMAC2 -> 90:71:D7:3A:A3:EF\nMAC3 -> CA:04:B4:59:AD:80\nMAC4 -> 08:FB:05:00:BD:34\nMAC5 -> AD:9F:F2:AE:9C:B8"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 0A:B2:A2:9E:74:FB、4B:83:08:C5:AF:39、86:BD:A2:9A:5E:ED、55:8D:9E:97:DA:38 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 依原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 0A:B2:A2:9E:74:FB\nMAC2 -> 4B:83:08:C5:AF:39\nMAC3 -> 86:BD:A2:9A:5E:ED\nMAC4 -> 55:8D:9E:97:DA:38"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 13:AC:8B:37:57:E1、E0:5D:8E:2E:B3:B8、5D:5D:E1:18:6E:E8、C4:CC:95:65:CC:6E 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 依原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 13:AC:8B:37:57:E1\nMAC2 -> E0:5D:8E:2E:B3:B8\nMAC3 -> 5D:5D:E1:18:6E:E8\nMAC4 -> C4:CC:95:65:CC:6E"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nMAC 位址 C3:AD:16:B6:4F:65 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。",
+    "input": "",
+    "output": "<thinking>單一 MAC；非上班/未授權/觀察清單語意保留；對照 MAC1 -> C3:AD:16:B6:4F:65。</thinking>\n\nMAC 位址 MAC1 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。\n\n【對照表】\nMAC1 -> C3:AD:16:B6:4F:65"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 06:8C:FD:2E:60:DA、84:27:1C:08:4D:81、43:E9:82:70:AD:1F、E1:44:BB:52:C4:5D 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 06:8C:FD:2E:60:DA\nMAC2 -> 84:27:1C:08:4D:81\nMAC3 -> 43:E9:82:70:AD:1F\nMAC4 -> E1:44:BB:52:C4:5D"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 5D:34:37:59:A1:38、42:F6:BA:15:D8:35、8B:0F:D3:56:FF:6D、BE:13:7E:04:BD:1B 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 原序對應。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 5D:34:37:59:A1:38\nMAC2 -> 42:F6:BA:15:D8:35\nMAC3 -> 8B:0F:D3:56:FF:6D\nMAC4 -> BE:13:7E:04:BD:1B"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n81:46:F8:0B:21:1F 和 70:4B:B7:23:A1:81 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序對應。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 81:46:F8:0B:21:1F\nMAC2 -> 70:4B:B7:23:A1:81"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n7E:4D:A7:AE:D7:8F、19:07:91:87:25:CE、E4:62:47:0D:4E:A8 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險語意保留；MAC1~MAC3 原序。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 7E:4D:A7:AE:D7:8F\nMAC2 -> 19:07:91:87:25:CE\nMAC3 -> E4:62:47:0D:4E:A8"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nMAC 位址 94:96:E6:95:7F:54 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。",
+    "input": "",
+    "output": "<thinking>單一 MAC；非上班/未授權/觀察清單語意保留；對照 MAC1 -> 94:96:E6:95:7F:54。</thinking>\n\nMAC 位址 MAC1 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。\n\n【對照表】\nMAC1 -> 94:96:E6:95:7F:54"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n2F:A3:70:63:65:39 和 F5:6B:9D:01:B2:96 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 對應原序。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 2F:A3:70:63:65:39\nMAC2 -> F5:6B:9D:01:B2:96"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n88:31:B7:08:E5:95、61:B7:8A:41:C5:0C、12:5C:D9:76:D7:53 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線語意保留；MAC1~MAC3 按原序。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 88:31:B7:08:E5:95\nMAC2 -> 61:B7:8A:41:C5:0C\nMAC3 -> 12:5C:D9:76:D7:53"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nMAC 位址 C0:BA:4F:1C:D3:EC 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。",
+    "input": "",
+    "output": "<thinking>單一 MAC；非上班/未授權/觀察清單語意保留；對照 MAC1 -> C0:BA:4F:1C:D3:EC。</thinking>\n\nMAC 位址 MAC1 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。\n\n【對照表】\nMAC1 -> C0:BA:4F:1C:D3:EC"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n54:EB:75:A7:2A:18 和 D1:73:F8:20:B3:0D 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 54:EB:75:A7:2A:18\nMAC2 -> D1:73:F8:20:B3:0D"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 4C:13:B5:18:87:93、0D:8E:6C:C8:26:B8、12:6E:2C:74:6C:94、05:32:A3:8A:1B:76 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 4C:13:B5:18:87:93\nMAC2 -> 0D:8E:6C:C8:26:B8\nMAC3 -> 12:6E:2C:74:6C:94\nMAC4 -> 05:32:A3:8A:1B:76"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n87:B2:30:64:FD:43 和 68:DF:97:04:17:4A 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 87:B2:30:64:FD:43\nMAC2 -> 68:DF:97:04:17:4A"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n23:AB:8D:A8:13:3A 和 45:B7:70:A3:99:D2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序對應。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 23:AB:8D:A8:13:3A\nMAC2 -> 45:B7:70:A3:99:D2"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n3B:4A:F0:26:4D:C7、A8:EF:86:43:0A:2B、B5:29:94:08:68:5A、4F:C8:3F:DC:21:F7、D0:48:38:71:15:69 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> 3B:4A:F0:26:4D:C7\nMAC2 -> A8:EF:86:43:0A:2B\nMAC3 -> B5:29:94:08:68:5A\nMAC4 -> 4F:C8:3F:DC:21:F7\nMAC5 -> D0:48:38:71:15:69"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 F4:7F:B3:7A:C5:AD、4B:40:4A:3F:E9:8E、29:72:42:C6:43:9B、8F:D9:3C:D4:1A:DE 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 原序。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> F4:7F:B3:7A:C5:AD\nMAC2 -> 4B:40:4A:3F:E9:8E\nMAC3 -> 29:72:42:C6:43:9B\nMAC4 -> 8F:D9:3C:D4:1A:DE"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nC5:4E:B7:60:C7:F4、B5:00:0D:F6:23:CA、35:25:7A:B7:6B:CD、F0:06:E3:B0:EE:12、66:B2:81:81:4E:7F 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> C5:4E:B7:60:C7:F4\nMAC2 -> B5:00:0D:F6:23:CA\nMAC3 -> 35:25:7A:B7:6B:CD\nMAC4 -> F0:06:E3:B0:EE:12\nMAC5 -> 66:B2:81:81:4E:7F"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nA8:A9:84:84:57:66、12:F7:48:F1:03:5E、40:6E:14:27:77:74 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險端點語意保留；MAC1~MAC3 原序。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> A8:A9:84:84:57:66\nMAC2 -> 12:F7:48:F1:03:5E\nMAC3 -> 40:6E:14:27:77:74"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nA8:62:EF:FF:ED:01 和 CA:D6:44:39:D9:B5 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序對應。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> A8:62:EF:FF:ED:01\nMAC2 -> CA:D6:44:39:D9:B5"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nBA:A4:8B:7E:85:05、05:1B:A9:3F:81:B3、96:71:22:D1:A8:26、DB:22:B2:90:3B:AA、DB:3E:D9:07:97:62 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 原序。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> BA:A4:8B:7E:85:05\nMAC2 -> 05:1B:A9:3F:81:B3\nMAC3 -> 96:71:22:D1:A8:26\nMAC4 -> DB:22:B2:90:3B:AA\nMAC5 -> DB:3E:D9:07:97:62"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n26:CE:F8:3E:0B:2A 和 99:F7:99:D4:BA:8B 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 26:CE:F8:3E:0B:2A\nMAC2 -> 99:F7:99:D4:BA:8B"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nE3:45:F2:DA:51:47、39:E8:0A:F5:13:A7、0C:DB:B0:D2:6F:A4 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險端點語意保留；MAC1~MAC3 原序對應。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> E3:45:F2:DA:51:47\nMAC2 -> 39:E8:0A:F5:13:A7\nMAC3 -> 0C:DB:B0:D2:6F:A4"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nAE:82:ED:04:2B:9E、FF:1D:72:F1:CF:33、10:1A:79:1A:36:9B、69:21:63:FC:94:2F、28:74:F4:0A:3C:81 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> AE:82:ED:04:2B:9E\nMAC2 -> FF:1D:72:F1:CF:33\nMAC3 -> 10:1A:79:1A:36:9B\nMAC4 -> 69:21:63:FC:94:2F\nMAC5 -> 28:74:F4:0A:3C:81"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nD3:86:33:C0:0C:53、A8:7F:FD:D2:8E:3D、FF:06:7C:64:3B:A6、60:54:01:BF:C0:6B、D0:F9:01:FF:FA:2B 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 原序。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> D3:86:33:C0:0C:53\nMAC2 -> A8:7F:FD:D2:8E:3D\nMAC3 -> FF:06:7C:64:3B:A6\nMAC4 -> 60:54:01:BF:C0:6B\nMAC5 -> D0:F9:01:FF:FA:2B"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n8E:27:9A:C5:B3:83、91:D8:36:CC:A9:DE、A5:EB:27:97:DC:E9 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線語意保留；MAC1~MAC3 原序。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 8E:27:9A:C5:B3:83\nMAC2 -> 91:D8:36:CC:A9:DE\nMAC3 -> A5:EB:27:97:DC:E9"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n9A:C4:A3:0A:29:51 和 92:6D:D9:F0:0F:E8 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 9A:C4:A3:0A:29:51\nMAC2 -> 92:6D:D9:F0:0F:E8"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 55:B5:7F:C9:B6:E2、8B:66:D6:3D:ED:D2、5A:67:75:96:96:19、D4:7F:66:EE:68:40 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 按原序對應。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 55:B5:7F:C9:B6:E2\nMAC2 -> 8B:66:D6:3D:ED:D2\nMAC3 -> 5A:67:75:96:96:19\nMAC4 -> D4:7F:66:EE:68:40"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nCE:DF:17:A8:36:5C、CA:EF:3E:54:DD:93、B8:F0:01:64:3F:F4、1F:F1:2E:BB:63:93、AE:38:EF:83:B6:D1 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> CE:DF:17:A8:36:5C\nMAC2 -> CA:EF:3E:54:DD:93\nMAC3 -> B8:F0:01:64:3F:F4\nMAC4 -> 1F:F1:2E:BB:63:93\nMAC5 -> AE:38:EF:83:B6:D1"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 5D:BD:40:4B:35:77、D4:A6:A1:49:76:B6、2F:BE:CF:EC:C3:FC、C6:90:4E:C6:17:10 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 按原序對應。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 5D:BD:40:4B:35:77\nMAC2 -> D4:A6:A1:49:76:B6\nMAC3 -> 2F:BE:CF:EC:C3:FC\nMAC4 -> C6:90:4E:C6:17:10"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n4B:9C:D9:B7:40:DB 和 2E:5D:BA:80:D8:F0 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序對應。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 4B:9C:D9:B7:40:DB\nMAC2 -> 2E:5D:BA:80:D8:F0"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nMAC 位址 F3:E2:8A:C3:0A:24 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。",
+    "input": "",
+    "output": "<thinking>單一 MAC；非上班/未授權/觀察清單語意保留；對照 MAC1 -> F3:E2:8A:C3:0A:24。</thinking>\n\nMAC 位址 MAC1 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。\n\n【對照表】\nMAC1 -> F3:E2:8A:C3:0A:24"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 77:95:B6:7D:50:59、F8:B6:66:DF:D2:A2、89:6F:11:D7:33:7A、45:E9:76:68:31:B5 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 按原序對應。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 77:95:B6:7D:50:59\nMAC2 -> F8:B6:66:DF:D2:A2\nMAC3 -> 89:6F:11:D7:33:7A\nMAC4 -> 45:E9:76:68:31:B5"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n38:B4:56:2A:33:07、DE:31:59:3C:04:3F、A8:A8:0E:A8:BB:03 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險端點語意保留；MAC1~MAC3 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 38:B4:56:2A:33:07\nMAC2 -> DE:31:59:3C:04:3F\nMAC3 -> A8:A8:0E:A8:BB:03"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n77:DD:C7:EA:F6:07 和 DF:DC:89:03:62:42 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序對應。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 77:DD:C7:EA:F6:07\nMAC2 -> DF:DC:89:03:62:42"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nMAC 位址 E7:C7:C3:81:3C:00 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。",
+    "input": "",
+    "output": "<thinking>單一 MAC；非上班/未授權/觀察清單語意保留；對照 MAC1 -> E7:C7:C3:81:3C:00。</thinking>\n\nMAC 位址 MAC1 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。\n\n【對照表】\nMAC1 -> E7:C7:C3:81:3C:00"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nC4:76:07:D6:A2:61、D2:F9:05:C1:0A:1D、DC:40:A9:1C:B8:97、19:DA:5D:9A:F8:7F、9A:B8:7E:97:CA:95 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> C4:76:07:D6:A2:61\nMAC2 -> D2:F9:05:C1:0A:1D\nMAC3 -> DC:40:A9:1C:B8:97\nMAC4 -> 19:DA:5D:9A:F8:7F\nMAC5 -> 9A:B8:7E:97:CA:95"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 2B:58:DF:7E:4A:07、0F:71:D8:BB:BC:B7、4E:07:F7:80:F6:82、A0:91:4F:A1:D6:C7 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 按原序對應。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 2B:58:DF:7E:4A:07\nMAC2 -> 0F:71:D8:BB:BC:B7\nMAC3 -> 4E:07:F7:80:F6:82\nMAC4 -> A0:91:4F:A1:D6:C7"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n98:05:C2:14:BB:BB、DE:DF:00:14:F2:05、9B:2C:B7:FC:22:02 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險端點語意保留；MAC1~MAC3 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 98:05:C2:14:BB:BB\nMAC2 -> DE:DF:00:14:F2:05\nMAC3 -> 9B:2C:B7:FC:22:02"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nA8:EF:FF:D0:4D:8E、EA:D5:4C:9F:F0:07、5F:12:96:E5:5F:5A 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險端點語意保留；MAC1~MAC3 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> A8:EF:FF:D0:4D:8E\nMAC2 -> EA:D5:4C:9F:F0:07\nMAC3 -> 5F:12:96:E5:5F:5A"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nAA:27:24:ED:1E:16 和 3D:BE:20:E6:D2:6D 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序對應。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> AA:27:24:ED:1E:16\nMAC2 -> 3D:BE:20:E6:D2:6D"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nE2:B5:15:C0:E8:BA、87:D1:0A:9B:82:BD、C8:C8:70:A6:92:16 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險端點語意保留；MAC1~MAC3 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> E2:B5:15:C0:E8:BA\nMAC2 -> 87:D1:0A:9B:82:BD\nMAC3 -> C8:C8:70:A6:92:16"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nBB:12:29:5F:7F:4F、A1:E1:F3:3E:3A:4E、5F:D6:E7:D0:42:19 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險端點語意保留；MAC1~MAC3 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> BB:12:29:5F:7F:4F\nMAC2 -> A1:E1:F3:3E:3A:4E\nMAC3 -> 5F:D6:E7:D0:42:19"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n22:53:3B:9C:7A:F2、86:7D:43:61:9B:A6、82:4B:63:B0:14:5E 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險端點語意保留；MAC1~MAC3 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 22:53:3B:9C:7A:F2\nMAC2 -> 86:7D:43:61:9B:A6\nMAC3 -> 82:4B:63:B0:14:5E"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 1D:DC:30:6F:08:97、77:AB:D9:A6:35:D7、F2:21:35:61:ED:76、AE:CD:CA:17:6E:F9 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 按原序對應。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 1D:DC:30:6F:08:97\nMAC2 -> 77:AB:D9:A6:35:D7\nMAC3 -> F2:21:35:61:ED:76\nMAC4 -> AE:CD:CA:17:6E:F9"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n58:DC:EF:90:89:02 和 D1:A0:0E:8E:9A:2F 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序對應。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 58:DC:EF:90:89:02\nMAC2 -> D1:A0:0E:8E:9A:2F"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n系統紀錄顯示 5A:DA:AD:CE:46:79、84:11:AD:BA:81:C2、5F:4D:54:1A:9A:41、2D:12:43:45:60:91 的裝置同時出現於未授權網段，涉及內部網路掃描。",
+    "input": "",
+    "output": "<thinking>4 個 MAC；未授權網段/內部掃描語意保留；MAC1~MAC4 按原序對應。</thinking>\n\n系統紀錄顯示 MAC1、MAC2、MAC3、MAC4 的裝置同時出現於未授權網段，涉及內部網路掃描。\n\n【對照表】\nMAC1 -> 5A:DA:AD:CE:46:79\nMAC2 -> 84:11:AD:BA:81:C2\nMAC3 -> 5F:4D:54:1A:9A:41\nMAC4 -> 2D:12:43:45:60:91"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n46:D6:C0:12:79:98、9C:DB:F2:77:79:8C、E3:8D:57:6D:B4:31、36:94:85:58:C8:84、F9:09:5A:6B:28:CE 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。",
+    "input": "",
+    "output": "<thinking>5 個 MAC；APT 樣本；MAC1~MAC5 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3、MAC4、MAC5 為近期APT樣本中頻繁出現的 MAC 地址，建議全數列入封鎖名單。\n\n【對照表】\nMAC1 -> 46:D6:C0:12:79:98\nMAC2 -> 9C:DB:F2:77:79:8C\nMAC3 -> E3:8D:57:6D:B4:31\nMAC4 -> 36:94:85:58:C8:84\nMAC5 -> F9:09:5A:6B:28:CE"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n6E:B0:D6:BB:7C:8D、13:CA:2B:B6:35:CF、06:BF:B6:36:7A:DC 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。",
+    "input": "",
+    "output": "<thinking>3 個 MAC；beacon.exe 連線/高風險端點語意保留；MAC1~MAC3 按原序對應。</thinking>\n\nMAC1、MAC2、MAC3 被偵測出與惡意 beacon.exe 有連線行為，屬高風險端點。\n\n【對照表】\nMAC1 -> 6E:B0:D6:BB:7C:8D\nMAC2 -> 13:CA:2B:B6:35:CF\nMAC3 -> 06:BF:B6:36:7A:DC"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\nMAC 位址 6F:41:03:AE:05:60 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。",
+    "input": "",
+    "output": "<thinking>單一 MAC；非上班/未授權/觀察清單語意保留；對照 MAC1 -> 6F:41:03:AE:05:60。</thinking>\n\nMAC 位址 MAC1 所屬設備曾在非上班時間登入，並執行未授權指令，已被列入觀察清單。\n\n【對照表】\nMAC1 -> 6F:41:03:AE:05:60"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n2D:76:7C:98:CA:0D 和 13:CB:D9:61:FC:BE 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。",
+    "input": "",
+    "output": "<thinking>2 組 MAC；敏感資料庫/權限提升語意保留；MAC1、MAC2 原序對應。</thinking>\n\nMAC1 和 MAC2 這兩組 MAC 位址在同一時段連線至敏感資料庫，且觸發異常權限提升。\n\n【對照表】\nMAC1 -> 2D:76:7C:98:CA:0D\nMAC2 -> 13:CB:D9:61:FC:BE"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 周建國、李雅婷、張育誠、陳建國 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 周建國\n人員2 -> 李雅婷\n人員3 -> 張育誠\n人員4 -> 陳建國"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 林麗麗、趙玉珍、陳玉珍、李麗麗 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 林麗麗\n人員2 -> 趙玉珍\n人員3 -> 陳玉珍\n人員4 -> 李麗麗"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n陳冠廷、趙麗麗、周雅婷 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 陳冠廷\n人員2 -> 趙麗麗\n人員3 -> 周雅婷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n陳玉珍 與 徐小明 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 陳玉珍\n人員2 -> 徐小明"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐育誠、李建國、李美華 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 徐育誠\n人員2 -> 李建國\n人員3 -> 李美華"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n陳玉珍 與 趙冠廷 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 陳玉珍\n人員2 -> 趙冠廷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n陳麗麗 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 陳麗麗"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n林建國、陳美華、李雅婷、周小明、李麗麗 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 林建國\n人員2 -> 陳美華\n人員3 -> 李雅婷\n人員4 -> 周小明\n人員5 -> 李麗麗"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n黃小明 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 黃小明"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n李美華 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 李美華"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王冠廷、林大仁、王小明 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 王冠廷\n人員2 -> 林大仁\n人員3 -> 王小明"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王育誠、林建國、黃小明 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 王育誠\n人員2 -> 林建國\n人員3 -> 黃小明"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n周麗麗、陳雅婷、徐志強、張玉珍、陳冠廷 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 周麗麗\n人員2 -> 陳雅婷\n人員3 -> 徐志強\n人員4 -> 張玉珍\n人員5 -> 陳冠廷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n李玉珍 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 李玉珍"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n李美華、李雅婷、張建國、陳美華、趙大仁 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 李美華\n人員2 -> 李雅婷\n人員3 -> 張建國\n人員4 -> 陳美華\n人員5 -> 趙大仁"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n林美華、吳志強、李小明、吳小明、張小明 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 林美華\n人員2 -> 吳志強\n人員3 -> 李小明\n人員4 -> 吳小明\n人員5 -> 張小明"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n黃建國、周冠廷、林志強 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 黃建國\n人員2 -> 周冠廷\n人員3 -> 林志強"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 徐建國、徐雅婷、趙玉珍、周美華 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 徐建國\n人員2 -> 徐雅婷\n人員3 -> 趙玉珍\n人員4 -> 周美華"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n黃玉珍、林麗麗、王美華、張冠廷、趙玉珍 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 黃玉珍\n人員2 -> 林麗麗\n人員3 -> 王美華\n人員4 -> 張冠廷\n人員5 -> 趙玉珍"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n吳大仁、張玉珍、周麗麗 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 吳大仁\n人員2 -> 張玉珍\n人員3 -> 周麗麗"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n周冠廷、李大仁、陳小明、黃志強、黃大仁 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 周冠廷\n人員2 -> 李大仁\n人員3 -> 陳小明\n人員4 -> 黃志強\n人員5 -> 黃大仁"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 林建國、李美華、陳雅婷、林大仁 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 林建國\n人員2 -> 李美華\n人員3 -> 陳雅婷\n人員4 -> 林大仁"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n吳玉珍 與 林麗麗 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 吳玉珍\n人員2 -> 林麗麗"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n周雅婷、林美華、趙建國 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 周雅婷\n人員2 -> 林美華\n人員3 -> 趙建國"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 林育誠、黃志強、周冠廷、王小明 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 林育誠\n人員2 -> 黃志強\n人員3 -> 周冠廷\n人員4 -> 王小明"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 林育誠、李美華、趙冠廷、周建國 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 林育誠\n人員2 -> 李美華\n人員3 -> 趙冠廷\n人員4 -> 周建國"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n吳玉珍 與 徐志強 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 吳玉珍\n人員2 -> 徐志強"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐小明、陳美華、周大仁 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 徐小明\n人員2 -> 陳美華\n人員3 -> 周大仁"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 周志強、吳大仁、陳小明、周大仁 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名（含重複名）；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 周志強\n人員2 -> 吳大仁\n人員3 -> 陳小明\n人員4 -> 周大仁"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王志強 與 黃建國 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 王志強\n人員2 -> 黃建國"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 吳育誠、徐建國、吳建國、林建國 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 吳育誠\n人員2 -> 徐建國\n人員3 -> 吳建國\n人員4 -> 林建國"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n陳志強、趙玉珍、李大仁、林育誠、吳冠廷 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 陳志強\n人員2 -> 趙玉珍\n人員3 -> 李大仁\n人員4 -> 林育誠\n人員5 -> 吳冠廷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 周雅婷、趙雅婷、陳冠廷、徐大仁 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 周雅婷\n人員2 -> 趙雅婷\n人員3 -> 陳冠廷\n人員4 -> 徐大仁"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n林麗麗 與 王建國 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 林麗麗\n人員2 -> 王建國"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王雅婷、陳玉珍、張建國 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 王雅婷\n人員2 -> 陳玉珍\n人員3 -> 張建國"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王志強 與 林冠廷 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 王志強\n人員2 -> 林冠廷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐冠廷、吳建國、李建國、吳小明、陳雅婷 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 徐冠廷\n人員2 -> 吳建國\n人員3 -> 李建國\n人員4 -> 吳小明\n人員5 -> 陳雅婷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n林建國 與 周玉珍 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 林建國\n人員2 -> 周玉珍"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 陳冠廷、林雅婷、王大仁、吳玉珍 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 陳冠廷\n人員2 -> 林雅婷\n人員3 -> 王大仁\n人員4 -> 吳玉珍"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 吳麗麗、周玉珍、林玉珍、王冠廷 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 吳麗麗\n人員2 -> 周玉珍\n人員3 -> 林玉珍\n人員4 -> 王冠廷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n張雅婷 與 王小明 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 張雅婷\n人員2 -> 王小明"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王玉珍 與 徐大仁 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 王玉珍\n人員2 -> 徐大仁"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n林大仁、林建國、林麗麗、陳小明、林育誠 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 林大仁\n人員2 -> 林建國\n人員3 -> 林麗麗\n人員4 -> 陳小明\n人員5 -> 林育誠"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n張育誠 與 林雅婷 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 張育誠\n人員2 -> 林雅婷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n張小明、林育誠、吳玉珍 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 張小明\n人員2 -> 林育誠\n人員3 -> 吳玉珍"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n周小明、林美華、周志強、趙育誠、林育誠 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 周小明\n人員2 -> 林美華\n人員3 -> 周志強\n人員4 -> 趙育誠\n人員5 -> 林育誠"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n周美華 與 黃玉珍 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 周美華\n人員2 -> 黃玉珍"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 林建國、趙建國、王美華、張冠廷 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 林建國\n人員2 -> 趙建國\n人員3 -> 王美華\n人員4 -> 張冠廷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐雅婷 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 徐雅婷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐雅婷 與 黃麗麗 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 徐雅婷\n人員2 -> 黃麗麗"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 黃大仁、李建國、周美華、林冠廷 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 黃大仁\n人員2 -> 李建國\n人員3 -> 周美華\n人員4 -> 林冠廷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐雅婷 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 徐雅婷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n張建國 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 張建國"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n趙小明 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 趙小明"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 王育誠、吳冠廷、趙麗麗、王建國 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 王育誠\n人員2 -> 吳冠廷\n人員3 -> 趙麗麗\n人員4 -> 王建國"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n黃育誠 與 趙雅婷 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 黃育誠\n人員2 -> 趙雅婷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n張育誠、陳建國、黃小明、黃育誠、陳冠廷 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 張育誠\n人員2 -> 陳建國\n人員3 -> 黃小明\n人員4 -> 黃育誠\n人員5 -> 陳冠廷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王大仁、張志強、黃建國 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 王大仁\n人員2 -> 張志強\n人員3 -> 黃建國"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王美華 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 王美華"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n林建國 與 李小明 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 林建國\n人員2 -> 李小明"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王育誠、徐志強、王冠廷、李美華、徐雅婷 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 王育誠\n人員2 -> 徐志強\n人員3 -> 王冠廷\n人員4 -> 李美華\n人員5 -> 徐雅婷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n黃玉珍、趙麗麗、周大仁、周育誠、周玉珍 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 黃玉珍\n人員2 -> 趙麗麗\n人員3 -> 周大仁\n人員4 -> 周育誠\n人員5 -> 周玉珍"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐育誠、黃雅婷、王大仁 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 徐育誠\n人員2 -> 黃雅婷\n人員3 -> 王大仁"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n張玉珍 與 陳冠廷 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 張玉珍\n人員2 -> 陳冠廷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n黃冠廷 與 黃志強 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 黃冠廷\n人員2 -> 黃志強"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n李大仁 與 吳雅婷 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 李大仁\n人員2 -> 吳雅婷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n趙冠廷 與 周育誠 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 趙冠廷\n人員2 -> 周育誠"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐大仁 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 徐大仁"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n吳大仁、張小明、張大仁 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 吳大仁\n人員2 -> 張小明\n人員3 -> 張大仁"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n李玉珍、李小明、徐育誠、吳大仁、黃冠廷 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 李玉珍\n人員2 -> 李小明\n人員3 -> 徐育誠\n人員4 -> 吳大仁\n人員5 -> 黃冠廷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n陳玉珍 與 林麗麗 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 陳玉珍\n人員2 -> 林麗麗"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n林雅婷 與 李育誠 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 林雅婷\n人員2 -> 李育誠"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n林大仁、徐建國、陳育誠 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 林大仁\n人員2 -> 徐建國\n人員3 -> 陳育誠"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐冠廷 與 趙玉珍 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 徐冠廷\n人員2 -> 趙玉珍"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n陳大仁 與 李麗麗 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 陳大仁\n人員2 -> 李麗麗"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 李冠廷、王建國、王育誠、趙志強 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 李冠廷\n人員2 -> 王建國\n人員3 -> 王育誠\n人員4 -> 趙志強"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n陳育誠、黃志強、陳雅婷 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 陳育誠\n人員2 -> 黃志強\n人員3 -> 陳雅婷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王育誠、陳建國、陳育誠 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 王育誠\n人員2 -> 陳建國\n人員3 -> 陳育誠"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n周玉珍、吳志強、吳雅婷、王大仁、王志強 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 周玉珍\n人員2 -> 吳志強\n人員3 -> 吳雅婷\n人員4 -> 王大仁\n人員5 -> 王志強"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 黃雅婷、林建國、徐志強、王育誠 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 黃雅婷\n人員2 -> 林建國\n人員3 -> 徐志強\n人員4 -> 王育誠"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n周冠廷 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 周冠廷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王育誠 與 趙麗麗 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 王育誠\n人員2 -> 趙麗麗"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n趙大仁、黃玉珍、陳志強 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 趙大仁\n人員2 -> 黃玉珍\n人員3 -> 陳志強"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王麗麗 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 王麗麗"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐雅婷、王麗麗、徐玉珍 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 徐雅婷\n人員2 -> 王麗麗\n人員3 -> 徐玉珍"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n趙小明 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 趙小明"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n趙冠廷、陳小明、王美華、陳大仁、徐大仁 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 趙冠廷\n人員2 -> 陳小明\n人員3 -> 王美華\n人員4 -> 陳大仁\n人員5 -> 徐大仁"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王小明 與 趙雅婷 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 王小明\n人員2 -> 趙雅婷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n李育誠 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。",
+    "input": "",
+    "output": "<thinking>1 人名；去識別化為人員1；保留凌晨/高風險腳本/外部雲端/EDR 語意。</thinking>\n\n人員1 被記錄於凌晨執行高風險腳本並嘗試上傳至外部雲端，觸發 EDR 偵測。\n\n【對照表】\n\n人員1 -> 李育誠"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n黃麗麗 與 王育誠 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 黃麗麗\n人員2 -> 王育誠"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n吳大仁、李美華、黃雅婷 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 吳大仁\n人員2 -> 李美華\n人員3 -> 黃雅婷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n資安日誌顯示 陳育誠、張大仁、徐小明、李麗麗 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。",
+    "input": "",
+    "output": "<thinking>4 人名；去識別化為人員1~4（原序）；保留釣魚樣本語意。</thinking>\n\n資安日誌顯示 人員1、人員2、人員3、人員4 有執行可疑程式紀錄，行為與內部釣魚測試樣本相符。\n\n【對照表】\n\n人員1 -> 陳育誠\n人員2 -> 張大仁\n人員3 -> 徐小明\n人員4 -> 李麗麗"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n林大仁 與 林美華 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。",
+    "input": "",
+    "output": "<thinking>2 人名；去識別化為人員1~2（原序）；保留異常登入/資料外傳/啟動調查語意。</thinking>\n\n人員1 與 人員2 兩人帳號行為出現異常登入與資料外傳跡象，需啟動內部調查。\n\n【對照表】\n\n人員1 -> 林大仁\n人員2 -> 林美華"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n黃玉珍、黃建國、陳建國 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 黃玉珍\n人員2 -> 黃建國\n人員3 -> 陳建國"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n王麗麗、張玉珍、周大仁 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 王麗麗\n人員2 -> 張玉珍\n人員3 -> 周大仁"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n黃玉珍、吳育誠、陳小明 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 黃玉珍\n人員2 -> 吳育誠\n人員3 -> 陳小明"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n吳冠廷、林育誠、趙雅婷 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 吳冠廷\n人員2 -> 林育誠\n人員3 -> 趙雅婷"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐小明、李育誠、吳麗麗 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 徐小明\n人員2 -> 李育誠\n人員3 -> 吳麗麗"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐美華、張小明、周美華、趙小明、黃美華 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。",
+    "input": "",
+    "output": "<thinking>5 人名；去識別化為人員1~5（原序）；保留短時間多主機/上傳壓縮檔/重大風險語意。</thinking>\n\n人員1、人員2、人員3、人員4、人員5 在短時間內連線不同主機並上傳壓縮檔，風險等級列為重大。\n\n【對照表】\n\n人員1 -> 徐美華\n人員2 -> 張小明\n人員3 -> 周美華\n人員4 -> 趙小明\n人員5 -> 黃美華"
+  },
+  {
+    "instruction": "以下內容請幫我去識別化並加上對照表：\n\n徐玉珍、吳玉珍、周玉珍 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。",
+    "input": "",
+    "output": "<thinking>3 人名；去識別化為人員1~3（原序）；保留敏感伺服器/協同/通報語意。</thinking>\n\n人員1、人員2、人員3 涉及同時連線至敏感伺服器，疑似為協同行為，已通報 CSIRT。\n\n【對照表】\n\n人員1 -> 徐玉珍\n人員2 -> 吳玉珍\n人員3 -> 周玉珍"
+  }
+]

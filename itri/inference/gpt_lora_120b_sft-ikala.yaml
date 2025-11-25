@@ -1,0 +1,31 @@
+### model
+model_name_or_path: openai/gpt-oss-120b
+adapter_name_or_path: saves/gpt-120b-ikala_tmmluplus
+trust_remote_code: true
+load_in_8bit: false
+load_in_4bit: false
+
+### method
+stage: sft
+finetuning_type: lora
+
+### dataset
+template: gpt
+cutoff_len: 8192
+
+### inference
+infer_backend: vllm
+vllm_enforce_eager: false
+vllm_max_model_len: 8192
+vllm_gpu_memory_utilization: 0.90
+vllm_tensor_parallel_size: 8
+vllm_max_num_seqs: 256
+vllm_max_num_batched_tokens: 8192
+
+### generation
+max_new_tokens: 1024
+top_p: 0.9
+temperature: 0.6
+repetition_penalty: 1.1
+do_sample: true
+num_beams: 1

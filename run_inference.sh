@@ -17,13 +17,11 @@ echo "=========================================="
 # Install LLaMA-Factory if not already installed
 NEEDS_INSTALL=false
 
-# Check if llamafactory-cli exists in any location
-if [ -f /usr/local/bin/llamafactory-cli ]; then
-    echo "✓ LLaMA-Factory already installed at /usr/local/bin/llamafactory-cli"
+# Check if llamafactory module is importable (most reliable check)
+if python3 -c "import llamafactory" 2>/dev/null; then
+    echo "✓ LLaMA-Factory already installed (module found)"
 elif command -v llamafactory-cli &> /dev/null; then
     echo "✓ LLaMA-Factory already installed (found in PATH)"
-elif [ -f .venv/bin/llamafactory-cli ]; then
-    echo "✓ LLaMA-Factory already installed at .venv/bin/llamafactory-cli"
 else
     NEEDS_INSTALL=true
 fi
@@ -62,21 +60,28 @@ echo ""
 echo "Verifying llamafactory-cli installation..."
 
 # Determine which llamafactory-cli to use (check system paths first for container compatibility)
-if [ -f /usr/local/bin/llamafactory-cli ]; then
-    LLAMAFACTORY_CMD="/usr/local/bin/llamafactory-cli"
-    echo "✓ Found: /usr/local/bin/llamafactory-cli"
-elif command -v llamafactory-cli &> /dev/null; then
+# Use python3 -m llamafactory.cli to avoid shebang path issues in containers
+if command -v llamafactory-cli &> /dev/null; then
     LLAMAFACTORY_CMD="llamafactory-cli"
     echo "✓ Found: llamafactory-cli (in PATH)"
+elif [ -f /usr/local/bin/llamafactory-cli ]; then
+    LLAMAFACTORY_CMD="python3 /usr/local/bin/llamafactory-cli"
+    echo "✓ Found: /usr/local/bin/llamafactory-cli (using python3)"
 elif [ -f .venv/bin/llamafactory-cli ]; then
-    LLAMAFACTORY_CMD=".venv/bin/llamafactory-cli"
-    echo "✓ Found: .venv/bin/llamafactory-cli"
+    # Use python3 directly to avoid shebang path issues
+    LLAMAFACTORY_CMD="python3 .venv/bin/llamafactory-cli"
+    echo "✓ Found: .venv/bin/llamafactory-cli (using python3)"
+elif python3 -c "import llamafactory" 2>/dev/null; then
+    # If package is installed, use module execution
+    LLAMAFACTORY_CMD="python3 -m llamafactory.cli"
+    echo "✓ Found: llamafactory package (using python3 -m)"
 else
     echo "ERROR: llamafactory-cli not found after installation"
     echo "Searched in:"
-    echo "  - /usr/local/bin/llamafactory-cli"
     echo "  - PATH (command -v llamafactory-cli)"
+    echo "  - /usr/local/bin/llamafactory-cli"
     echo "  - .venv/bin/llamafactory-cli"
+    echo "  - Python module (python3 -m llamafactory.cli)"
     echo ""
     echo "Trying to locate it..."
     find /usr/local -name "llamafactory-cli" 2>/dev/null || true
