@@ -1,0 +1,22 @@
+### model
+model_name_or_path: openai/gpt-oss-20b
+adapter_name_or_path: saves/gpt-20b/lora/sft
+trust_remote_code: true
+
+### method
+stage: sft
+finetuning_type: lora
+
+### dataset
+template: gpt
+cutoff_len: 2048
+
+### output
+# output_dir: saves/gpt-20b/lora/sft/inference_result
+# overwrite_output_dir: true
+
+### generation
+max_new_tokens: 512
+top_p: 0.9
+temperature: 0.6
+repetition_penalty: 1.1

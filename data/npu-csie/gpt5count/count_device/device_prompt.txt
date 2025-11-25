@@ -1,0 +1,10 @@
+sec-tower01
+laptop-admin01
+server-192-168-1-10
+kali-redteam
+iot-camera-5
+macbook-lisa
+ubuntu-db01
+workstation-bob
+win10-john
+vm-centos-core

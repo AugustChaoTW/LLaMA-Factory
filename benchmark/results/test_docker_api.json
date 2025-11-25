@@ -1,0 +1,54 @@
+{
+  "overall_accuracy": 0.2,
+  "correct": 1,
+  "total": 5,
+  "subject_stats": {
+    "engineering_math": {
+      "correct": 1,
+      "total": 5,
+      "accuracy": 0.2
+    }
+  },
+  "detailed_results": [
+    {
+      "question": "給定兩向量u=[1 1 2]T及 v=[2 -1 1]T ，下列選項何者錯誤？",
+      "subject": "engineering_math",
+      "correct_answer": "A",
+      "predicted_answer": "A",
+      "raw_response": "analysisassistantfinalB",
+      "is_correct": true
+    },
+    {
+      "question": "2已知\\(X\\)和\\(Y\\)的聯合機率密度函數 (Joint probability density function) 為 \\[ f_{X,Y}(x,y) = \\begin{cases} 2, & 0 \\leq y \\leq x \\leq 1 \\\\ 0, & 其他 \\end{cases} \\] 下列何者錯誤？",
+      "subject": "engineering_math",
+      "correct_answer": "C",
+      "predicted_answer": "A",
+      "raw_response": "analysisassistantfinalC",
+      "is_correct": false
+    },
+    {
+      "question": "利用拉普拉斯轉換（Laplacetransform）解下列二階微分方程式y\"+5y'+6y=2δ(t-1)，y(0)=0 ， y'(0) = 0 ，其中 δ (t ) 為脈衝函數（unit impulse），對於 t > 1 ，下列何者正確？",
+      "subject": "engineering_math",
+      "correct_answer": "C",
+      "predicted_answer": "A",
+      "raw_response": "analysisassistantfinalC",
+      "is_correct": false
+    },
+    {
+      "question": "令 \\( A = \\left[ \\begin{array}{ccc} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 0 \\end{array} \\right] \\)，則矩陣 \\( e^A \\) 的像空間(image space)維度為何？",
+      "subject": "engineering_math",
+      "correct_answer": "B",
+      "predicted_answer": "A",
+      "raw_response": "analysisassistantfinalD",
+      "is_correct": false
+    },
+    {
+      "question": "\\( \\lim_{x \\to 11} \\frac{\\sqrt{x} - \\sqrt{11}}{x^2 - 121} = ? \\)",
+      "subject": "engineering_math",
+      "correct_answer": "D",
+      "predicted_answer": "A",
+      "raw_response": "analysisassistantfinalA",
+      "is_correct": false
+    }
+  ]
+}
