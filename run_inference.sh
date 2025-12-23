@@ -14,6 +14,15 @@ echo "Mode: $MODE"
 echo "Config: $CONFIG"
 echo "=========================================="
 
+# Activate virtual environment if it exists
+if [ -f ".venv/bin/activate" ]; then
+    echo "Activating virtual environment (.venv)..."
+    source .venv/bin/activate
+elif [ -f "venv/bin/activate" ]; then
+    echo "Activating virtual environment (venv)..."
+    source venv/bin/activate
+fi
+
 # Install LLaMA-Factory if not already installed
 NEEDS_INSTALL=false
 
